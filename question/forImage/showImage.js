@@ -4,6 +4,10 @@ define(function(require){
 
 	var Model = function(){
 		this.callParent();
+		var self = this;
+		$('.imageClick').bind('click', function() { 
+			this.close();
+		});
 	};
 
 
@@ -23,7 +27,7 @@ define(function(require){
 						var operateType = "browse";
 						var url = '/baas/justep/attachment/simpleFileStore?realFileName=' + realFileName + '&storeFileName=' + storeFileName + '&ownerID=' + ownerID + '&operateType=' + operateType;
 						var fImgUrl = require.toUrl(url);
-                        newArray.push({"content":'<div style ="margin:0 auto;text-align:center;" ><a href="#"><img  class="imageClick"  alt="" src="'+fImgUrl+'" ></a></div>'});
+                        newArray.push({"content":'<div style ="margin:0 auto;text-align:center;vertical-align:middle;" ><a href="#"><img  class="imageClick" style="max-width: 100%;max-height: 100%;" alt="" src="'+fImgUrl+'" ></a></div>'});
 					}
 				}
 			} catch (e) {

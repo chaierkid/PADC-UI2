@@ -7,6 +7,7 @@ require('$model/UI2/system/components/justep/scrollView/scrollView');
 require('$model/UI2/system/components/justep/list/list');
 require('$model/UI2/system/components/justep/panel/child');
 require('$model/UI2/system/components/justep/panel/panel');
+require('$model/UI2/system/components/justep/popOver/popOver');
 require('$model/UI2/system/components/justep/row/row');
 require('$model/UI2/system/components/justep/select/select');
 require('$model/UI2/system/components/justep/output/output');
