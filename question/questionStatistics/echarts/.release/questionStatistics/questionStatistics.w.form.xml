@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cMVNfqe" class="cMVNfqe" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/tabs/tabs,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.cMVNfqe{color: rgb(33, 33, 33)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad" __cid="cMVNfqe" class="cMVNfqe"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pdd707c501c5d47a58e8183602b025a84-iosstatusbar cMVNfqe" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cMVNfqe"> 
+    <div class="x-panel-top cMVNfqe" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:350}" __cid="cMVNfqe"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cMVNfqe" style="font-size:x-large;height:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;统计数据&quot;}" __cid="cMVNfqe"> 
+        <div class="x-titlebar-left cMVNfqe" __cid="cMVNfqe"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cMVNfqe" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cMVNfqe"> 
+            <i class="icon-chevron-left cMVNfqe" __cid="cMVNfqe"/>  
+            <span __cid="cMVNfqe" class="cMVNfqe"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cMVNfqe" __cid="cMVNfqe">统计数据</div>  
+        <div class="x-titlebar-right  cMVNfqe" __cid="cMVNfqe">
+          <div class="empty cMVNfqe" __cid="cMVNfqe"/>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cMVNfqe" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMVNfqe"> 
+        <div class="x-col cMVNfqe" xid="col25" __cid="cMVNfqe"> 
+          <label xid="label11" __cid="cMVNfqe" class="cMVNfqe">统计条件</label>
+        </div>  
+        <div class="x-col cMVNfqe" xid="col27" style="text-align:right;" __cid="cMVNfqe"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-icon-left cMVNfqe" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;icon&quot;:&quot;icon-android-search&quot;,&quot;label&quot;:&quot;查询&quot;}" __cid="cMVNfqe"> 
+            <i xid="i3" class="icon-android-search cMVNfqe" __cid="cMVNfqe"/>  
+            <span xid="span4" __cid="cMVNfqe" class="cMVNfqe">查询</span>
+          </a> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cMVNfqe" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMVNfqe"> 
+        <div class="x-col x-col-20 x-col-center cMVNfqe" xid="col24" __cid="cMVNfqe"> 
+          <label xid="label12" style="font-weight:normal;" __cid="cMVNfqe" class="cMVNfqe">区县</label>
+        </div>  
+        <div class="x-col cMVNfqe" xid="col23" __cid="cMVNfqe"> 
+          <select component="$model/UI2/system/components/justep/select/select" class="form-control cMVNfqe" style="height:30px;" bind-options="data2.datas" bind-optionsValue="'name'" xid="select2" bind-optionsText="'name'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:$model.data1.ref(&quot;area&quot;),name:'$model/UI2/system/components/justep/select/select'}" __cid="cMVNfqe"/>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cMVNfqe" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMVNfqe"> 
+        <div class="x-col x-col-20 x-col-center cMVNfqe" xid="col6" __cid="cMVNfqe"> 
+          <label xid="label6" style="font-weight:normal;" __cid="cMVNfqe" class="cMVNfqe">填报时间</label>
+        </div>  
+        <div class="x-col cMVNfqe" xid="col18" __cid="cMVNfqe"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cMVNfqe" xid="input5" style="height:30px;" data-bind="component:{ref:$model.data1.ref(&quot;startdate&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cMVNfqe"/>
+        </div>  
+        <div class="x-col x-col-20 x-col-center cMVNfqe" xid="col11" style="text-align:center;" __cid="cMVNfqe"> 
+          <label xid="label7" style="font-weight:normal;" __cid="cMVNfqe" class="cMVNfqe">至</label>
+        </div>  
+        <div class="x-col cMVNfqe" xid="col19" __cid="cMVNfqe"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cMVNfqe" xid="input1" style="height:30px;" data-bind="component:{ref:$model.data1.ref(&quot;enddate&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cMVNfqe"/>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cMVNfqe" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMVNfqe"> 
+        <div class="x-col x-col-center cMVNfqe" xid="col28" __cid="cMVNfqe"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cMVNfqe" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMVNfqe"> 
+            <label class="x-label cMVNfqe" xid="label8" __cid="cMVNfqe">调查范围：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cMVNfqe" xid="output2" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cMVNfqe"/>
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cMVNfqe" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMVNfqe"> 
+        <div class="x-col x-col-center cMVNfqe" xid="col20" __cid="cMVNfqe"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cMVNfqe" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMVNfqe"> 
+            <label class="x-label cMVNfqe" xid="label10" __cid="cMVNfqe">调查内容：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cMVNfqe" xid="output1" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cMVNfqe"/>
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cMVNfqe" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMVNfqe"> 
+        <div class="x-col x-col-center cMVNfqe" xid="col26" __cid="cMVNfqe"> 
+          <label xid="label9" style="font-weight:normal;" __cid="cMVNfqe" class="cMVNfqe">存在的问题，如下饼图：</label>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-content cMVNfqe" xid="content1" style="overflow: auto;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMVNfqe"> 
+      <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cMVNfqe" xid="tabs1" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cMVNfqe"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pbba8ed21c04146d39c7dddb625bdbea9-iosstatusbar cMVNfqe" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cMVNfqe"> 
+          <div class="x-panel-top cMVNfqe" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMVNfqe"> 
+            <ul class="nav nav-tabs cMVNfqe" xid="navs1" __cid="cMVNfqe"> 
+              <li class="active cMVNfqe" xid="li1" __cid="cMVNfqe"> 
+                <a content="tabContent_1" xid="tabItem1" __cid="cMVNfqe" class="cMVNfqe">各区分布图</a>
+              </li>  
+              <li xid="li2" __cid="cMVNfqe" class="cMVNfqe"> 
+                <a content="tabContent1" xid="tabItem2" __cid="cMVNfqe" class="cMVNfqe">各种问题分布图</a>
+              </li>
+            </ul> 
+          </div>  
+          <div class="x-panel-content cMVNfqe" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMVNfqe"> 
+            <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cMVNfqe" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cMVNfqe"> 
+              <div class="x-contents-content active active cMVNfqe" xid="areaImage" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cMVNfqe"/>  
+              <div class="x-contents-content cMVNfqe" xid="problemImage" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cMVNfqe"/>
+            </div> 
+          </div>  
+          <style __cid="cMVNfqe" class="cMVNfqe">.x-panel.pbba8ed21c04146d39c7dddb625bdbea9-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pbba8ed21c04146d39c7dddb625bdbea9-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pbba8ed21c04146d39c7dddb625bdbea9-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pbba8ed21c04146d39c7dddb625bdbea9-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pbba8ed21c04146d39c7dddb625bdbea9-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pbba8ed21c04146d39c7dddb625bdbea9-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pbba8ed21c04146d39c7dddb625bdbea9-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pbba8ed21c04146d39c7dddb625bdbea9-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pbba8ed21c04146d39c7dddb625bdbea9-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cMVNfqe" class="cMVNfqe">.x-panel.pdd707c501c5d47a58e8183602b025a84-iosstatusbar &gt;.x-panel-top {height: 350px;}.x-panel.pdd707c501c5d47a58e8183602b025a84-iosstatusbar &gt;.x-panel-content { top: 350px;bottom: nullpx;}.x-panel.pdd707c501c5d47a58e8183602b025a84-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pdd707c501c5d47a58e8183602b025a84-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pdd707c501c5d47a58e8183602b025a84-iosstatusbar &gt;.x-panel-top {height: 370px;}.iosstatusbar .x-panel.pdd707c501c5d47a58e8183602b025a84-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pdd707c501c5d47a58e8183602b025a84-iosstatusbar &gt;.x-panel-content { top: 370px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pdd707c501c5d47a58e8183602b025a84-iosstatusbar &gt;.x-panel-top {height: 350px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pdd707c501c5d47a58e8183602b025a84-iosstatusbar &gt;.x-panel-content {top: 350px;}</style>
+  </div> 
+</div>

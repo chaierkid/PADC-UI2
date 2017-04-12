@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c3INvMv" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c3INvMv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.c3INvMv{background-color: rgb(0, 0, 0)} .x-panel-content.c3INvMv{background-color: rgb(241, 241, 241)} .free-wall.c3INvMv{margin: 15px} .brick.c3INvMv img.c3INvMv{width: 100%; height: 100%} .size2-2.c3INvMv{width: 80px; height: 80px} .size11.c3INvMv{width: 160px; height: 160px} .size12.c3INvMv{width: 160px; height: 320px} .size21.c3INvMv{width: 320px; height: 160px} .size22.c3INvMv{width: 320px; height: 320px} .size13.c3INvMv{width: 160px; height: 480px} .size31.c3INvMv{width: 480px; height: 160px} .size23.c3INvMv{width: 320px; height: 480px} .size24.c3INvMv{width: 320px; height: 640px} .size32.c3INvMv{width: 480px; height: 320px} .size33.c3INvMv{width: 480px; height: 480px} .size34.c3INvMv{width: 480px; height: 640px} .size35.c3INvMv{width: 480px; height: 800px} .size36.c3INvMv{width: 480px; height: 960px} .size43.c3INvMv{width: 640px; height: 480px} .size53.c3INvMv{width: 800px; height: 480px} .brick.c3INvMv{background-color: white; float: left; cursor: default; overflow: hidden; background-repeat: no-repeat; background-size: cover; background-position: center}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c3INvMv" class="c3INvMv"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p3f45d4bc7b204353a444f25b0fc92ca8-iosstatusbar c3INvMv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c3INvMv"> 
+    <div class="x-panel-top c3INvMv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c3INvMv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c3INvMv" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;瀑布流布局&quot;}" __cid="c3INvMv"> 
+        <div class="x-titlebar-left c3INvMv" xid="left1" __cid="c3INvMv"/>  
+        <div class="x-titlebar-title c3INvMv" xid="title1" __cid="c3INvMv">瀑布流布局</div>  
+        <div class="x-titlebar-right  c3INvMv" xid="right1" __cid="c3INvMv"> 
+          <div class="empty c3INvMv" __cid="c3INvMv"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c3INvMv" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c3INvMv"> 
+      <ul id="freewall demo-test-gallery" component="$model/UI2/system/components/justep/list/list" class="free-wall demo-gallery x-list x-list-template hide c3INvMv" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" data-config="{&quot;data&quot;:&quot;imgData&quot;}" __cid="c3INvMv"> 
+        <li class="brick c3INvMv" __cid="c3INvMv"> 
+          <a href="" data-size="" data-med="" data-med-size="" __cid="c3INvMv" class="c3INvMv"> 
+            <img src="" __cid="c3INvMv" class="c3INvMv" data-bind="attr:{src:$model.toUrl(val(&quot;fSmallImg&quot;))}"/> 
+          </a> 
+        </li> 
+      </ul>  
+      <div id="gallery" class="pswp c3INvMv" tabindex="-1" role="dialog" aria-hidden="true" __cid="c3INvMv"> 
+        <div class="pswp__bg c3INvMv" __cid="c3INvMv"/>  
+        <div class="pswp__scroll-wrap c3INvMv" __cid="c3INvMv"> 
+          <div class="pswp__container c3INvMv" __cid="c3INvMv"> 
+            <div class="pswp__item c3INvMv" __cid="c3INvMv"/>  
+            <div class="pswp__item c3INvMv" __cid="c3INvMv"/>  
+            <div class="pswp__item c3INvMv" __cid="c3INvMv"/> 
+          </div>  
+          <div class="pswp__ui pswp__ui--hidden c3INvMv" __cid="c3INvMv"> 
+            <div class="pswp__top-bar c3INvMv" __cid="c3INvMv"> 
+              <div class="pswp__counter c3INvMv" __cid="c3INvMv"/>  
+              <button class="pswp__button pswp__button--close c3INvMv" title="Close (Esc)" __cid="c3INvMv"/>  
+              <button class="pswp__button pswp__button--share c3INvMv" title="Share" __cid="c3INvMv"/>  
+              <button class="pswp__button pswp__button--fs c3INvMv" title="Toggle fullscreen" __cid="c3INvMv"/>  
+              <button class="pswp__button pswp__button--zoom c3INvMv" title="Zoom in/out" __cid="c3INvMv"/>  
+              <div class="pswp__preloader c3INvMv" __cid="c3INvMv"> 
+                <div class="pswp__preloader__icn c3INvMv" __cid="c3INvMv"> 
+                  <div class="pswp__preloader__cut c3INvMv" __cid="c3INvMv"> 
+                    <div class="pswp__preloader__donut c3INvMv" __cid="c3INvMv"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap c3INvMv" __cid="c3INvMv"> 
+              <div class="pswp__share-tooltip c3INvMv" __cid="c3INvMv"/> 
+            </div>  
+            <button class="pswp__button pswp__button--arrow--left c3INvMv" title="Previous (arrow left)" __cid="c3INvMv"/>  
+            <button class="pswp__button pswp__button--arrow--right c3INvMv" title="Next (arrow right)" __cid="c3INvMv"/>  
+            <div class="pswp__caption c3INvMv" __cid="c3INvMv"> 
+              <div class="pswp__caption__center c3INvMv" __cid="c3INvMv"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="c3INvMv" class="c3INvMv">.x-panel.p3f45d4bc7b204353a444f25b0fc92ca8-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p3f45d4bc7b204353a444f25b0fc92ca8-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p3f45d4bc7b204353a444f25b0fc92ca8-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p3f45d4bc7b204353a444f25b0fc92ca8-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p3f45d4bc7b204353a444f25b0fc92ca8-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p3f45d4bc7b204353a444f25b0fc92ca8-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p3f45d4bc7b204353a444f25b0fc92ca8-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p3f45d4bc7b204353a444f25b0fc92ca8-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p3f45d4bc7b204353a444f25b0fc92ca8-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

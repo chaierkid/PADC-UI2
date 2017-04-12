@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cryqe6r" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cryqe6r" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.h3.cryqe6r{margin: 0; color: inherit; font-size: 24px} .x-output.cryqe6r{padding: 0px} .account-list-line.cryqe6r{border-bottom: 1px solid lightgray; overflow: hidden} .account-list-line.cryqe6r:active{background-color: lightgray} .account-income.cryqe6r{color: green} .account-payout.cryqe6r{color: brown}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cryqe6r" class="cryqe6r"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="detailDialog" style="left:103px;top:198px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceived:detailDialogReceived" data-config="{&quot;src&quot;:&quot;$model/UI2/demo/account/detail.w&quot;,&quot;title&quot;:&quot;记账&quot;}" __cid="cryqe6r" class="cryqe6r"> 
+    <result concept="accountData" operation="edit" origin="accountData" xid="default26" __cid="cryqe6r" class="cryqe6r"> 
+      <mapping from="fID" to="fID" locator="true" xid="default27" __cid="cryqe6r" class="cryqe6r"/>  
+      <mapping from="fCreateTime" to="fCreateTime" xid="default28" __cid="cryqe6r" class="cryqe6r"/>  
+      <mapping from="fDate" to="fDate" xid="default29" __cid="cryqe6r" class="cryqe6r"/>  
+      <mapping from="fMoney" to="fMoney" xid="default30" __cid="cryqe6r" class="cryqe6r"/>  
+      <mapping from="fDescription" to="fDescription" xid="default31" __cid="cryqe6r" class="cryqe6r"/>  
+      <mapping from="fType" to="fType" xid="default32" __cid="cryqe6r" class="cryqe6r"/>  
+      <mapping from="fClass" to="fClass" xid="default33" __cid="cryqe6r" class="cryqe6r"/> 
+    </result>  
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cryqe6r" __cid="cryqe6r"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cryqe6r" style="display:none;" __cid="cryqe6r">
+      <xhtml:div class="x-dialog-title cryqe6r" __cid="cryqe6r">
+        <xhtml:button class="close cryqe6r" __cid="cryqe6r">
+          <xhtml:span __cid="cryqe6r" class="cryqe6r">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cryqe6r" __cid="cryqe6r">记账</xhtml:div>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cryqe6r" __cid="cryqe6r"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p6e8e5c0242ba489cbb32b48f13cca451-iosstatusbar cryqe6r" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cryqe6r"> 
+    <div class="x-panel-top cryqe6r" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cryqe6r"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cryqe6r" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;记账本&quot;}" __cid="cryqe6r"> 
+        <div class="x-titlebar-left cryqe6r" xid="div1" __cid="cryqe6r"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cryqe6r" xid="settingBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:settingBtnClick" data-config="{&quot;icon&quot;:&quot;icon-navicon-round&quot;,&quot;label&quot;:&quot;设置&quot;}" __cid="cryqe6r"> 
+            <i xid="i4" class="icon-navicon-round cryqe6r" __cid="cryqe6r"/>  
+            <span xid="span5" __cid="cryqe6r" class="cryqe6r">设置</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cryqe6r" xid="div2" __cid="cryqe6r">记账本</div>  
+        <div class="x-titlebar-right  cryqe6r" xid="div3" __cid="cryqe6r">
+          <div class="empty cryqe6r" __cid="cryqe6r"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cryqe6r" xid="newBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:newBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;,&quot;label&quot;:&quot;新增&quot;}" __cid="cryqe6r"> 
+            <i xid="i2" class="icon-android-add cryqe6r" __cid="cryqe6r"/>  
+            <span xid="span2" __cid="cryqe6r" class="cryqe6r">新增</span> 
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-scroll-view cryqe6r" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cryqe6r"> 
+      <div class="x-scroll cryqe6r" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cryqe6r"> 
+        <div class="x-content-center x-pull-down container cryqe6r" xid="div4" __cid="cryqe6r"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cryqe6r" xid="i1" __cid="cryqe6r"/>  
+          <span class="x-pull-down-label cryqe6r" xid="span1" __cid="cryqe6r">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content cryqe6r" xid="div5" __cid="cryqe6r"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cryqe6r" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;accountData&quot;}" __cid="cryqe6r"> 
+            <ul class="x-list-template hide cryqe6r" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cryqe6r"> 
+              <li xid="li1" class="account-list-line cryqe6r" bind-css="{'account-income' : $object.val('fType') == '收入','account-payout' : $object.val('fType') == '支出'}" __cid="cryqe6r"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center cryqe6r" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cryqe6r"> 
+                  <div class="x-col cryqe6r" xid="col2" bind-click="listLineClick" __cid="cryqe6r"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cryqe6r" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cryqe6r"> 
+                      <div class="x-col cryqe6r" xid="col4" __cid="cryqe6r"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output h3 cryqe6r" xid="output2" data-bind="component:{ref:ref('fClass'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cryqe6r"/> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cryqe6r" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cryqe6r"> 
+                      <div class="x-col cryqe6r" xid="col7" __cid="cryqe6r"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cryqe6r" xid="output4" data-bind="component:{ref:ref('fDescription'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cryqe6r"/> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-col cryqe6r" xid="col3" bind-click="listLineClick" __cid="cryqe6r"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cryqe6r" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cryqe6r"> 
+                      <div class="x-col cryqe6r" xid="col10" __cid="cryqe6r"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output h3 cryqe6r" xid="output1" data-bind="component:{ref:ref('fMoney'),name:'$model/UI2/system/components/justep/output/output'}" data-config="{&quot;format&quot;:&quot;0,000.00&quot;}" __cid="cryqe6r"/> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cryqe6r" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cryqe6r"> 
+                      <div class="x-col cryqe6r" xid="col13" __cid="cryqe6r"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cryqe6r" xid="output3" data-bind="component:{ref:ref('fDate'),name:'$model/UI2/system/components/justep/output/output'}" data-config="{&quot;format&quot;:&quot;yyyy-MM-dd&quot;}" __cid="cryqe6r"/> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-col x-col-fixed cryqe6r" xid="col1" style="width:50px;" __cid="cryqe6r"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon account-delete cryqe6r" xid="deleteBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deleteBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;删除&quot;}" __cid="cryqe6r"> 
+                      <i xid="i3" class="icon-android-close cryqe6r" __cid="cryqe6r"/>  
+                      <span xid="span3" __cid="cryqe6r" class="cryqe6r">删除</span> 
+                    </a> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up cryqe6r" xid="div6" __cid="cryqe6r"> 
+          <span class="x-pull-up-label cryqe6r" xid="span4" __cid="cryqe6r">加载更多...</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cryqe6r" class="cryqe6r">.x-panel.p6e8e5c0242ba489cbb32b48f13cca451-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p6e8e5c0242ba489cbb32b48f13cca451-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p6e8e5c0242ba489cbb32b48f13cca451-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p6e8e5c0242ba489cbb32b48f13cca451-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p6e8e5c0242ba489cbb32b48f13cca451-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p6e8e5c0242ba489cbb32b48f13cca451-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p6e8e5c0242ba489cbb32b48f13cca451-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p6e8e5c0242ba489cbb32b48f13cca451-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p6e8e5c0242ba489cbb32b48f13cca451-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

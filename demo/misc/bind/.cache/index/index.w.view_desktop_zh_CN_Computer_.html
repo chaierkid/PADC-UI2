@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window caEBJvm" component="$model/UI2/system/components/justep/window/window" design="device:pc;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __justepbasexid__="7bb2e9b40e904b5b97bd145edf3db1b8" __cid="caEBJvm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="caEBJvm" class="caEBJvm"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/row/row" class="x-row caEBJvm" xid="row1" style="height:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+    <div class="x-col caEBJvm" xid="col1" __cid="caEBJvm"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list caEBJvm" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;foodData&quot;}" __cid="caEBJvm"> 
+        <ul class="x-list-template hide caEBJvm" xid="listTemplateUl1" __cid="caEBJvm" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li xid="li1" __cid="caEBJvm" class="caEBJvm" data-bind="css:{'bg-info':$index() %2 == 1 &amp;&amp; val('fID')!=data.val('fID'), 'bg-primary':val('fID')==data.val('fID')}"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+              <div class="x-col caEBJvm" xid="col7" __cid="caEBJvm"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control caEBJvm" xid="input5" data-bind="component:{ref:ref('fName'),name:'$model/UI2/system/components/justep/input/input'}" __cid="caEBJvm"/> 
+              </div>  
+              <div xid="col8" style="width:80px;" class="x-col x-col-fixed caEBJvm" __cid="caEBJvm"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control caEBJvm" xid="input6" data-bind="component:{ref:ref('fPrice'),name:'$model/UI2/system/components/justep/input/input'}" __cid="caEBJvm"/> 
+              </div>  
+              <div xid="col14" class="x-col x-col-fixed caEBJvm" style="width:100px;" __cid="caEBJvm"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control caEBJvm" xid="input13" data-bind="component:{ref:ref('calcPriceText'),name:'$model/UI2/system/components/justep/input/input'}" __cid="caEBJvm"/> 
+              </div>  
+              <div xid="col5" class="x-col x-col-fixed caEBJvm" style="width:80px;" __cid="caEBJvm"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control caEBJvm" xid="input1" data-bind="component:{ref:ref('fStatus'),name:'$model/UI2/system/components/justep/input/input'}" __cid="caEBJvm"/> 
+              </div>  
+              <div xid="col25" class="x-col x-col-fixed caEBJvm" style="width:80px;" __cid="caEBJvm"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control caEBJvm" xid="input3" data-bind="component:{ref:ref('calcStatusText'),name:'$model/UI2/system/components/justep/input/input'}" __cid="caEBJvm"/> 
+              </div>  
+              <div class="x-col x-col-fixed caEBJvm" xid="col19" style="width:auto;" __cid="caEBJvm"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon  caEBJvm" xid="deleteBtn" style="width:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deleteBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-remove&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="caEBJvm"> 
+                  <i xid="i1" class="icon-android-remove text-danger caEBJvm" __cid="caEBJvm"/>  
+                  <span xid="span4" __cid="caEBJvm" class="caEBJvm"/> 
+                </a> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+        <div class="x-col caEBJvm" xid="col20" __cid="caEBJvm"> 
+          <span xid="span9" __cid="caEBJvm" class="caEBJvm">菜品总数：</span> 
+        </div>  
+        <div class="x-col caEBJvm" xid="col21" __cid="caEBJvm"> 
+          <label xid="label3" __cid="caEBJvm" class="caEBJvm" data-bind="text:tempData.ref('foodCount')">label</label> 
+        </div>  
+        <div class="x-col caEBJvm" xid="col22" __cid="caEBJvm"> 
+          <span xid="span11" __cid="caEBJvm" class="caEBJvm">启用菜品数：</span> 
+        </div>  
+        <div class="x-col caEBJvm" xid="col26" __cid="caEBJvm"> 
+          <label xid="label2" __cid="caEBJvm" class="caEBJvm" data-bind="text:tempData.ref('enabledFoodCount')">label</label> 
+        </div>  
+        <div class="x-col x-col-fixed caEBJvm" xid="col28" style="width:65px;" __cid="caEBJvm"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default caEBJvm" xid="editBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:tempData.val('foodDataReadonly') ? '编辑' : '只读'" data-events="onClick:editBtnClick" data-config="{&quot;label&quot;:&quot;编辑&quot;}" __cid="caEBJvm"> 
+            <i xid="i2" __cid="caEBJvm" class="caEBJvm"/>  
+            <span xid="span12" __cid="caEBJvm" class="caEBJvm">编辑</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-col caEBJvm" xid="col2" __cid="caEBJvm"> 
+      <div class="panel panel-default caEBJvm" style="height:auto;" xid="div3" __cid="caEBJvm"> 
+        <div class="panel-heading caEBJvm" style="padding: 5px;" xid="div4" __cid="caEBJvm" data-bind="event:{click:$model._callModelFn.bind($model, 'panelTopClick')}"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row22" style="padding: 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div class="x-col caEBJvm" xid="col43" __cid="caEBJvm"> 
+              <h4 xid="h44" __cid="caEBJvm" class="caEBJvm">bind-ref、bind-labelRef</h4> 
+            </div>  
+            <div xid="col44" __cid="caEBJvm" class="caEBJvm"> 
+              <label xid="label15" __cid="caEBJvm" class="caEBJvm">点击标题显示或隐藏</label> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="panel-body caEBJvm" style="padding: 0px;height:auto;" xid="div5" __cid="caEBJvm"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row24" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col48" style="width:120px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span23" __cid="caEBJvm" class="caEBJvm">绑定数值字段</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col47" __cid="caEBJvm"> 
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control caEBJvm" xid="input12" data-bind="component:{ref:foodData.ref('fPrice'),name:'$model/UI2/system/components/justep/input/input'}" __cid="caEBJvm"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row25" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col49" style="width:120px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span24" __cid="caEBJvm" class="caEBJvm">绑定日期字段</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col50" __cid="caEBJvm"> 
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control caEBJvm" xid="input16" data-bind="component:{ref:foodData.ref('fDate'),name:'$model/UI2/system/components/justep/input/input'}" __cid="caEBJvm"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col24" style="width:120px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span1" __cid="caEBJvm" class="caEBJvm">bind-labelRef</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col23" __cid="caEBJvm"> 
+              <select component="$model/UI2/system/components/justep/select/select" class="form-control caEBJvm" xid="select1" data-bind="component:{ref:foodData.ref('fStatus'),name:'$model/UI2/system/components/justep/select/select',labelRef:foodData.ref('calcStatusText')},options:statusData.datas,optionsValue:'code',optionsText:'name',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="caEBJvm"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row26" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col51" style="width:120px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span25" __cid="caEBJvm" class="caEBJvm">计算规则感知</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col52" __cid="caEBJvm"> 
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control caEBJvm" xid="input17" data-bind="component:{ref:foodData.ref('calcPriceText'),name:'$model/UI2/system/components/justep/input/input'}" __cid="caEBJvm"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row27" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col56" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span29" __cid="caEBJvm" class="caEBJvm">只读规则感知：数值大于30则日期只读</span> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row caEBJvm" xid="row29" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col55" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span27" __cid="caEBJvm" class="caEBJvm">约束规则感知：日期不能大于2020年</span> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row caEBJvm" xid="row28" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col54" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span28" __cid="caEBJvm" class="caEBJvm">必填规则感知：价格不能为空</span> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="panel panel-default caEBJvm" style="height:auto;" xid="div8" __cid="caEBJvm"> 
+        <div class="panel-heading caEBJvm" style="padding: 5px;" xid="div7" __cid="caEBJvm" data-bind="event:{click:$model._callModelFn.bind($model, 'panelTopClick')}"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row15" style="padding: 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div class="x-col caEBJvm" xid="col29" __cid="caEBJvm"> 
+              <h4 xid="h43" __cid="caEBJvm" class="caEBJvm">bind-value、bind-checked、bind-text</h4> 
+            </div>  
+            <div xid="col27" __cid="caEBJvm" class="caEBJvm"> 
+              <label xid="label1" __cid="caEBJvm" class="caEBJvm">点击标题显示或隐藏</label> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="panel-body caEBJvm" style="padding: 0px;height:auto;" xid="div6" __cid="caEBJvm"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col3" style="width:120px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span5" __cid="caEBJvm" class="caEBJvm">bind-value（ref）</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col4" __cid="caEBJvm"> 
+              <input type="text" value="" xid="input10" style="width:100%;" __cid="caEBJvm" class="caEBJvm" data-bind="value:foodData.ref('fPrice')"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col9" style="width:120px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span6" __cid="caEBJvm" class="caEBJvm">bind-value（val）</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col6" __cid="caEBJvm"> 
+              <input type="text" value="" xid="input11" style="width:100%;" __cid="caEBJvm" class="caEBJvm" data-bind="value:foodData.val('fPrice')"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col11" style="width:120px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span7" __cid="caEBJvm" class="caEBJvm">bind-text</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col10" __cid="caEBJvm"> 
+              <span xid="span8" __cid="caEBJvm" class="caEBJvm" data-bind="text:foodData.ref('fPrice')"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col13" style="width:120px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span10" __cid="caEBJvm" class="caEBJvm">bind-checked</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col12" __cid="caEBJvm"> 
+              <input type="radio" value="1" name="price" xid="radio1" __cid="caEBJvm" class="caEBJvm" data-bind="checked:foodData.ref('fStatus')"/>  
+              <label xid="label10" for="7bb2e9b40e904b5b97bd145edf3db1b8_radio1" __cid="caEBJvm" class="caEBJvm">启用</label>  
+              <input type="radio" value="0" name="price" xid="radio2" __cid="caEBJvm" class="caEBJvm" data-bind="checked:foodData.ref('fStatus')"/>  
+              <label xid="label11" for="7bb2e9b40e904b5b97bd145edf3db1b8_radio2" __cid="caEBJvm" class="caEBJvm">禁用</label> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="panel panel-default caEBJvm" style="height:auto;" xid="div1" __cid="caEBJvm"> 
+        <div class="panel-heading caEBJvm" style="padding: 5px;" xid="div9" __cid="caEBJvm" data-bind="event:{click:$model._callModelFn.bind($model, 'panelTopClick')}"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row17" style="padding: 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div class="x-col caEBJvm" xid="col32" __cid="caEBJvm"> 
+              <h4 xid="h41" __cid="caEBJvm" class="caEBJvm">bind-visible、bind-hasFocus、bind-enabled、bind-disabled</h4> 
+            </div>  
+            <div xid="col31" __cid="caEBJvm" class="caEBJvm"> 
+              <label xid="label4" __cid="caEBJvm" class="caEBJvm">点击标题显示或隐藏</label> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="panel-body caEBJvm" style="padding: 0px;height:auto;" xid="div10" __cid="caEBJvm"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row19" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col41" style="width:150px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span19" __cid="caEBJvm" class="caEBJvm">bind-visible（&gt;30）</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col45" __cid="caEBJvm"> 
+              <input type="text" value="" xid="input8" style="width:100%;" __cid="caEBJvm" class="caEBJvm" data-bind="value:foodData.ref('fPrice'),visible:foodData.val('fPrice') &gt; 30"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row20" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col40" style="width:150px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span21" __cid="caEBJvm" class="caEBJvm">bind-hasFocus（&gt;50）</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col42" __cid="caEBJvm"> 
+              <input type="text" value="" xid="input9" style="width:100%;" __cid="caEBJvm" class="caEBJvm" data-bind="value:foodData.val('fPrice'),hasFocus:foodData.val('fPrice') &gt; 50"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row18" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col38" style="width:150px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span20" __cid="caEBJvm" class="caEBJvm">bind-enabled（状态）</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col39" __cid="caEBJvm"> 
+              <input type="text" value="" xid="input14" style="width:100%;" __cid="caEBJvm" class="caEBJvm" data-bind="value:foodData.val('fPrice'),enable:foodData.val('fStatus') == 1"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row23" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col58" style="width:150px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span22" __cid="caEBJvm" class="caEBJvm">bind-disabled（状态）</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col57" __cid="caEBJvm"> 
+              <input type="text" value="" xid="input15" style="width:100%;" __cid="caEBJvm" class="caEBJvm" data-bind="value:foodData.val('fPrice'),disable:foodData.val('fStatus') != 1"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="panel panel-default caEBJvm" style="height:auto;" xid="div12" __cid="caEBJvm"> 
+        <div class="panel-heading caEBJvm" style="padding: 5px;" xid="div11" __cid="caEBJvm" data-bind="event:{click:$model._callModelFn.bind($model, 'panelTopClick')}"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row31" style="padding: 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div class="x-col caEBJvm" xid="col64" __cid="caEBJvm"> 
+              <h4 xid="h42" __cid="caEBJvm" class="caEBJvm">bind-style、bind-css</h4> 
+            </div>  
+            <div xid="col63" __cid="caEBJvm" class="caEBJvm"> 
+              <label xid="label7" __cid="caEBJvm" class="caEBJvm">点击标题显示或隐藏</label> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="panel-body caEBJvm" style="padding: 0px;height:auto;" xid="div13" __cid="caEBJvm"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row33" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col70" style="width:150px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span30" __cid="caEBJvm" class="caEBJvm">bind-style（&gt;30）</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col67" __cid="caEBJvm"> 
+              <input type="text" value="" xid="input22" style="width:100%;" __cid="caEBJvm" class="caEBJvm" data-bind="value:foodData.ref('fPrice'),style:{'backgroundColor': foodData.val('fPrice') &gt; 30 ? 'red' : null, 'color' : foodData.val('fPrice') &gt; 30 ? 'yellow' : null}"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row34" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col69" style="width:150px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span33" __cid="caEBJvm" class="caEBJvm">bind-css（&gt;30）</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col68" __cid="caEBJvm"> 
+              <input type="text" value="" xid="input21" style="width:100%;" __cid="caEBJvm" class="caEBJvm" data-bind="value:foodData.val('fPrice'),css:{'text-danger': foodData.val('fPrice') &gt; 30}"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="panel panel-default caEBJvm" style="height:auto;" xid="div15" __cid="caEBJvm"> 
+        <div class="panel-heading caEBJvm" style="padding: 5px;" xid="div16" __cid="caEBJvm" data-bind="event:{click:$model._callModelFn.bind($model, 'panelTopClick')}"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row38" style="padding: 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div class="x-col caEBJvm" xid="col72" __cid="caEBJvm"> 
+              <h4 xid="h45" __cid="caEBJvm" class="caEBJvm">bind-attr-xxx</h4> 
+            </div>  
+            <div xid="col71" __cid="caEBJvm" class="caEBJvm"> 
+              <label xid="label8" __cid="caEBJvm" class="caEBJvm">点击标题显示或隐藏</label> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="panel-body caEBJvm" style="padding: 0px;height:auto;" xid="div14" __cid="caEBJvm"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row37" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col76" style="width:150px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span35" __cid="caEBJvm" class="caEBJvm">bind-attr-src</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col75" __cid="caEBJvm"> 
+              <img src="about:blank" alt="" xid="image1" height="80px" style="width:120px;" __cid="caEBJvm" class="caEBJvm" data-bind="attr:{src:toUrl('./img/' + foodData.val('fImage'))}"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row36" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col74" style="width:150px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span34" __cid="caEBJvm" class="caEBJvm">bind-attr-xxx</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col73" __cid="caEBJvm"> 
+              <input type="text" value="" xid="input23" style="width:100%;" __cid="caEBJvm" class="caEBJvm" data-bind="value:foodData.val('fPrice'),attr:{xxx:foodData.val('fName')}"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="panel panel-default caEBJvm" style="height:auto;" xid="div18" __cid="caEBJvm"> 
+        <div class="panel-heading caEBJvm" style="padding: 5px;" xid="div17" __cid="caEBJvm" data-bind="event:{click:$model._callModelFn.bind($model, 'panelTopClick')}"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row39" style="padding: 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div class="x-col caEBJvm" xid="col77" __cid="caEBJvm"> 
+              <h4 xid="h46" __cid="caEBJvm" class="caEBJvm">bind-if、bind-ifnot、bind-with、bind-foreach</h4> 
+            </div>  
+            <div xid="col78" __cid="caEBJvm" class="caEBJvm"> 
+              <label xid="label9" __cid="caEBJvm" class="caEBJvm">点击标题显示或隐藏</label> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="panel-body caEBJvm" style="padding: 0px;height:auto;" xid="div19" __cid="caEBJvm"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row41" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col81" style="width:150px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span37" __cid="caEBJvm" class="caEBJvm">bind-if（&gt;30）</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col82" __cid="caEBJvm" data-bind="if:foodData.val('fPrice') &gt; 30"> 
+              <input type="text" value="" xid="input25" style="width:100%;" __cid="caEBJvm" class="caEBJvm" data-bind="value:foodData.val('fPrice')"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col15" style="width:150px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span2" __cid="caEBJvm" class="caEBJvm">bind-with（foodData）</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col16" __cid="caEBJvm" data-bind="with:foodData"> 
+              <input type="text" value="" xid="input2" style="width:100%;" __cid="caEBJvm" class="caEBJvm" data-bind="value:xid+ '的数量：' + getCount()"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center caEBJvm" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEBJvm"> 
+            <div xid="col18" style="width:150px;" __cid="caEBJvm" class="caEBJvm"> 
+              <span xid="span3" __cid="caEBJvm" class="caEBJvm">bind-foreach</span> 
+            </div>  
+            <div class="x-col caEBJvm" xid="col17" __cid="caEBJvm" data-bind="foreach:foodData.datas"> 
+              <input type="text" value="" xid="input4" style="width:100%;" __cid="caEBJvm" class="caEBJvm" data-bind="value:$index() + val('fName')"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

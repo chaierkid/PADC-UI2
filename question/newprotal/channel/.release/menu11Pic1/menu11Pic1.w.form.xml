@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c3URNvq" class="c3URNvq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-bg-img1.c3URNvq{background: url($model/UI2/question/newprotal/img/bg3.jpg); background-size: 320px 100%}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c3URNvq" class="c3URNvq"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pba8c00b8e2a146fc815506d4514b7e40-iosstatusbar c3URNvq" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c3URNvq"> 
+    <div class="x-panel-top c3URNvq" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c3URNvq"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c3URNvq" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;关于我们&quot;}" __cid="c3URNvq"> 
+        <div class="x-titlebar-left c3URNvq" __cid="c3URNvq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c3URNvq" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="c3URNvq"> 
+            <i class="icon-chevron-left c3URNvq" __cid="c3URNvq"/>  
+            <span __cid="c3URNvq" class="c3URNvq"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c3URNvq" __cid="c3URNvq">关于我们</div>  
+        <div class="x-titlebar-right  c3URNvq" __cid="c3URNvq">
+          <div class="empty c3URNvq" __cid="c3URNvq"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-bg-img1 c3URNvq" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c3URNvq"> 
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group x-bg-img1 c3URNvq" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;关于我们&quot;}" __cid="c3URNvq"> 
+        <div class="x-control-group-title c3URNvq" xid="controlGroupTitle1" __cid="c3URNvq"> 
+          <span xid="span1" __cid="c3URNvq" class="c3URNvq">关于我们</span> 
+        </div>  
+        <p __cid="c3URNvq" class="c3URNvq">物资调剂中心接受中航工业企业管理部的业务管理，是中航工业物资（包括原材料和元器件等）调剂业务的承办机构。主要负责开展物资调剂的相关专题研究，制定中航工业物资调剂管理的有关制度和办法；搭建中航工业内部原材料库存物资信息平台，定期发布相关信息；组织中航工业内部库存物资调剂，组织航空武器装备生产所需物资的小额订货或特殊物资的集中采购；研究和创新采购模式并组织推广应用等，为企业提供增值服务。</p>  
+        <p __cid="c3URNvq" class="c3URNvq">物资调剂中心成立五年来，在中航工业相关部门的领导下，发挥了中航工业要求的为各单位的采购渠道、资源调控和议价能力等优势，强化了与供应商的战略合作，形成中航工业的整体优势，与中航工业相关部门、直属单位紧密配合，积极开展工作，为企业提供了有力地保障和服务工作。</p>  
+        <p __cid="c3URNvq" class="c3URNvq">中航工业物资调剂平台2015年4月搭建成功，5月推介试运行。我们相信，在中航工业正确领导下，通过中航工业所属企业（院、所）、物资调剂中心的共同努力，用科学技术方法，使该平台在中航工业物资调剂工作中发挥更大作用。</p>&gt;
+      </div> 
+    </div>  
+    <style __cid="c3URNvq" class="c3URNvq">.x-panel.pba8c00b8e2a146fc815506d4514b7e40-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pba8c00b8e2a146fc815506d4514b7e40-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pba8c00b8e2a146fc815506d4514b7e40-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pba8c00b8e2a146fc815506d4514b7e40-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pba8c00b8e2a146fc815506d4514b7e40-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pba8c00b8e2a146fc815506d4514b7e40-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pba8c00b8e2a146fc815506d4514b7e40-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pba8c00b8e2a146fc815506d4514b7e40-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pba8c00b8e2a146fc815506d4514b7e40-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

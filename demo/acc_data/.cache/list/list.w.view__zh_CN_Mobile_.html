@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cmY32qm" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmY32qm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/pagerBar/pagerBar,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/pagination/pagination,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/pagerLimitSelect/pagerLimitSelect,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.h3.cmY32qm{margin: 0; color: inherit; font-size: 24px} .x-output.cmY32qm{padding: 0px} .account-list-line.cmY32qm{border-bottom: 1px solid lightgray; overflow: hidden} .account-list-line.cmY32qm:active{background-color: lightgray} .account-income.cmY32qm{color: green} .account-payout.cmY32qm{color: brown}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cmY32qm" class="cmY32qm"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="detailDialog" style="left:103px;top:198px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceived:detailDialogReceived" data-config="{&quot;src&quot;:&quot;$model/UI2/demo/acc_data/detail.w&quot;,&quot;title&quot;:&quot;记账&quot;}" __cid="cmY32qm" class="cmY32qm"> 
+    <result concept="accountData" operation="edit" origin="accountData" xid="default26" __cid="cmY32qm" class="cmY32qm"> 
+      <mapping from="fID" to="fID" locator="true" xid="default27" __cid="cmY32qm" class="cmY32qm"/>  
+      <mapping from="fCreateTime" to="fCreateTime" xid="default28" __cid="cmY32qm" class="cmY32qm"/>  
+      <mapping from="fDate" to="fDate" xid="default29" __cid="cmY32qm" class="cmY32qm"/>  
+      <mapping from="fMoney" to="fMoney" xid="default30" __cid="cmY32qm" class="cmY32qm"/>  
+      <mapping from="fDescription" to="fDescription" xid="default31" __cid="cmY32qm" class="cmY32qm"/>  
+      <mapping from="fType" to="fType" xid="default32" __cid="cmY32qm" class="cmY32qm"/>  
+      <mapping from="fClass" to="fClass" xid="default33" __cid="cmY32qm" class="cmY32qm"/> 
+    </result>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cmY32qm" __cid="cmY32qm"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cmY32qm" style="display:none;" __cid="cmY32qm">  
+      <div class="x-dialog-title cmY32qm" __cid="cmY32qm"> 
+        <button class="close cmY32qm" __cid="cmY32qm"> 
+          <span __cid="cmY32qm" class="cmY32qm">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cmY32qm" __cid="cmY32qm">记账</div> 
+      </div>  
+      <div class="x-dialog-body cmY32qm" __cid="cmY32qm"/> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p50b4a11bdeaf458494193f936ebb493c-iosstatusbar cmY32qm" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmY32qm"> 
+    <div class="x-panel-top cmY32qm" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmY32qm"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cmY32qm" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;记账本&quot;}" __cid="cmY32qm"> 
+        <div class="x-titlebar-left cmY32qm" xid="div1" __cid="cmY32qm"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cmY32qm" xid="settingBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:settingBtnClick" data-config="{&quot;icon&quot;:&quot;icon-navicon-round&quot;,&quot;label&quot;:&quot;设置&quot;}" __cid="cmY32qm"> 
+            <i xid="i4" class="icon-navicon-round cmY32qm" __cid="cmY32qm"/>  
+            <span xid="span5" __cid="cmY32qm" class="cmY32qm">设置</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cmY32qm" xid="div2" __cid="cmY32qm">记账本</div>  
+        <div class="x-titlebar-right  cmY32qm" xid="div3" __cid="cmY32qm"> 
+          <div class="empty cmY32qm" __cid="cmY32qm"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cmY32qm" xid="newBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:newBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;,&quot;label&quot;:&quot;新增&quot;}" __cid="cmY32qm"> 
+            <i xid="i2" class="icon-android-add cmY32qm" __cid="cmY32qm"/>  
+            <span xid="span2" __cid="cmY32qm" class="cmY32qm">新增</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-scroll-view cmY32qm" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmY32qm"> 
+      <div class="x-scroll cmY32qm" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cmY32qm"> 
+        <div class="x-content-center x-pull-down container cmY32qm" xid="div4" __cid="cmY32qm"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cmY32qm" xid="i1" __cid="cmY32qm"/>  
+          <span class="x-pull-down-label cmY32qm" xid="span1" __cid="cmY32qm">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content cmY32qm" xid="div5" __cid="cmY32qm"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cmY32qm" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;accountData&quot;}" __cid="cmY32qm"> 
+            <ul class="x-list-template hide cmY32qm" xid="listTemplateUl1" __cid="cmY32qm" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li1" class="account-list-line cmY32qm" __cid="cmY32qm" data-bind="css:{'account-income' : $object.val('fType') == '收入','account-payout' : $object.val('fType') == '支出'}"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center cmY32qm" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmY32qm"> 
+                  <div class="x-col cmY32qm" xid="col2" __cid="cmY32qm" data-bind="event:{click:$model._callModelFn.bind($model, 'listLineClick')}"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cmY32qm" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmY32qm"> 
+                      <div class="x-col cmY32qm" xid="col4" __cid="cmY32qm"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output h3 cmY32qm" xid="output2" data-bind="component:{ref:ref('fClass'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmY32qm"/> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cmY32qm" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmY32qm"> 
+                      <div class="x-col cmY32qm" xid="col7" __cid="cmY32qm"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cmY32qm" xid="output4" data-bind="component:{ref:ref('fDescription'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmY32qm"/> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-col cmY32qm" xid="col3" __cid="cmY32qm" data-bind="event:{click:$model._callModelFn.bind($model, 'listLineClick')}"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cmY32qm" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmY32qm"> 
+                      <div class="x-col cmY32qm" xid="col10" __cid="cmY32qm"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output h3 cmY32qm" xid="output1" data-bind="component:{ref:ref('fMoney'),name:'$model/UI2/system/components/justep/output/output'}" data-config="{&quot;format&quot;:&quot;0,000.00&quot;}" __cid="cmY32qm"/> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cmY32qm" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmY32qm"> 
+                      <div class="x-col cmY32qm" xid="col13" __cid="cmY32qm"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cmY32qm" xid="output3" data-bind="component:{ref:ref('fDate'),name:'$model/UI2/system/components/justep/output/output'}" data-config="{&quot;format&quot;:&quot;yyyy-MM-dd&quot;}" __cid="cmY32qm"/> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-col x-col-fixed cmY32qm" xid="col1" style="width:50px;" __cid="cmY32qm"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon account-delete cmY32qm" xid="deleteBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deleteBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;删除&quot;}" __cid="cmY32qm"> 
+                      <i xid="i3" class="icon-android-close cmY32qm" __cid="cmY32qm"/>  
+                      <span xid="span3" __cid="cmY32qm" class="cmY32qm">删除</span> 
+                    </a> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up cmY32qm" xid="div6" __cid="cmY32qm"> 
+          <span class="x-pull-up-label cmY32qm" xid="span4" __cid="cmY32qm">加载更多...</span>  
+          <div component="$model/UI2/system/components/justep/pagerBar/pagerBar" class="x-pagerbar container-fluid cmY32qm" xid="pagerBar1" data-bind="component:{name:'$model/UI2/system/components/justep/pagerBar/pagerBar'}" __cid="cmY32qm"> 
+            <div class="row cmY32qm" xid="div7" __cid="cmY32qm"> 
+              <div class="col-sm-3 cmY32qm" xid="div8" __cid="cmY32qm"> 
+                <div class="x-pagerbar-length cmY32qm" xid="div9" __cid="cmY32qm"> 
+                  <label component="$model/UI2/system/components/justep/pagerLimitSelect/pagerLimitSelect" class="x-pagerlimitselect cmY32qm" xid="pagerLimitSelect1" data-bind="component:{name:'$model/UI2/system/components/justep/pagerLimitSelect/pagerLimitSelect'}" __cid="cmY32qm"> 
+                    <span xid="span6" __cid="cmY32qm" class="cmY32qm">显示</span>  
+                    <select component="$model/UI2/system/components/justep/select/select" class="form-control input-sm cmY32qm" xid="select1" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'}" __cid="cmY32qm"> 
+                      <option value="10" xid="default1" __cid="cmY32qm" class="cmY32qm">10</option>  
+                      <option value="20" xid="default3" __cid="cmY32qm" class="cmY32qm">20</option>  
+                      <option value="50" xid="default4" __cid="cmY32qm" class="cmY32qm">50</option>  
+                      <option value="100" xid="default5" __cid="cmY32qm" class="cmY32qm">100</option> 
+                    </select>  
+                    <span xid="span7" __cid="cmY32qm" class="cmY32qm">条</span> 
+                  </label> 
+                </div> 
+              </div>  
+              <div class="col-sm-3 cmY32qm" xid="div10" __cid="cmY32qm"> 
+                <div class="x-pagerbar-info cmY32qm" xid="div11" __cid="cmY32qm">当前显示0条，共0条</div> 
+              </div>  
+              <div class="col-sm-6 cmY32qm" xid="div12" __cid="cmY32qm"> 
+                <div class="x-pagerbar-pagination cmY32qm" xid="div13" __cid="cmY32qm"> 
+                  <ul class="pagination cmY32qm" component="$model/UI2/system/components/bootstrap/pagination/pagination" xid="pagination1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/pagination/pagination'}" __cid="cmY32qm"> 
+                    <li class="prev cmY32qm" xid="li2" __cid="cmY32qm"> 
+                      <a href="#" xid="a1" __cid="cmY32qm" class="cmY32qm"> 
+                        <span aria-hidden="true" xid="span8" __cid="cmY32qm" class="cmY32qm">«</span>  
+                        <span class="sr-only cmY32qm" xid="span9" __cid="cmY32qm">Previous</span> 
+                      </a> 
+                    </li>  
+                    <li class="next cmY32qm" xid="li3" __cid="cmY32qm"> 
+                      <a href="#" xid="a2" __cid="cmY32qm" class="cmY32qm"> 
+                        <span aria-hidden="true" xid="span10" __cid="cmY32qm" class="cmY32qm">»</span>  
+                        <span class="sr-only cmY32qm" xid="span11" __cid="cmY32qm">Next</span> 
+                      </a> 
+                    </li> 
+                  </ul> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cmY32qm" class="cmY32qm">.x-panel.p50b4a11bdeaf458494193f936ebb493c-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p50b4a11bdeaf458494193f936ebb493c-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p50b4a11bdeaf458494193f936ebb493c-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p50b4a11bdeaf458494193f936ebb493c-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p50b4a11bdeaf458494193f936ebb493c-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p50b4a11bdeaf458494193f936ebb493c-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p50b4a11bdeaf458494193f936ebb493c-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p50b4a11bdeaf458494193f936ebb493c-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p50b4a11bdeaf458494193f936ebb493c-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

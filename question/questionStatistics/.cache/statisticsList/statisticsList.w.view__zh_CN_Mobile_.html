@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="caIBjym" class="caIBjym" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.caIBjym{color: rgb(33, 33, 33)} .imagelist.caIBjym{width: 100%; height: 100%}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="caIBjym" class="caIBjym"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pb171a104ea9f4000b12b4dbde14b3b3d-iosstatusbar caIBjym" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="caIBjym"> 
+    <div class="x-panel-top caIBjym" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:60}" __cid="caIBjym"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar caIBjym" style="height:100%;font-size:x-large;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;暗访结果&quot;}" __cid="caIBjym"> 
+        <div class="x-titlebar-left caIBjym" __cid="caIBjym"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon caIBjym" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="caIBjym"> 
+            <i class="icon-chevron-left caIBjym" __cid="caIBjym"/>  
+            <span __cid="caIBjym" class="caIBjym"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title caIBjym" __cid="caIBjym">暗访结果</div>  
+        <div class="x-titlebar-right  caIBjym" __cid="caIBjym"> 
+          <div class="empty caIBjym" __cid="caIBjym"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content caIBjym" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caIBjym"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list caIBjym" xid="list1" style="width:100%;height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;,&quot;disableInfiniteLoad&quot;:false,&quot;disablePullToRefresh&quot;:false}" __cid="caIBjym"> 
+        <ul class="x-list-template hide caIBjym" xid="listTemplateUl1" style="height:70px;" __cid="caIBjym" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li class="center-block list-group-item caIBjym" style="font-size:large;vertical-align:middle;border-style:none none none none;height:200;" __cid="caIBjym" data-bind="event:{click:$model._callModelFn.bind($model, 'open')}"> 
+            <img alt="" xid="image1" class="imagelist caIBjym" style="vertical-align:middle;text-align:right;" __cid="caIBjym" data-bind="attr:{src:$model.transUrl($object)}"/> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <style __cid="caIBjym" class="caIBjym">.x-panel.pb171a104ea9f4000b12b4dbde14b3b3d-iosstatusbar &gt;.x-panel-top {height: 60px;}.x-panel.pb171a104ea9f4000b12b4dbde14b3b3d-iosstatusbar &gt;.x-panel-content { top: 60px;bottom: nullpx;}.x-panel.pb171a104ea9f4000b12b4dbde14b3b3d-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pb171a104ea9f4000b12b4dbde14b3b3d-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pb171a104ea9f4000b12b4dbde14b3b3d-iosstatusbar &gt;.x-panel-top {height: 80px;}.iosstatusbar .x-panel.pb171a104ea9f4000b12b4dbde14b3b3d-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pb171a104ea9f4000b12b4dbde14b3b3d-iosstatusbar &gt;.x-panel-content { top: 80px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pb171a104ea9f4000b12b4dbde14b3b3d-iosstatusbar &gt;.x-panel-top {height: 60px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pb171a104ea9f4000b12b4dbde14b3b3d-iosstatusbar &gt;.x-panel-content {top: 60px;}</style> 
+  </div> 
+</div>

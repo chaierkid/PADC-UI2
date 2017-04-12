@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cuYJbMf" class="cuYJbMf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.cuYJbMf{color: rgb(33, 33, 33)} .x-titlebar.cuYJbMf{background-color: rgb(23, 1, 83)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cuYJbMf" class="cuYJbMf"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pczE773y-iosstatusbar cuYJbMf" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuYJbMf"> 
+    <div class="x-panel-top cuYJbMf" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuYJbMf"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cuYJbMf" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;基本情况&quot;}" __cid="cuYJbMf"> 
+        <div class="x-titlebar-left cuYJbMf" __cid="cuYJbMf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cuYJbMf" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cuYJbMf"> 
+            <i class="icon-chevron-left cuYJbMf" __cid="cuYJbMf"/>  
+            <span __cid="cuYJbMf" class="cuYJbMf"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cuYJbMf" __cid="cuYJbMf">基本情况</div>  
+        <div class="x-titlebar-right  cuYJbMf" __cid="cuYJbMf"> 
+          <div class="empty cuYJbMf" __cid="cuYJbMf"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cuYJbMf" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuYJbMf"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cuYJbMf" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;,&quot;disableInfiniteLoad&quot;:false,&quot;disablePullToRefresh&quot;:false}" __cid="cuYJbMf"> 
+        <ul class="x-list-template hide cuYJbMf" xid="listTemplateUl1" __cid="cuYJbMf" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li class="list-group-item cuYJbMf" __cid="cuYJbMf" data-bind="event:{click:$model._callModelFn.bind($model, 'open')}"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cuYJbMf" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cuYJbMf"> 
+              <i xid="i1" class="icon-ios7-arrow-right text-muted cuYJbMf" __cid="cuYJbMf"/>  
+              <span xid="span1" __cid="cuYJbMf" class="cuYJbMf"/> 
+            </a>  
+            <h5 class="text-black cuYJbMf" __cid="cuYJbMf" data-bind="text:ref('title')"/> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <style __cid="cuYJbMf" class="cuYJbMf">.x-panel.pczE773y-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pczE773y-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pczE773y-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pczE773y-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczE773y-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pczE773y-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczE773y-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczE773y-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczE773y-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

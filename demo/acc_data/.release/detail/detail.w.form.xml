@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window crIzQB3" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="crIzQB3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-panel.crIzQB3 &gt; .x-panel-content.crIzQB3{margin: 10px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="crIzQB3" class="crIzQB3"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p42e7ce460c44455080c112549ca19895-iosstatusbar crIzQB3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="crIzQB3"> 
+    <div class="x-panel-top crIzQB3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crIzQB3"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar crIzQB3" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;记一笔&quot;}" __cid="crIzQB3"> 
+        <div class="x-titlebar-left crIzQB3" xid="div1" __cid="crIzQB3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon crIzQB3" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="crIzQB3"> 
+            <i xid="i3" __cid="crIzQB3" class="crIzQB3"/>  
+            <span xid="span3" __cid="crIzQB3" class="crIzQB3"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title crIzQB3" xid="div2" __cid="crIzQB3">记一笔</div>  
+        <div class="x-titlebar-right  crIzQB3" xid="div3" __cid="crIzQB3">
+          <div class="empty crIzQB3" __cid="crIzQB3"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon crIzQB3" xid="okBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-checkmark&quot;,&quot;label&quot;:&quot;确定&quot;}" __cid="crIzQB3"> 
+            <i xid="i1" class="icon-android-checkmark crIzQB3" __cid="crIzQB3"/>  
+            <span xid="span1" __cid="crIzQB3" class="crIzQB3">确定</span> 
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content crIzQB3" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crIzQB3"> 
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crIzQB3" xid="labelSelect1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crIzQB3"> 
+        <label class="x-label crIzQB3" xid="label5" __cid="crIzQB3">类型</label>  
+        <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit crIzQB3" xid="select4" bind-options="typeData.datas" bind-optionsValue="'fType'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:accountData.ref('fType'),name:'$model/UI2/system/components/justep/select/select'}" __cid="crIzQB3"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crIzQB3" xid="labelSelect2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crIzQB3"> 
+        <label class="x-label crIzQB3" xid="label2" __cid="crIzQB3">分类</label>  
+        <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit crIzQB3" xid="select2" bind-options="$model.classData.find(['fType'], [$model.accountData.getValue('fType')])" bind-optionsValue="'fClass'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:accountData.ref('fClass'),name:'$model/UI2/system/components/justep/select/select'}" __cid="crIzQB3"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crIzQB3" xid="labelInput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crIzQB3"> 
+        <label class="x-label crIzQB3" xid="label1" __cid="crIzQB3">日期</label>  
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit crIzQB3" xid="input1" data-bind="component:{ref:accountData.ref('fDate'),name:'$model/UI2/system/components/justep/input/input'}" __cid="crIzQB3"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crIzQB3" xid="labelInput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crIzQB3"> 
+        <label class="x-label crIzQB3" xid="label3" __cid="crIzQB3">金额</label>  
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit crIzQB3" xid="input2" data-bind="component:{ref:accountData.ref('fMoney'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;format&quot;:&quot;0,000.00&quot;,&quot;placeHolder&quot;:&quot;0.00&quot;}" __cid="crIzQB3"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crIzQB3" xid="labelInput3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crIzQB3"> 
+        <label class="x-label crIzQB3" xid="label6" __cid="crIzQB3">备注</label>  
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit crIzQB3" xid="input3" data-bind="component:{ref:accountData.ref('fDescription'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入备注&quot;}" __cid="crIzQB3"/> 
+      </div> 
+    </div>  
+    <style __cid="crIzQB3" class="crIzQB3">.x-panel.p42e7ce460c44455080c112549ca19895-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p42e7ce460c44455080c112549ca19895-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p42e7ce460c44455080c112549ca19895-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p42e7ce460c44455080c112549ca19895-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p42e7ce460c44455080c112549ca19895-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p42e7ce460c44455080c112549ca19895-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p42e7ce460c44455080c112549ca19895-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p42e7ce460c44455080c112549ca19895-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p42e7ce460c44455080c112549ca19895-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

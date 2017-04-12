@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cEJbAJ3" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEJbAJ3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/form/form,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/fragment/list/listTable,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">@import url(@justepContextPath@/v_5113_nol_zh_CNs_desktopd_pc/system/components/designerCommon/css/common.css); .form-horizontal.cEJbAJ3 .form-group.cEJbAJ3{margin-left: 0px; margin-right: 0px} .template-output-control.cEJbAJ3{text-overflow: ellipsis; width: 360px; overflow: hidden}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cEJbAJ3" class="cEJbAJ3"/>  
+  <div xmlns="" class="form-horizontal container-fluid  data-form scroll cEJbAJ3" component="$model/UI2/system/components/bootstrap/form/form" xid="form1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="cEJbAJ3"> 
+    <div component="$model/UI2/system/components/justep/panel/panel" xid="panel1" class="x-panel x-full p5b7022c91a4c4ee7a2df0d750f52d2c6-iosstatusbar cEJbAJ3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cEJbAJ3"> 
+      <div class="x-panel-content x-flex x-flex-column cEJbAJ3" xid="content1" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEJbAJ3"> 
+        <div class="x-control-group x-flex cEJbAJ3" style="height:54px;" xid="controlGroup1" __cid="cEJbAJ3"> 
+          <div class="x-flex1 cEJbAJ3" __cid="cEJbAJ3"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cEJbAJ3" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cEJbAJ3"> 
+              <label class="x-center x-label cEJbAJ3" xid="label1" __cid="cEJbAJ3">action类型</label>  
+              <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cEJbAJ3" xid="select1" data-bind="component:{ref:actionType,name:'$model/UI2/system/components/justep/select/select'},options:dataActionType.datas,optionsValue:'value',optionsText:'label',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-events="onChange:select1Change" __cid="cEJbAJ3"/> 
+            </div> 
+          </div>  
+          <div class="x-flex1 cEJbAJ3" __cid="cEJbAJ3"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cEJbAJ3" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cEJbAJ3"> 
+              <label class="x-label x-center cEJbAJ3" xid="label2" __cid="cEJbAJ3">查询</label>  
+              <div class="x-edit cEJbAJ3" xid="controlGroupForm1" __cid="cEJbAJ3"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control cEJbAJ3" xid="input5" data-bind="component:{ref:filter,name:'$model/UI2/system/components/justep/input/input'}" __cid="cEJbAJ3"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-control-group x-flex1  x-scroll-view cEJbAJ3" __cid="cEJbAJ3"> 
+          <div class="x-scroll cEJbAJ3" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cEJbAJ3"> 
+            <div class="x-content-center x-pull-down container cEJbAJ3" xid="controlGroupForm4" __cid="cEJbAJ3"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cEJbAJ3" xid="i4" __cid="cEJbAJ3"/>  
+              <span class="x-pull-down-label cEJbAJ3" xid="span4" __cid="cEJbAJ3">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content cEJbAJ3" xid="controlGroupForm5" __cid="cEJbAJ3"> 
+              <div component="$model/UI2/system/components/fragment/list/listTable" data="dataService" masterData="" masterCol="" xid="listTable4" data-bind="component:{name:'$model/UI2/system/components/fragment/list/listTable'}" __cid="cEJbAJ3" class="cEJbAJ3"> 
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list cEJbAJ3" xid="list4" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;dataService&quot;}" __cid="cEJbAJ3"> 
+                  <table class="table table-condensed table-hover table-striped cEJbAJ3" component="$model/UI2/system/components/bootstrap/table/table" xid="table4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cEJbAJ3"> 
+                    <thead xid="thead4" __cid="cEJbAJ3" class="cEJbAJ3"> 
+                      <tr xid="tr7" __cid="cEJbAJ3" class="cEJbAJ3"> 
+                        <th xid="col10" style="width:80px;text-align:center;" __cid="cEJbAJ3" class="cEJbAJ3"> 
+                          <label xid="label15" __cid="cEJbAJ3" class="cEJbAJ3" data-bind="text:$model.dataService.label('checked')"/> 
+                        </th>  
+                        <th xid="col11" __cid="cEJbAJ3" class="cEJbAJ3"> 
+                          <label xid="label16" __cid="cEJbAJ3" class="cEJbAJ3" data-bind="text:$model.dataService.label('path')"/> 
+                        </th>  
+                        <th xid="col12" __cid="cEJbAJ3" class="cEJbAJ3"> 
+                          <label xid="label17" __cid="cEJbAJ3" class="cEJbAJ3" data-bind="text:$model.dataService.label('action')"/> 
+                        </th>  
+                        <th xid="col13" __cid="cEJbAJ3" class="cEJbAJ3"> 
+                          <label xid="label18" __cid="cEJbAJ3" class="cEJbAJ3" data-bind="text:$model.dataService.label('table')"/> 
+                        </th> 
+                      </tr> 
+                    </thead>  
+                    <tbody class="x-list-template hide cEJbAJ3" xid="tbody4" __cid="cEJbAJ3" data-bind="foreach:{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element)},event:{click:$model!=$object?$object.data.to($object):null}"> 
+                      <tr xid="tr8" __cid="cEJbAJ3" class="cEJbAJ3"> 
+                        <td xid="td10" style="text-align:center;" __cid="cEJbAJ3" class="cEJbAJ3"> 
+                          <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cEJbAJ3" xid="radio4" name="checked" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;name&quot;:&quot;checked&quot;}" data-bind="component:{ref:ref('checked'),name:'$model/UI2/system/components/justep/button/radio'}" __cid="cEJbAJ3"> 
+                            <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" name="checked" __cid="cEJbAJ3" class="cEJbAJ3"></input>  
+                            <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cEJbAJ3" class="cEJbAJ3"></label> 
+                          </span> 
+                        </td>  
+                        <td xid="td11" __cid="cEJbAJ3" class="cEJbAJ3"> 
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output cEJbAJ3" xid="output6" data-bind="component:{ref:ref('path'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cEJbAJ3"/> 
+                        </td>  
+                        <td xid="td12" __cid="cEJbAJ3" class="cEJbAJ3"> 
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output cEJbAJ3" xid="output7" data-bind="component:{ref:ref('action'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cEJbAJ3"/> 
+                        </td>  
+                        <td xid="td13" __cid="cEJbAJ3" class="cEJbAJ3"> 
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output cEJbAJ3" xid="output8" data-bind="component:{ref:ref('table'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cEJbAJ3"/> 
+                        </td> 
+                      </tr> 
+                    </tbody> 
+                  </table> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cEJbAJ3" xid="controlGroupForm6" __cid="cEJbAJ3"> 
+              <span class="x-pull-up-label cEJbAJ3" xid="span5" __cid="cEJbAJ3">加载更多...</span> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-control-group cEJbAJ3" style="height:50px" xid="div1" __cid="cEJbAJ3"> 
+          <div xid="div2" style="width:auto;float:right;" __cid="cEJbAJ3" class="cEJbAJ3"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cEJbAJ3" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cEJbAJ3"> 
+              <i xid="i2" __cid="cEJbAJ3" class="cEJbAJ3"/>  
+              <span xid="span2" __cid="cEJbAJ3" class="cEJbAJ3">确定</span> 
+            </a> 
+          </div> 
+        </div> 
+      </div>  
+      <style __cid="cEJbAJ3" class="cEJbAJ3">.x-panel.p5b7022c91a4c4ee7a2df0d750f52d2c6-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.p5b7022c91a4c4ee7a2df0d750f52d2c6-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p5b7022c91a4c4ee7a2df0d750f52d2c6-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p5b7022c91a4c4ee7a2df0d750f52d2c6-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p5b7022c91a4c4ee7a2df0d750f52d2c6-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p5b7022c91a4c4ee7a2df0d750f52d2c6-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p5b7022c91a4c4ee7a2df0d750f52d2c6-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p5b7022c91a4c4ee7a2df0d750f52d2c6-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p5b7022c91a4c4ee7a2df0d750f52d2c6-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+    </div> 
+  </div> 
+</div>

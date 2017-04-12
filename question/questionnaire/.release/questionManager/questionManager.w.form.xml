@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cYnmQzi" class="cYnmQzi" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.cYnmQzi{color: rgb(33, 33, 33)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onParamsReceive:modelParamsReceive" __cid="cYnmQzi" class="cYnmQzi"></div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver  cYnmQzi" xid="popOver1" style="display:block;height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;auto&quot;,&quot;dismissible&quot;:false}" __cid="cYnmQzi"> 
+    <div class="x-popOver-overlay cYnmQzi" xid="div1" __cid="cYnmQzi"/>  
+    <div class="x-popOver-content cYnmQzi" xid="div2" __cid="cYnmQzi">
+      <img src="$model/UI2/question/img/13221820.gif" alt="" xid="image1" __cid="cYnmQzi" class="cYnmQzi"/>
+    </div>
+  </div>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pf72267fcf9e14370a25654ca99ab7945-iosstatusbar cYnmQzi" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cYnmQzi"> 
+    <div class="x-panel-top cYnmQzi" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:60}" __cid="cYnmQzi"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cYnmQzi" style="height:100%;font-size:x-large;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;街面秩序列表&quot;}" __cid="cYnmQzi"> 
+        <div class="x-titlebar-left cYnmQzi" __cid="cYnmQzi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cYnmQzi" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cYnmQzi"> 
+            <i class="icon-chevron-left cYnmQzi" __cid="cYnmQzi"/>  
+            <span __cid="cYnmQzi" class="cYnmQzi"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cYnmQzi" __cid="cYnmQzi">街面秩序列表</div>  
+        <div class="x-titlebar-right  cYnmQzi" __cid="cYnmQzi">
+          <div class="empty cYnmQzi" __cid="cYnmQzi"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cYnmQzi" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cYnmQzi"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pe42cba02a82049b6ada52bb552f2d401-iosstatusbar cYnmQzi" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cYnmQzi"> 
+        <div class="x-panel-top cYnmQzi" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:120}" __cid="cYnmQzi"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cYnmQzi" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYnmQzi"> 
+            <div class="x-col  cYnmQzi" xid="col19" style="vertical-align:middle;height:30px;" __cid="cYnmQzi"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-left cYnmQzi" xid="button1" style="padding-top:5px;height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;,&quot;label&quot;:&quot;新建问卷&quot;}" __cid="cYnmQzi"> 
+                <i xid="i2" class="icon-android-add cYnmQzi" __cid="cYnmQzi"/>  
+                <span xid="span2" __cid="cYnmQzi" class="cYnmQzi">新建问卷</span>
+              </a>
+            </div>  
+            <div class="x-col  cYnmQzi" xid="col17" style="vertical-align:middle;height:30px;" __cid="cYnmQzi"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-left pull-right cYnmQzi" xid="button4" style="padding-top:5px;height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;icon&quot;:&quot;icon-android-search&quot;,&quot;label&quot;:&quot;查询&quot;}" __cid="cYnmQzi"> 
+                <i xid="i4" class="icon-android-search cYnmQzi" __cid="cYnmQzi"/>  
+                <span xid="span5" __cid="cYnmQzi" class="cYnmQzi">查询</span>
+              </a>
+            </div>  
+            <div class="x-col  cYnmQzi" xid="col18" style="vertical-align:middle;height:30px;" __cid="cYnmQzi"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-left cYnmQzi" xid="button8" style="padding-top:5px;height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button8Click" data-config="{&quot;icon&quot;:&quot;icon-ios7-reload&quot;,&quot;label&quot;:&quot;清空&quot;}" __cid="cYnmQzi"> 
+                <i xid="i8" class="icon-ios7-reload cYnmQzi" __cid="cYnmQzi"/>  
+                <span xid="span8" __cid="cYnmQzi" class="cYnmQzi">清空</span>
+              </a> 
+            </div>
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cYnmQzi" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYnmQzi"> 
+            <div class="x-col x-col-33 cYnmQzi" xid="col15" __cid="cYnmQzi"> 
+              <select component="$model/UI2/system/components/justep/select/select" class="form-control cYnmQzi" xid="select1" style="height:30px;" bind-options="data2.datas" bind-optionsValue="'name'" bind-optionsText="'id'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:$model.data1.ref(&quot;type&quot;),name:'$model/UI2/system/components/justep/select/select'}" data-events="onChange:select1Change" __cid="cYnmQzi"/>
+            </div>  
+            <div class="x-col cYnmQzi" xid="col8" __cid="cYnmQzi"> 
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control cYnmQzi" xid="name" style="height:30px;" data-bind="component:{ref:$model.data1.ref(&quot;name&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cYnmQzi"/>  
+              <select component="$model/UI2/system/components/justep/select/select" class="form-control cYnmQzi" xid="area" style="display:none;height:30px;" bind-options="data3.datas" bind-optionsValue="'name'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:$model.data1.ref(&quot;area&quot;),name:'$model/UI2/system/components/justep/select/select'}" __cid="cYnmQzi"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control cYnmQzi" xid="date" style="display:none;height:30px;" data-bind="component:{ref:$model.data1.ref(&quot;time&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cYnmQzi"/>  
+              <select component="$model/UI2/system/components/justep/select/select" class="form-control cYnmQzi" xid="status" style="display:none;height:30px;" bind-options="data4.datas" bind-optionsValue="'id'" bind-optionsText="'name'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:$model.data1.ref(&quot;status&quot;),name:'$model/UI2/system/components/justep/select/select'}" __cid="cYnmQzi"/>
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cYnmQzi" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYnmQzi"> 
+            <div class="x-col  cYnmQzi" xid="col20" __cid="cYnmQzi"> 
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output cYnmQzi" xid="output7" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cYnmQzi"/>
+            </div> 
+          </div>
+        </div>  
+        <div class="x-panel-content cYnmQzi" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cYnmQzi">
+          <div class="x-list x-inner-scroll cYnmQzi" component="$model/UI2/system/components/justep/list/list" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:false,&quot;data&quot;:&quot;baasData1&quot;,&quot;limit&quot;:20}" __cid="cYnmQzi"> 
+            <div class="x-list-head cYnmQzi" __cid="cYnmQzi"/>  
+            <div class="x-list-content x-scroll-view cYnmQzi" __cid="cYnmQzi"> 
+              <div component="$model/UI2/system/components/justep/scrollView/scrollView" supportPullToRefresh="true" supportInfiniteLoad="true" class="x-scroll cYnmQzi" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;bounce&quot;:true,&quot;hScroll&quot;:false,&quot;hScrollbar&quot;:false,&quot;vScroll&quot;:true,&quot;vScrollbar&quot;:true}" __cid="cYnmQzi"> 
+                <div class="x-content-center x-pull-down container cYnmQzi" __cid="cYnmQzi"> 
+                  <i class="x-pull-down-img glyphicon x-icon-pull-down cYnmQzi" __cid="cYnmQzi"/>  
+                  <span class="x-pull-down-label cYnmQzi" __cid="cYnmQzi">下拉刷新...</span> 
+                </div>  
+                <div class="x-scroll-content cYnmQzi" __cid="cYnmQzi"> 
+                  <ul class="x-list-template hide cYnmQzi" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cYnmQzi"> 
+                    <li class="list-group-item cYnmQzi" bind-click="li1Click" style="font-size:large;" __cid="cYnmQzi"> 
+                      <div class="x-row x-row-center cYnmQzi" component="$model/UI2/system/components/justep/row/row" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYnmQzi"> 
+                        <div class="x-col x-col-33 x-col-center cYnmQzi" style="vertical-align:middle;text-align:left;" __cid="cYnmQzi"> 
+                          <label xid="label1" style="font-weight:normal;" __cid="cYnmQzi" class="cYnmQzi">区县名称：</label>
+                        </div>  
+                        <div class="x-col x-col-center cYnmQzi" xid="col1" __cid="cYnmQzi">
+                          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output1" style="font-weight:bold;" data-bind="component:{ref:ref(&quot;fArea&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cYnmQzi" class="cYnmQzi"/>
+                        </div> 
+                      </div>  
+                      <div class="x-row x-row-center cYnmQzi" component="$model/UI2/system/components/justep/row/row" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYnmQzi"> 
+                        <div class="x-col x-col-33 x-col-center cYnmQzi" xid="col12" __cid="cYnmQzi"> 
+                          <label xid="label6" style="font-weight:normal;" __cid="cYnmQzi" class="cYnmQzi">点位名称：</label>
+                        </div>  
+                        <div class="x-col cYnmQzi" xid="col13" style="font-weight:bold;" __cid="cYnmQzi"> 
+                          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output8" data-bind="component:{ref:ref(&quot;fStreet&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cYnmQzi" class="cYnmQzi"/>
+                        </div> 
+                      </div>
+                      <div class="x-row x-row-center cYnmQzi" component="$model/UI2/system/components/justep/row/row" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYnmQzi"> 
+                        <div class="x-col x-col-33 x-col-center cYnmQzi" style="vertical-align:middle;text-align:left;" xid="col7" __cid="cYnmQzi"> 
+                          <label xid="label3" style="font-weight:normal;" __cid="cYnmQzi" class="cYnmQzi">访员：</label>
+                        </div>  
+                        <div class="x-col x-col-center cYnmQzi" xid="col6" __cid="cYnmQzi"> 
+                          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output3" style="font-weight:bold;" data-bind="component:{ref:ref(&quot;fCreator&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cYnmQzi" class="cYnmQzi"/>
+                        </div> 
+                      </div>  
+                      <div class="x-row x-row-center cYnmQzi" component="$model/UI2/system/components/justep/row/row" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYnmQzi"> 
+                        <div class="x-col x-col-33 x-col-center cYnmQzi" xid="col10" __cid="cYnmQzi"> 
+                          <label xid="label8" style="font-weight:normal;" __cid="cYnmQzi" class="cYnmQzi">填报时间：</label>
+                        </div>  
+                        <div class="x-col cYnmQzi" xid="col11" style="font-weight:bold;" __cid="cYnmQzi"> 
+                          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output6" data-bind="component:{ref:ref(&quot;fCreateDate&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cYnmQzi" class="cYnmQzi"/>
+                        </div> 
+                      </div>  
+                      <div class="x-row x-row-center cYnmQzi" component="$model/UI2/system/components/justep/row/row" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYnmQzi"> 
+                        <div class="x-col x-col-20 x-col-center cYnmQzi" xid="col3" __cid="cYnmQzi"> 
+                          <label xid="label2" style="font-weight:normal;" __cid="cYnmQzi" class="cYnmQzi">状态：</label>
+                        </div>  
+                        <div class="x-col cYnmQzi" xid="col2" style="font-weight:bold;font-size:small;" __cid="cYnmQzi"> 
+                          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output2" data-bind="component:{ref:ref(&quot;fStatus2&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cYnmQzi" class="cYnmQzi"/>
+                        </div>  
+                        <div class="x-col cYnmQzi" xid="col2" style="font-weight:bold;font-size:small;" __cid="cYnmQzi"> 
+                          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output4" data-bind="component:{ref:ref(&quot;fStatus&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cYnmQzi" class="cYnmQzi"/>
+                        </div>  
+                        <div class="x-col cYnmQzi" xid="col3" style="font-weight:bold;font-size:small;" __cid="cYnmQzi"> 
+                          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output5" data-bind="component:{ref:ref(&quot;fStatus3&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cYnmQzi" class="cYnmQzi"/>
+                        </div> 
+                      </div> 
+                    </li> 
+                  </ul> 
+                </div>  
+                <div class="x-content-center x-pull-up cYnmQzi" __cid="cYnmQzi"> 
+                  <span class="x-pull-up-label cYnmQzi" __cid="cYnmQzi">加载更多...</span> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cYnmQzi" class="cYnmQzi">.x-panel.pe42cba02a82049b6ada52bb552f2d401-iosstatusbar &gt;.x-panel-top {height: 120px;}.x-panel.pe42cba02a82049b6ada52bb552f2d401-iosstatusbar &gt;.x-panel-content { top: 120px;bottom: nullpx;}.x-panel.pe42cba02a82049b6ada52bb552f2d401-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pe42cba02a82049b6ada52bb552f2d401-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pe42cba02a82049b6ada52bb552f2d401-iosstatusbar &gt;.x-panel-top {height: 140px;}.iosstatusbar .x-panel.pe42cba02a82049b6ada52bb552f2d401-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pe42cba02a82049b6ada52bb552f2d401-iosstatusbar &gt;.x-panel-content { top: 140px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pe42cba02a82049b6ada52bb552f2d401-iosstatusbar &gt;.x-panel-top {height: 120px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pe42cba02a82049b6ada52bb552f2d401-iosstatusbar &gt;.x-panel-content {top: 120px;}</style>
+      </div>
+    </div>  
+    <style __cid="cYnmQzi" class="cYnmQzi">.x-panel.pf72267fcf9e14370a25654ca99ab7945-iosstatusbar &gt;.x-panel-top {height: 60px;}.x-panel.pf72267fcf9e14370a25654ca99ab7945-iosstatusbar &gt;.x-panel-content { top: 60px;bottom: nullpx;}.x-panel.pf72267fcf9e14370a25654ca99ab7945-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pf72267fcf9e14370a25654ca99ab7945-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pf72267fcf9e14370a25654ca99ab7945-iosstatusbar &gt;.x-panel-top {height: 80px;}.iosstatusbar .x-panel.pf72267fcf9e14370a25654ca99ab7945-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pf72267fcf9e14370a25654ca99ab7945-iosstatusbar &gt;.x-panel-content { top: 80px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pf72267fcf9e14370a25654ca99ab7945-iosstatusbar &gt;.x-panel-top {height: 60px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pf72267fcf9e14370a25654ca99ab7945-iosstatusbar &gt;.x-panel-content {top: 60px;}</style>
+  </div> 
+</div>

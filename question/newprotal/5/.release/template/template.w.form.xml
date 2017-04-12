@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEzYray" class="cEzYray" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cEzYray" class="cEzYray"></div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver" style="left:40px;top:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiverReceive" __cid="cEzYray" class="cEzYray"/>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pfb6410a60284452cbbd65677055a7ec5-iosstatusbar cEzYray" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cEzYray"> 
+    <div class="x-panel-top cEzYray" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEzYray"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cEzYray" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;售后服务&quot;}" __cid="cEzYray"> 
+        <div class="x-titlebar-left cEzYray" __cid="cEzYray"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cEzYray" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'windowReceiver.windowCancel'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cEzYray"> 
+            <i class="icon-chevron-left cEzYray" __cid="cEzYray"/>  
+            <span __cid="cEzYray" class="cEzYray"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cEzYray" __cid="cEzYray">售后服务</div>  
+        <div class="x-titlebar-right  cEzYray" __cid="cEzYray">
+          <div class="empty cEzYray" __cid="cEzYray"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cEzYray" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEzYray"> 
+      <div class="x-control-group cEzYray" xid="controlGroup1" __cid="cEzYray"> 
+        <div class="x-control-group-title cEzYray" xid="controlGroupTitle1" __cid="cEzYray"> 
+          <span xid="span1" bind-text="data.val('title')" __cid="cEzYray" class="cEzYray"/> 
+        </div>  
+        <span bind-text="data.val('wDate')" __cid="cEzYray" class="cEzYray"/>  
+        <div bind-foreach="data.datas" __cid="cEzYray" class="cEzYray"> 
+          <p bind-text="val('content')" __cid="cEzYray" class="cEzYray"/> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cEzYray" class="cEzYray">.x-panel.pfb6410a60284452cbbd65677055a7ec5-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pfb6410a60284452cbbd65677055a7ec5-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pfb6410a60284452cbbd65677055a7ec5-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pfb6410a60284452cbbd65677055a7ec5-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pfb6410a60284452cbbd65677055a7ec5-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pfb6410a60284452cbbd65677055a7ec5-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pfb6410a60284452cbbd65677055a7ec5-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pfb6410a60284452cbbd65677055a7ec5-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pfb6410a60284452cbbd65677055a7ec5-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

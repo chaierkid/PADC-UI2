@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ce63yIr" class="ce63yIr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.ce63yIr{color: rgb(33, 33, 33)} .imagelist.ce63yIr{width: 100%; height: 100%}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="ce63yIr" class="ce63yIr"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p5ce1be6e351f48c2868c07f70e4b8774-iosstatusbar ce63yIr" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ce63yIr"> 
+    <div class="x-panel-top ce63yIr" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:60}" __cid="ce63yIr"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ce63yIr" style="height:100%;font-size:x-large;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;安保调查列表&quot;}" __cid="ce63yIr"> 
+        <div class="x-titlebar-left ce63yIr" __cid="ce63yIr"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ce63yIr" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="ce63yIr"> 
+            <i class="icon-chevron-left ce63yIr" __cid="ce63yIr"/>  
+            <span __cid="ce63yIr" class="ce63yIr"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title ce63yIr" __cid="ce63yIr">安保调查列表</div>  
+        <div class="x-titlebar-right  ce63yIr" __cid="ce63yIr"> 
+          <div class="empty ce63yIr" __cid="ce63yIr"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content ce63yIr" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ce63yIr"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list ce63yIr" xid="list1" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;,&quot;disableInfiniteLoad&quot;:false,&quot;disablePullToRefresh&quot;:false}" __cid="ce63yIr"> 
+        <ul class="x-list-template hide ce63yIr" xid="listTemplateUl1" style="height:70px;" __cid="ce63yIr" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li class="list-group-item ce63yIr" style="font-size:large;vertical-align:middle;border-style:none none none none;height:200;" __cid="ce63yIr" data-bind="event:{click:$model._callModelFn.bind($model, 'open')}"> 
+            <img alt="" xid="image1" class="imagelist ce63yIr" style="vertical-align:middle;text-align:right;" __cid="ce63yIr" data-bind="attr:{src:$model.transUrl($object)}"/> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <style __cid="ce63yIr" class="ce63yIr">.x-panel.p5ce1be6e351f48c2868c07f70e4b8774-iosstatusbar &gt;.x-panel-top {height: 60px;}.x-panel.p5ce1be6e351f48c2868c07f70e4b8774-iosstatusbar &gt;.x-panel-content { top: 60px;bottom: nullpx;}.x-panel.p5ce1be6e351f48c2868c07f70e4b8774-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p5ce1be6e351f48c2868c07f70e4b8774-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p5ce1be6e351f48c2868c07f70e4b8774-iosstatusbar &gt;.x-panel-top {height: 80px;}.iosstatusbar .x-panel.p5ce1be6e351f48c2868c07f70e4b8774-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p5ce1be6e351f48c2868c07f70e4b8774-iosstatusbar &gt;.x-panel-content { top: 80px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p5ce1be6e351f48c2868c07f70e4b8774-iosstatusbar &gt;.x-panel-top {height: 60px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p5ce1be6e351f48c2868c07f70e4b8774-iosstatusbar &gt;.x-panel-content {top: 60px;}</style> 
+  </div> 
+</div>

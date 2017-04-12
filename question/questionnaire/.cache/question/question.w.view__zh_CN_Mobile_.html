@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciQvy2a" class="ciQvy2a" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.ciQvy2a{color: rgb(33, 33, 33)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ciQvy2a" class="ciQvy2a"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pa2d5b53809aa471e9ad0fdc95d8969f2-iosstatusbar ciQvy2a" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciQvy2a"> 
+    <div class="x-panel-top ciQvy2a" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:60}" __cid="ciQvy2a"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ciQvy2a" style="height:100%;font-size:x-large;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;暗访问卷&quot;}" __cid="ciQvy2a"> 
+        <div class="x-titlebar-left ciQvy2a" __cid="ciQvy2a"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciQvy2a" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="ciQvy2a"> 
+            <i class="icon-chevron-left ciQvy2a" __cid="ciQvy2a"/>  
+            <span __cid="ciQvy2a" class="ciQvy2a"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title ciQvy2a" __cid="ciQvy2a">暗访问卷</div>  
+        <div class="x-titlebar-right  ciQvy2a" __cid="ciQvy2a"> 
+          <div class="empty ciQvy2a" __cid="ciQvy2a"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content ciQvy2a" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciQvy2a"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list ciQvy2a" xid="list1" style="width:100%;height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;,&quot;disableInfiniteLoad&quot;:false,&quot;disablePullToRefresh&quot;:false}" __cid="ciQvy2a"> 
+        <ul class="x-list-template hide ciQvy2a" xid="listTemplateUl1" style="height:70px;" __cid="ciQvy2a" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li class="center-block list-group-item ciQvy2a" style="height:100%;font-size:large;vertical-align:middle;" __cid="ciQvy2a" data-bind="event:{click:$model._callModelFn.bind($model, 'open')}"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-only-icon pull-right ciQvy2a" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciQvy2a"> 
+              <i xid="i1" class="icon-ios7-arrow-right text-muted ciQvy2a" __cid="ciQvy2a"/>  
+              <span xid="span1" __cid="ciQvy2a" class="ciQvy2a"/> 
+            </a>  
+            <h5 class="text-black ciQvy2a" style="font-size:large;vertical-align:middle;" __cid="ciQvy2a" data-bind="text:ref('title')"/> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom ciQvy2a" xid="bottom2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:80}" __cid="ciQvy2a"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row text-center ciQvy2a" xid="row1" style="background-color:#B3D6F4;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciQvy2a"> 
+        <div class="x-col x-col-25 ciQvy2a" xid="col1" __cid="ciQvy2a" data-bind="event:{click:$model._callModelFn.bind($model, 'col1Click')}"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-top ciQvy2a" xid="bookshelvesBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-book&quot;,&quot;label&quot;:&quot;首页&quot;}" __cid="ciQvy2a"> 
+            <i xid="i5" class="icon-android-book ciQvy2a" __cid="ciQvy2a"/>  
+            <span xid="span7" __cid="ciQvy2a" class="ciQvy2a">首页</span> 
+          </a> 
+        </div>  
+        <div class="x-col x-col-25 ciQvy2a" xid="col2" __cid="ciQvy2a" data-bind="event:{click:$model._callModelFn.bind($model, 'col2Click')}"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-top ciQvy2a" xid="bookCityBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-eye-open&quot;,&quot;label&quot;:&quot;公司介绍&quot;}" __cid="ciQvy2a"> 
+            <i xid="i6" class="glyphicon glyphicon-eye-open ciQvy2a" __cid="ciQvy2a"/>  
+            <span xid="span8" __cid="ciQvy2a" class="ciQvy2a">公司介绍</span> 
+          </a> 
+        </div>  
+        <div class="x-col x-col-25 ciQvy2a" xid="col3" __cid="ciQvy2a" data-bind="event:{click:$model._callModelFn.bind($model, 'col3Click')}"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-top ciQvy2a" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-list-alt&quot;,&quot;label&quot;:&quot;工作案例&quot;}" __cid="ciQvy2a"> 
+            <i xid="i8" class="glyphicon glyphicon-list-alt ciQvy2a" __cid="ciQvy2a"/>  
+            <span xid="span10" __cid="ciQvy2a" class="ciQvy2a">工作案例</span> 
+          </a> 
+        </div>  
+        <div class="x-col ciQvy2a" xid="col10" style="display:none" __cid="ciQvy2a"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-top ciQvy2a" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-alert-circled&quot;,&quot;label&quot;:&quot;法规&quot;}" __cid="ciQvy2a"> 
+            <i xid="i10" class="icon-alert-circled ciQvy2a" __cid="ciQvy2a"/>  
+            <span xid="span12" __cid="ciQvy2a" class="ciQvy2a">法规</span> 
+          </a> 
+        </div>  
+        <div class="x-col ciQvy2a" xid="col9" __cid="ciQvy2a" data-bind="event:{click:$model._callModelFn.bind($model, 'col9Click')}"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-top ciQvy2a" xid="personalCenterBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-contact&quot;,&quot;label&quot;:&quot;个人中心&quot;}" __cid="ciQvy2a"> 
+            <i xid="i7" class="icon-android-contact ciQvy2a" __cid="ciQvy2a"/>  
+            <span xid="span9" __cid="ciQvy2a" class="ciQvy2a">个人中心</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="ciQvy2a" class="ciQvy2a">.x-panel.pa2d5b53809aa471e9ad0fdc95d8969f2-iosstatusbar &gt;.x-panel-top {height: 60px;}.x-panel.pa2d5b53809aa471e9ad0fdc95d8969f2-iosstatusbar &gt;.x-panel-content { top: 60px;bottom: 80px;}.x-panel.pa2d5b53809aa471e9ad0fdc95d8969f2-iosstatusbar &gt;.x-panel-bottom {height: 80px;}.iosstatusbar .x-panel.pa2d5b53809aa471e9ad0fdc95d8969f2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pa2d5b53809aa471e9ad0fdc95d8969f2-iosstatusbar &gt;.x-panel-top {height: 80px;}.iosstatusbar .x-panel.pa2d5b53809aa471e9ad0fdc95d8969f2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pa2d5b53809aa471e9ad0fdc95d8969f2-iosstatusbar &gt;.x-panel-content { top: 80px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pa2d5b53809aa471e9ad0fdc95d8969f2-iosstatusbar &gt;.x-panel-top {height: 60px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pa2d5b53809aa471e9ad0fdc95d8969f2-iosstatusbar &gt;.x-panel-content {top: 60px;}</style> 
+  </div> 
+</div>

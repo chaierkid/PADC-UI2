@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cIvmQFf" class="cIvmQFf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cIvmQFf" class="cIvmQFf"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p401303db99e64776852853adcd19cfed-iosstatusbar cIvmQFf" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cIvmQFf"> 
+    <div class="x-panel-top cIvmQFf" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIvmQFf"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cIvmQFf" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;企业文化&quot;}" __cid="cIvmQFf"> 
+        <div class="x-titlebar-left cIvmQFf" __cid="cIvmQFf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cIvmQFf" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cIvmQFf"> 
+            <i class="icon-chevron-left cIvmQFf" __cid="cIvmQFf"/>  
+            <span __cid="cIvmQFf" class="cIvmQFf"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cIvmQFf" __cid="cIvmQFf">企业文化</div>  
+        <div class="x-titlebar-right  cIvmQFf" __cid="cIvmQFf">
+          <div class="empty cIvmQFf" __cid="cIvmQFf"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cIvmQFf" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIvmQFf">
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cIvmQFf" xid="controlGroup1" style="height:53px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;企业文化&quot;}" __cid="cIvmQFf"> 
+        <div class="x-control-group-title cIvmQFf" xid="controlGroupTitle1" __cid="cIvmQFf"> 
+          <span xid="span1" __cid="cIvmQFf" class="cIvmQFf">企业文化</span>
+        </div> 
+      </div>  
+      <div xid="mainList" class="x-list cIvmQFf" component="$model/UI2/system/components/justep/list/list" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;mainData&quot;,&quot;limit&quot;:6}" __cid="cIvmQFf"> 
+        <ul class="x-list-template hide cIvmQFf" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_mainList($element),afterRender:$model.foreach_afterRender_mainList.bind($model,$element)}" __cid="cIvmQFf"> 
+          <li xid="li1" __cid="cIvmQFf" class="cIvmQFf"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center cIvmQFf" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIvmQFf"> 
+              <div class="x-col cIvmQFf" style="text-align: left;" bind-visible="$model.controlData.val('edit')==1" xid="col1" __cid="cIvmQFf"> 
+                <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cIvmQFf" xid="checkbox1" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{ref:ref('calcCheckBox'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cIvmQFf">
+                  <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cIvmQFf" class="cIvmQFf"/>
+                  <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cIvmQFf" class="cIvmQFf"/>
+                </span>
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-col x-col-90 cIvmQFf" bind-click="showDetailClick" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIvmQFf"> 
+                <div class="x-row cIvmQFf" component="$model/UI2/system/components/justep/row/row" style="background-color:#E3EFFF;" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIvmQFf"> 
+                  <div class="x-col cIvmQFf" xid="col2" __cid="cIvmQFf"></div>  
+                  <div class="x-col x-col-33 cIvmQFf" style="text-align:right;color:gray" xid="col3" __cid="cIvmQFf"></div> 
+                </div>  
+                <div class="x-row cIvmQFf" component="$model/UI2/system/components/justep/row/row" style="background-color:#E3EFFF;" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIvmQFf"> 
+                  <div class="x-col x-col-50 cIvmQFf" xid="col5" __cid="cIvmQFf"></div>  
+                  <div class="x-col cIvmQFf" style="text-align:right;color:gray" xid="col6" __cid="cIvmQFf"></div> 
+                </div>  
+                <div class="x-row cIvmQFf" component="$model/UI2/system/components/justep/row/row" style="height:10px;" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIvmQFf"> 
+                  <div class="x-col cIvmQFf" style="text-align:right;color:gray" xid="col4" __cid="cIvmQFf"/>
+                </div> 
+              </div>  
+              <div class="x-col font-gray cIvmQFf" bind-click="showDetailClick" style="text-align: right" xid="col7" __cid="cIvmQFf"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-only-icon cIvmQFf" xid="editBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cIvmQFf"> 
+                  <i class="icon-chevron-right cIvmQFf" xid="i1" __cid="cIvmQFf"/>  
+                  <span xid="span2" __cid="cIvmQFf" class="cIvmQFf"/>
+                </a> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div>
+    </div>  
+    <style __cid="cIvmQFf" class="cIvmQFf">.x-panel.p401303db99e64776852853adcd19cfed-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p401303db99e64776852853adcd19cfed-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p401303db99e64776852853adcd19cfed-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p401303db99e64776852853adcd19cfed-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p401303db99e64776852853adcd19cfed-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p401303db99e64776852853adcd19cfed-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p401303db99e64776852853adcd19cfed-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p401303db99e64776852853adcd19cfed-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p401303db99e64776852853adcd19cfed-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cERJraa" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cERJraa" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/form/form,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/toolBar/toolBar,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cERJraa" class="cERJraa"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiverReceive" __cid="cERJraa" class="cERJraa"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p4f59bac29b1d4716865c4c9f94bdbf55-iosstatusbar cERJraa" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cERJraa"> 
+    <div class="x-panel-top cERJraa" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cERJraa"> 
+      <div component="$model/UI2/system/components/justep/toolBar/toolBar" class="x-toolbar form-inline x-toolbar-spliter cERJraa" xid="toolBar1" data-bind="component:{name:'$model/UI2/system/components/justep/toolBar/toolBar'}" __cid="cERJraa"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cERJraa" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:allCheckClick" data-config="{&quot;label&quot;:&quot;全选&quot;}" __cid="cERJraa"> 
+          <i xid="i1" __cid="cERJraa" class="cERJraa"/>  
+          <span xid="span1" __cid="cERJraa" class="cERJraa">全选</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cERJraa" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:allNotCheckClick" data-config="{&quot;label&quot;:&quot;全不选&quot;}" __cid="cERJraa"> 
+          <i xid="i2" __cid="cERJraa" class="cERJraa"/>  
+          <span xid="span2" __cid="cERJraa" class="cERJraa">全不选</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cERJraa" xid="okBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&quot;label&quot;:&quot;完成&quot;}" __cid="cERJraa"> 
+          <i xid="i3" __cid="cERJraa" class="cERJraa"/>  
+          <span xid="span3" __cid="cERJraa" class="cERJraa">完成</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cERJraa" xid="closeBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'windowReceiver.windowCancel'}" data-config="{&quot;label&quot;:&quot;关闭&quot;}" __cid="cERJraa"> 
+          <i xid="i4" __cid="cERJraa" class="cERJraa"/>  
+          <span xid="span4" __cid="cERJraa" class="cERJraa">关闭</span> 
+        </a> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cERJraa" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cERJraa"> 
+      <div class="form-horizontal data-form  x-scroll-view cERJraa" component="$model/UI2/system/components/bootstrap/form/form" xid="form1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="cERJraa"> 
+        <div class="x-scroll cERJraa" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cERJraa"> 
+          <div class="x-content-center x-pull-down container cERJraa" xid="div2" __cid="cERJraa"> 
+            <i class="x-pull-down-img glyphicon x-icon-pull-down cERJraa" xid="i5" __cid="cERJraa"/>  
+            <span class="x-pull-down-label cERJraa" xid="span5" __cid="cERJraa">下拉刷新...</span> 
+          </div>  
+          <div class="x-scroll-content cERJraa" xid="div3" __cid="cERJraa"> 
+            <div component="$model/UI2/system/components/bootstrap/row/row" class="row cERJraa" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cERJraa"> 
+              <div class="col col-xs-1 col-sm-1 col-md-1 col-lg-1 cERJraa" xid="col1" __cid="cERJraa"> 
+                <label class="x-label cERJraa" xid="label1" __cid="cERJraa" data-bind="text:formData.label('index')"/> 
+              </div>  
+              <div class="col col-xs-1 col-sm-1 col-md-1 col-lg-1 cERJraa" xid="col1" __cid="cERJraa"> 
+                <label class="x-label cERJraa" xid="label1" __cid="cERJraa" data-bind="text:formData.label('check')"/> 
+              </div>  
+              <div class="col col-xs-3 col-sm-3 col-md-3 col-lg-3 cERJraa" xid="col11" __cid="cERJraa"> 
+                <label class="x-label cERJraa" xid="label9" __cid="cERJraa" data-bind="text:formData.label('name')"/> 
+              </div>  
+              <div class="col col-xs-2 col-sm-2 col-md-2 col-lg-2 cERJraa" xid="col12" __cid="cERJraa"> 
+                <label class="x-label cERJraa" xid="label8" __cid="cERJraa" data-bind="text:formData.label('dataType')"/> 
+              </div>  
+              <div class="col col-xs-2 col-sm-2 col-md-2 col-lg-2 cERJraa" xid="col12" __cid="cERJraa"> 
+                <label class="x-label cERJraa" xid="label8" __cid="cERJraa" data-bind="text:formData.label('colEditor')"/> 
+              </div>  
+              <div class="col col-xs-3 col-sm-3 col-md-3 col-lg-3 cERJraa" xid="col4" __cid="cERJraa"> 
+                <label class="x-label cERJraa" xid="label7" __cid="cERJraa" data-bind="text:formData.label('labelName')"/> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cERJraa" xid="list1" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;formData&quot;}" __cid="cERJraa"> 
+              <ul class="x-list-template hide cERJraa" xid="listTemplateUl1" __cid="cERJraa" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                <li xid="li1" __cid="cERJraa" class="cERJraa"> 
+                  <div component="$model/UI2/system/components/bootstrap/row/row" class="row cERJraa" xid="row3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cERJraa"> 
+                    <div class="col col-xs-1 col-sm-1 col-md-1 col-lg-1 cERJraa" xid="col2" __cid="cERJraa"> 
+                      <label class="x-label cERJraa" xid="label2" __cid="cERJraa" data-bind="text:ref('index')"/> 
+                    </div>  
+                    <div class="col col-xs-1 col-sm-1 col-md-1 col-lg-1 cERJraa" xid="col3" __cid="cERJraa"> 
+                      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cERJraa" xid="checkbox1" name="checkbox" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;name&quot;:&quot;checkbox&quot;}" data-bind="component:{ref:ref(&quot;check&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cERJraa"> 
+                        <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" name="checkbox" __cid="cERJraa" class="cERJraa"></input>  
+                        <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cERJraa" class="cERJraa"></label> 
+                      </span> 
+                    </div>  
+                    <div class="col col-xs-3 col-sm-3 col-md-3 col-lg-3 cERJraa" xid="col8" __cid="cERJraa"> 
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control cERJraa" xid="input6" data-bind="component:{ref:ref('name'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cERJraa"/> 
+                    </div>  
+                    <div class="col col-xs-2 col-sm-2 col-md-2 col-lg-2 cERJraa" xid="col10" __cid="cERJraa"> 
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control cERJraa" xid="input1" data-bind="component:{ref:ref('dataType'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cERJraa"/> 
+                    </div>  
+                    <div class="col col-xs-2 col-sm-2 col-md-2 col-lg-2 cERJraa" xid="col10" __cid="cERJraa"> 
+                      <select component="$model/UI2/system/components/justep/select/select" class="form-control cERJraa" xid="select1" data-bind="component:{ref:ref('colEditor'),name:'$model/UI2/system/components/justep/select/select'},options:$model.editeTypeData.datas,optionsValue:'type',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cERJraa"/> 
+                    </div>  
+                    <div class="col col-xs-3 col-sm-3 col-md-3 col-lg-3 cERJraa" xid="col9" __cid="cERJraa"> 
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control cERJraa" xid="input4" data-bind="component:{ref:ref('labelName'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cERJraa"/> 
+                    </div> 
+                  </div> 
+                </li> 
+              </ul> 
+            </div> 
+          </div>  
+          <div class="x-content-center x-pull-up cERJraa" xid="div4" __cid="cERJraa"> 
+            <span class="x-pull-up-label cERJraa" xid="span6" __cid="cERJraa">加载更多...</span> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cERJraa" class="cERJraa">.x-panel.p4f59bac29b1d4716865c4c9f94bdbf55-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p4f59bac29b1d4716865c4c9f94bdbf55-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p4f59bac29b1d4716865c4c9f94bdbf55-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p4f59bac29b1d4716865c4c9f94bdbf55-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p4f59bac29b1d4716865c4c9f94bdbf55-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p4f59bac29b1d4716865c4c9f94bdbf55-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p4f59bac29b1d4716865c4c9f94bdbf55-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p4f59bac29b1d4716865c4c9f94bdbf55-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p4f59bac29b1d4716865c4c9f94bdbf55-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

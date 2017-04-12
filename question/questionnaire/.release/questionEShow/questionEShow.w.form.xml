@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cyA3Azu" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cyA3Azu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cyA3Azu" class="cyA3Azu"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pe0d5c92aa0be497482206754e0b61fcc-iosstatusbar cyA3Azu" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cyA3Azu"> 
+    <div class="x-panel-top cyA3Azu" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:60}" __cid="cyA3Azu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cyA3Azu" xid="titleBar1" style="height:100%;font-size:x-large;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;重点医院&quot;}" __cid="cyA3Azu"> 
+        <div class="x-titlebar-left cyA3Azu" xid="left1" __cid="cyA3Azu"> 
+          <p xid="p1" style="background-color:red;" __cid="cyA3Azu" class="cyA3Azu"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-icon cyA3Azu" xid="返回主页" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button31Click" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cyA3Azu"> 
+            <i xid="i9" class="icon-chevron-left cyA3Azu" __cid="cyA3Azu"/>  
+            <span xid="span9" __cid="cyA3Azu" class="cyA3Azu"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cyA3Azu" xid="title1" __cid="cyA3Azu">重点医院</div>  
+        <div class="x-titlebar-right  cyA3Azu" xid="right1" style="vertical-align:middle;" __cid="cyA3Azu">
+          <div class="empty cyA3Azu" __cid="cyA3Azu"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top cyA3Azu" xid="button3" style="display:none;vertical-align:middle;font-size:small;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;icon&quot;:&quot;icon-edit&quot;,&quot;label&quot;:&quot;修改&quot;}" __cid="cyA3Azu"> 
+            <i xid="i3" class="icon-edit cyA3Azu" __cid="cyA3Azu"/>  
+            <span xid="span3" __cid="cyA3Azu" class="cyA3Azu">修改</span> 
+          </a>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top cyA3Azu" xid="button2" style="display:none;vertical-align:middle;font-size:small;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;icon&quot;:&quot;icon-android-remove&quot;,&quot;label&quot;:&quot;删除&quot;}" __cid="cyA3Azu"> 
+            <i xid="i2" class="icon-android-remove cyA3Azu" __cid="cyA3Azu"/>  
+            <span xid="span2" __cid="cyA3Azu" class="cyA3Azu">删除</span> 
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cyA3Azu" xid="content3" style="font-size:medium;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyA3Azu"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cyA3Azu" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyA3Azu"> 
+        <div class="x-col cyA3Azu" xid="col1" __cid="cyA3Azu"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label35 cyA3Azu" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyA3Azu"> 
+            <label class="x-label cyA3Azu" xid="label1" style="font-weight:bold;" __cid="cyA3Azu">Q1.区县名称：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cyA3Azu" xid="output5" data-bind="component:{ref:$model.tabquestion.ref(&quot;fArea&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyA3Azu"/>
+          </div>
+        </div> 
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cyA3Azu" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyA3Azu"> 
+        <div class="x-col cyA3Azu" xid="col2" __cid="cyA3Azu"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label35 cyA3Azu" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyA3Azu"> 
+            <label class="x-label cyA3Azu" xid="label2" style="font-weight:bold;" __cid="cyA3Azu">Q2.医院名称：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cyA3Azu" xid="output6" data-bind="component:{ref:$model.tabquestion.ref(&quot;fStreet&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyA3Azu"/>
+          </div>
+        </div> 
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cyA3Azu" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyA3Azu"> 
+        <div class="x-col cyA3Azu" xid="col5" __cid="cyA3Azu"> 
+          <label class="x-label cyA3Azu" xid="label13" style="font-weight:bold;" __cid="cyA3Azu">Q3.医院大门周围及门诊大厅环境秩序存在问题（多选）：</label>
+        </div> 
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cyA3Azu" xid="row15" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyA3Azu"> 
+        <div class="x-col x-col-center cyA3Azu" xid="col15" __cid="cyA3Azu">
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output cyA3Azu" xid="output15" data-bind="component:{ref:$model.tabquestion.ref(&quot;fProblem&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyA3Azu"/>
+        </div>
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cyA3Azu" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyA3Azu"> 
+        <div class="x-col x-col-center cyA3Azu" xid="col6" __cid="cyA3Azu"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyA3Azu" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyA3Azu"> 
+            <label class="x-label cyA3Azu" xid="label7" __cid="cyA3Azu">具体描述：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cyA3Azu" xid="output2" data-bind="component:{ref:$model.tabquestion.ref(&quot;fContent&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyA3Azu"/>
+          </div> 
+        </div> 
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cyA3Azu" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyA3Azu"> 
+        <div class="x-col cyA3Azu" xid="col9" __cid="cyA3Azu"> 
+          <label xid="label5" __cid="cyA3Azu" class="cyA3Azu">Q4.证据照片（2张以上，体现地理标志和问题事实）：</label> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cyA3Azu" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyA3Azu"> 
+        <div class="x-col cyA3Azu" xid="col3" __cid="cyA3Azu"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyA3Azu" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyA3Azu"> 
+            <label class="x-label cyA3Azu" xid="label3" style="font-weight:bold;" __cid="cyA3Azu">调查时间：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cyA3Azu" xid="output7" data-bind="component:{ref:$model.tabquestion.ref(&quot;fPhotoTime&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyA3Azu"/>
+          </div>
+        </div> 
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cyA3Azu" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyA3Azu"> 
+        <div class="x-col cyA3Azu" xid="col11" __cid="cyA3Azu"> 
+          <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple1" data-bind="component:{ref:$model.tabquestion.ref(&quot;fPhoto&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="cyA3Azu" class="cyA3Azu"> 
+            <div class="x-attachment cyA3Azu" xid="div23" __cid="cyA3Azu"> 
+              <div class="x-attachment-content x-card-border cyA3Azu" style="border-style:dashed dashed dashed dashed;border-width:0px 0px 0px 0px;" xid="div24" __cid="cyA3Azu"> 
+                <div class="x-doc-process cyA3Azu" xid="div25" __cid="cyA3Azu"> 
+                  <div class="progress-bar x-doc-process-bar cyA3Azu" role="progressbar" style="width:0%;" xid="progressBar3" __cid="cyA3Azu"/> 
+                </div>  
+                <div data-bind="foreach:$attachmentItems" xid="div26" __cid="cyA3Azu" class="cyA3Azu"> 
+                  <div class="x-attachment-cell cyA3Azu" xid="div27" __cid="cyA3Azu"> 
+                    <div class="x-attachment-item x-item-other cyA3Azu" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div28" __cid="cyA3Azu"> 
+                      <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cyA3Azu" xid="a3" __cid="cyA3Azu"/> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div class="x-attachment-cell cyA3Azu" data-bind="visible:$state.get() == 'upload'" xid="div29" __cid="cyA3Azu"> 
+                  <div class="x-attachment-item x-item-upload cyA3Azu" style="margin: 0 !important;width: 0 !important;height: 0 !important;" data-bind="visible:$state.get() == 'upload'" xid="div30" __cid="cyA3Azu"/> 
+                </div>  
+                <div class="x-attachment-cell cyA3Azu" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div31" __cid="cyA3Azu"> 
+                  <div class="x-attachment-item x-item-remove cyA3Azu" style="margin: 0 !important;width: 0 !important;height: 0 !important;" data-bind="click:changeState.bind($object,'remove')" xid="div32" __cid="cyA3Azu"/> 
+                </div>  
+                <div style="clear:both;" xid="div33" __cid="cyA3Azu" class="cyA3Azu"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="x-row x-row-center cyA3Azu" component="$model/UI2/system/components/justep/row/row" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyA3Azu"> 
+        <div class="x-col x-col-20 x-col-center cyA3Azu" xid="col8" __cid="cyA3Azu"> 
+          <label xid="label4" style="font-weight:normal;" __cid="cyA3Azu" class="cyA3Azu">状态：</label>
+        </div>  
+        <div class="x-col cyA3Azu" xid="col7" style="font-weight:bold;" __cid="cyA3Azu"> 
+          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output1" data-bind="component:{ref:$model.tabquestion.ref(&quot;fStatus2&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyA3Azu" class="cyA3Azu"/>
+        </div>  
+        <div class="x-col cyA3Azu" xid="col4" style="font-weight:bold;" __cid="cyA3Azu"> 
+          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output4" data-bind="component:{ref:$model.tabquestion.ref(&quot;fStatus&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyA3Azu" class="cyA3Azu"/>
+        </div>  
+        <div class="x-col cyA3Azu" xid="col4" style="font-weight:bold;" __cid="cyA3Azu"> 
+          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output3" data-bind="component:{ref:$model.tabquestion.ref(&quot;fStatus3&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyA3Azu" class="cyA3Azu"/>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cyA3Azu" class="cyA3Azu">.x-panel.pe0d5c92aa0be497482206754e0b61fcc-iosstatusbar &gt;.x-panel-top {height: 60px;}.x-panel.pe0d5c92aa0be497482206754e0b61fcc-iosstatusbar &gt;.x-panel-content { top: 60px;bottom: nullpx;}.x-panel.pe0d5c92aa0be497482206754e0b61fcc-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pe0d5c92aa0be497482206754e0b61fcc-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pe0d5c92aa0be497482206754e0b61fcc-iosstatusbar &gt;.x-panel-top {height: 80px;}.iosstatusbar .x-panel.pe0d5c92aa0be497482206754e0b61fcc-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pe0d5c92aa0be497482206754e0b61fcc-iosstatusbar &gt;.x-panel-content { top: 80px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pe0d5c92aa0be497482206754e0b61fcc-iosstatusbar &gt;.x-panel-top {height: 60px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pe0d5c92aa0be497482206754e0b61fcc-iosstatusbar &gt;.x-panel-content {top: 60px;}</style>
+  </div> 
+</div>

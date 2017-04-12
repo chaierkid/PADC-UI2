@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cNb2aEz" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNb2aEz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.top-line.cNb2aEz{border-top: 1px solid rgb(238, 238, 238)} .split-line.cNb2aEz{border-right: 1px solid rgb(255, 128, 255)} .title-completed.cNb2aEz{text-decoration: line-through}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:loadData" __cid="cNb2aEz" class="cNb2aEz"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pfe4c19b33c304ca0b993c02f090ff2ca-iosstatusbar cNb2aEz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cNb2aEz"> 
+    <div class="x-panel-content cNb2aEz" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNb2aEz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cNb2aEz" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;todos&quot;}" __cid="cNb2aEz"> 
+        <div class="x-titlebar-left cNb2aEz" xid="div1" __cid="cNb2aEz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cNb2aEz" xid="backBtn1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cNb2aEz"> 
+            <i class="icon-chevron-left cNb2aEz" xid="i8" __cid="cNb2aEz"/>  
+            <span xid="span8" __cid="cNb2aEz" class="cNb2aEz"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cNb2aEz" xid="div2" __cid="cNb2aEz">todos</div>  
+        <div class="x-titlebar-right  cNb2aEz" xid="div3" __cid="cNb2aEz"> 
+          <div class="empty cNb2aEz" __cid="cNb2aEz"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center cNb2aEz" xid="row1" style="padding: 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNb2aEz"> 
+        <div xid="col1" style="padding: 15px 10px;" class="split-line cNb2aEz" __cid="cNb2aEz"> 
+          <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cNb2aEz" xid="allCompletedCheckbox" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{ref:tempData.ref('allCompleted'),name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:allCompletedCheckboxChange" __cid="cNb2aEz"> 
+            <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cNb2aEz" class="cNb2aEz"></input>  
+            <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cNb2aEz" class="cNb2aEz"></label> 
+          </span> 
+        </div>  
+        <div class="x-col cNb2aEz" xid="col2" __cid="cNb2aEz"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cNb2aEz" xid="titleInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'},event:{keydown:$model._callModelFn.bind($model, 'titleInputKeydown')}" __cid="cNb2aEz"/> 
+        </div>  
+        <div xid="col3" __cid="cNb2aEz" class="cNb2aEz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon cNb2aEz" xid="addBtn" style="color:#008000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addTodo" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cNb2aEz"> 
+            <i xid="i2" class="icon-android-add cNb2aEz" __cid="cNb2aEz"/>  
+            <span xid="span2" __cid="cNb2aEz" class="cNb2aEz"/> 
+          </a> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cNb2aEz" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;todoData&quot;,&quot;filter&quot;:&quot;js:$model.tempData.val('status')=='All' || ($model.tempData.val('status')=='Active' &amp;&amp; !$row.val('completed')) || ($model.tempData.val('status')=='Completed' &amp;&amp; $row.val('completed'))&quot;}" __cid="cNb2aEz"> 
+        <ul class="x-list-template hide cNb2aEz" xid="listTemplateUl1" __cid="cNb2aEz" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li xid="li1" __cid="cNb2aEz" class="cNb2aEz"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center top-line cNb2aEz" xid="row2" style="padding: 0px" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNb2aEz"> 
+              <div xid="col4" style="padding: 10px 10px;" class="split-line cNb2aEz" __cid="cNb2aEz"> 
+                <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cNb2aEz" xid="checkbox1" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{ref:ref('completed'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cNb2aEz"> 
+                  <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cNb2aEz" class="cNb2aEz"></input>  
+                  <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cNb2aEz" class="cNb2aEz"></label> 
+                </span> 
+              </div>  
+              <div class="x-col cNb2aEz" xid="col5" __cid="cNb2aEz"> 
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output cNb2aEz" xid="output1" data-bind="component:{ref:ref('title'),name:'$model/UI2/system/components/justep/output/output'},css:{'title-completed': val('completed')}" __cid="cNb2aEz"/> 
+              </div>  
+              <div xid="col6" __cid="cNb2aEz" class="cNb2aEz"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon cNb2aEz" xid="deleteBtn" style="color:#FF0000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deleteBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cNb2aEz"> 
+                  <i xid="i4" class="icon-android-close cNb2aEz" __cid="cNb2aEz"/>  
+                  <span xid="span4" __cid="cNb2aEz" class="cNb2aEz"/> 
+                </a> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center top-line cNb2aEz" xid="row3" style="height:35px;background-color:#D0D0FF;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},visible:$model.todoData.getCount() &gt; 0" __cid="cNb2aEz"> 
+        <div class="x-col cNb2aEz" xid="col7" __cid="cNb2aEz" data-bind="text:($model.todoData.getCount() - tempData.val('completedCount')) + ' items left'"/>  
+        <div xid="col8" __cid="cNb2aEz" class="cNb2aEz"> 
+          <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-sm cNb2aEz" xid="radio2" name="statusRadio" checkedValue="All" label="All" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;All&quot;,&quot;disabled&quot;:false,&quot;label&quot;:&quot;All&quot;,&quot;name&quot;:&quot;statusRadio&quot;}" data-bind="component:{ref:tempData.ref('status'),name:'$model/UI2/system/components/justep/button/radio'}" __cid="cNb2aEz"> 
+            <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" name="statusRadio" __cid="cNb2aEz" class="cNb2aEz"></input>  
+            <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cNb2aEz" class="cNb2aEz">All</label> 
+          </span>  
+          <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-sm cNb2aEz" xid="radio3" name="statusRadio" label="Active" checkedValue="Active" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;Active&quot;,&quot;disabled&quot;:false,&quot;label&quot;:&quot;Active&quot;,&quot;name&quot;:&quot;statusRadio&quot;}" data-bind="component:{ref:tempData.ref('status'),name:'$model/UI2/system/components/justep/button/radio'}" __cid="cNb2aEz"> 
+            <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" name="statusRadio" __cid="cNb2aEz" class="cNb2aEz"></input>  
+            <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cNb2aEz" class="cNb2aEz">Active</label> 
+          </span>  
+          <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-sm cNb2aEz" xid="radio4" name="statusRadio" label="Completed" checkedValue="Completed" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;Completed&quot;,&quot;disabled&quot;:false,&quot;label&quot;:&quot;Completed&quot;,&quot;name&quot;:&quot;statusRadio&quot;}" data-bind="component:{ref:tempData.ref('status'),name:'$model/UI2/system/components/justep/button/radio'}" __cid="cNb2aEz"> 
+            <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" name="statusRadio" __cid="cNb2aEz" class="cNb2aEz"></input>  
+            <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cNb2aEz" class="cNb2aEz">Completed</label> 
+          </span> 
+        </div>  
+        <div class="x-col cNb2aEz" xid="col9" __cid="cNb2aEz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-yellow btn-sm cNb2aEz" xid="clearCompletedBtn" style="float:right;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:'Clear completed (' + $model.tempData.val('completedCount') + ')',visible:$model.tempData.val('completedCount') &gt; 0,event:{click:$model._callModelFn.bind($model, 'clearCompletedBtnClick')}" data-config="{&quot;label&quot;:&quot;&quot;}" __cid="cNb2aEz"> 
+            <i xid="i1" __cid="cNb2aEz" class="cNb2aEz"/>  
+            <span xid="span1" __cid="cNb2aEz" class="cNb2aEz"/> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cNb2aEz" class="cNb2aEz">.x-panel.pfe4c19b33c304ca0b993c02f090ff2ca-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pfe4c19b33c304ca0b993c02f090ff2ca-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pfe4c19b33c304ca0b993c02f090ff2ca-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pfe4c19b33c304ca0b993c02f090ff2ca-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pfe4c19b33c304ca0b993c02f090ff2ca-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pfe4c19b33c304ca0b993c02f090ff2ca-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pfe4c19b33c304ca0b993c02f090ff2ca-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pfe4c19b33c304ca0b993c02f090ff2ca-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pfe4c19b33c304ca0b993c02f090ff2ca-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div> 
+</div>

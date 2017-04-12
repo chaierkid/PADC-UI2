@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cI3AVv2" class="cI3AVv2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-title-data.cI3AVv2{padding-top: 10px; font-size: 15px; color: black} .x-intro.cI3AVv2{overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: inherit; -webkit-box-flex: 2; -ms-box-flex: 2; -moz-box-flex: 2; box-flex: 2; -o-box-flex: 2; -webkit-flex: 2 1 0px; -moz-flex: 2 1 0px; -ms-flex: 2 1 0px; -o-flex: 2 1 0px; flex: 2 1 0px}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cI3AVv2" class="cI3AVv2"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p34dc3f92c73645428fe53500b43a647f-iosstatusbar cI3AVv2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cI3AVv2"> 
+    <div class="x-panel-top cI3AVv2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cI3AVv2"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cI3AVv2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;最新动态&quot;}" __cid="cI3AVv2"> 
+        <div class="x-titlebar-left cI3AVv2" __cid="cI3AVv2"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cI3AVv2" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cI3AVv2"> 
+            <i class="icon-chevron-left cI3AVv2" __cid="cI3AVv2"/>  
+            <span __cid="cI3AVv2" class="cI3AVv2"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cI3AVv2" __cid="cI3AVv2">最新动态</div>  
+        <div class="x-titlebar-right  cI3AVv2" __cid="cI3AVv2"> 
+          <div class="empty cI3AVv2" __cid="cI3AVv2"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cI3AVv2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cI3AVv2"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pef7bb564106e4d4e9ae53545327cf4bd-iosstatusbar cI3AVv2" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cI3AVv2"> 
+        <div class="x-panel-top cI3AVv2" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cI3AVv2"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cI3AVv2" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cI3AVv2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cI3AVv2" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;最新资讯&quot;,&quot;target&quot;:&quot;latestNews&quot;}" __cid="cI3AVv2"> 
+              <i xid="i1" __cid="cI3AVv2" class="cI3AVv2"/>  
+              <span xid="span1" __cid="cI3AVv2" class="cI3AVv2">最新资讯</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cI3AVv2" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;行业新闻&quot;,&quot;target&quot;:&quot;professionNews&quot;}" __cid="cI3AVv2"> 
+              <i xid="i2" __cid="cI3AVv2" class="cI3AVv2"/>  
+              <span xid="span2" __cid="cI3AVv2" class="cI3AVv2">行业新闻</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cI3AVv2" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;新闻资讯&quot;,&quot;target&quot;:&quot;news&quot;}" __cid="cI3AVv2"> 
+              <i xid="i3" __cid="cI3AVv2" class="cI3AVv2"/>  
+              <span xid="span3" __cid="cI3AVv2" class="cI3AVv2">新闻资讯</span> 
+            </a> 
+          </div> 
+        </div>  
+        <div class="x-panel-content cI3AVv2" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cI3AVv2"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cI3AVv2" xid="dataContents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:false}" __cid="cI3AVv2"> 
+            <div class="x-contents-content active cI3AVv2" xid="latestNews" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cI3AVv2"> 
+              <div class="x-scroll cI3AVv2" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cI3AVv2"> 
+                <div class="x-content-center x-pull-down container cI3AVv2" xid="div1" __cid="cI3AVv2"> 
+                  <i class="x-pull-down-img glyphicon x-icon-pull-down cI3AVv2" xid="i1" __cid="cI3AVv2"/>  
+                  <span class="x-pull-down-label cI3AVv2" xid="span1" __cid="cI3AVv2">下拉刷新...</span> 
+                </div>  
+                <div class="x-scroll-content cI3AVv2" xid="div2" __cid="cI3AVv2"> 
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list cI3AVv2" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;,&quot;limit&quot;:7}" __cid="cI3AVv2"> 
+                    <ul class="x-list-template hide cI3AVv2" xid="listTemplateUl1" __cid="cI3AVv2" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                      <li xid="li1" class="x-flex list-row cI3AVv2" __cid="cI3AVv2" data-bind="event:{click:$model._callModelFn.bind($model, 'open')}"> 
+                        <div xid="col21" class="head-pic-data cI3AVv2" __cid="cI3AVv2"> 
+                          <div __cid="cI3AVv2" class="cI3AVv2" data-bind="visible:val('id') != 5"> 
+                            <img style="width:66px;height:66px" class="img-rounded cI3AVv2" __cid="cI3AVv2" data-bind="attr:{src:$model.getImageUrl($object)}"/> 
+                          </div> 
+                        </div>  
+                        <div class="x-flex1 cI3AVv2" xid="col23" style="padding-left:10px;" __cid="cI3AVv2"> 
+                          <div _component="$UI/system/components/justep/row/row" class="x-flex cI3AVv2" xid="row8" __cid="cI3AVv2"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-title-data cI3AVv2" xid="output6" data-bind="component:{ref:ref('title'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cI3AVv2"/> 
+                          </div>  
+                          <div _component="$UI/system/components/justep/row/row" class="x-flex cI3AVv2" xid="row9" __cid="cI3AVv2"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-flex1 x-output content-data x-intro cI3AVv2" xid="output7" data-bind="component:{ref:ref('intro'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cI3AVv2"/>  
+                            <i class="icon-chevron-right cI3AVv2" __cid="cI3AVv2"/> 
+                          </div> 
+                        </div> 
+                      </li> 
+                    </ul> 
+                  </div> 
+                </div>  
+                <div class="x-content-center x-pull-up cI3AVv2" __cid="cI3AVv2"> 
+                  <span class="x-pull-up-label cI3AVv2" __cid="cI3AVv2">加载更多...</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cI3AVv2" xid="professionNews" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cI3AVv2"> 
+              <div class="x-scroll cI3AVv2" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cI3AVv2"> 
+                <div class="x-content-center x-pull-down container cI3AVv2" __cid="cI3AVv2"> 
+                  <i class="x-pull-down-img glyphicon x-icon-pull-down cI3AVv2" __cid="cI3AVv2"/>  
+                  <span class="x-pull-down-label cI3AVv2" __cid="cI3AVv2">下拉刷新...</span> 
+                </div>  
+                <div class="x-scroll-content cI3AVv2" __cid="cI3AVv2"> 
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list cI3AVv2" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data2&quot;,&quot;limit&quot;:7}" __cid="cI3AVv2"> 
+                    <ul class="x-list-template hide cI3AVv2" xid="listTemplateUl2" __cid="cI3AVv2" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+                      <li xid="li2" class="x-flex list-row cI3AVv2" __cid="cI3AVv2" data-bind="event:{click:$model._callModelFn.bind($model, 'open')}"> 
+                        <div class="head-pic-data cI3AVv2" __cid="cI3AVv2"> 
+                          <img style="width:66px;height:66px" class="img-rounded cI3AVv2" __cid="cI3AVv2" data-bind="attr:{src:$model.getImageUrl($object)}"/> 
+                        </div>  
+                        <div class="x-flex1 cI3AVv2" style="padding-left:10px;" __cid="cI3AVv2"> 
+                          <div _component="$UI/system/components/justep/row/row" class="x-flex cI3AVv2" __cid="cI3AVv2"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-title-data cI3AVv2" data-bind="component:{ref:ref('title'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cI3AVv2"/> 
+                          </div>  
+                          <div _component="$UI/system/components/justep/row/row" class="x-flex cI3AVv2" __cid="cI3AVv2"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-flex1 x-output content-data x-intro cI3AVv2" data-bind="component:{ref:ref('intro'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cI3AVv2"/>  
+                            <i class="icon-chevron-right cI3AVv2" __cid="cI3AVv2"/> 
+                          </div> 
+                        </div> 
+                      </li> 
+                    </ul> 
+                  </div> 
+                </div>  
+                <div class="x-content-center x-pull-up cI3AVv2" xid="div3" __cid="cI3AVv2"> 
+                  <span class="x-pull-up-label cI3AVv2" xid="span2" __cid="cI3AVv2">加载更多...</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cI3AVv2" xid="news" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cI3AVv2"> 
+              <div class="x-scroll cI3AVv2" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView3" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cI3AVv2"> 
+                <div class="x-content-center x-pull-down container cI3AVv2" __cid="cI3AVv2"> 
+                  <i class="x-pull-down-img glyphicon x-icon-pull-down cI3AVv2" __cid="cI3AVv2"/>  
+                  <span class="x-pull-down-label cI3AVv2" __cid="cI3AVv2">下拉刷新...</span> 
+                </div>  
+                <div class="x-scroll-content cI3AVv2" __cid="cI3AVv2"> 
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list cI3AVv2" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data3&quot;,&quot;limit&quot;:7}" __cid="cI3AVv2"> 
+                    <ul class="x-list-template hide cI3AVv2" xid="listTemplateUl3" __cid="cI3AVv2" data-bind="foreach:{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}"> 
+                      <li __cid="cI3AVv2" class="cI3AVv2" data-bind="event:{click:$model._callModelFn.bind($model, 'open')}"> 
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cI3AVv2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cI3AVv2"> 
+                          <div class="x-col x-col-90 cI3AVv2" __cid="cI3AVv2"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output cI3AVv2" data-bind="component:{ref:ref('title'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cI3AVv2"/> 
+                          </div>  
+                          <div class="x-col cI3AVv2" __cid="cI3AVv2"> 
+                            <span __cid="cI3AVv2" class="cI3AVv2"> 
+                              <i class="icon-chevron-right cI3AVv2" __cid="cI3AVv2"/> 
+                            </span> 
+                          </div> 
+                        </div> 
+                      </li> 
+                    </ul> 
+                  </div> 
+                </div>  
+                <div class="x-content-center x-pull-up cI3AVv2" __cid="cI3AVv2"> 
+                  <span class="x-pull-up-label cI3AVv2" __cid="cI3AVv2">加载更多...</span> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cI3AVv2" class="cI3AVv2">.x-panel.pef7bb564106e4d4e9ae53545327cf4bd-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pef7bb564106e4d4e9ae53545327cf4bd-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pef7bb564106e4d4e9ae53545327cf4bd-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pef7bb564106e4d4e9ae53545327cf4bd-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pef7bb564106e4d4e9ae53545327cf4bd-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pef7bb564106e4d4e9ae53545327cf4bd-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pef7bb564106e4d4e9ae53545327cf4bd-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pef7bb564106e4d4e9ae53545327cf4bd-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pef7bb564106e4d4e9ae53545327cf4bd-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+      </div>  
+      <div xid="parent" __cid="cI3AVv2" class="cI3AVv2"/> 
+    </div>  
+    <style __cid="cI3AVv2" class="cI3AVv2">.x-panel.p34dc3f92c73645428fe53500b43a647f-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p34dc3f92c73645428fe53500b43a647f-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p34dc3f92c73645428fe53500b43a647f-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p34dc3f92c73645428fe53500b43a647f-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p34dc3f92c73645428fe53500b43a647f-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p34dc3f92c73645428fe53500b43a647f-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p34dc3f92c73645428fe53500b43a647f-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p34dc3f92c73645428fe53500b43a647f-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p34dc3f92c73645428fe53500b43a647f-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

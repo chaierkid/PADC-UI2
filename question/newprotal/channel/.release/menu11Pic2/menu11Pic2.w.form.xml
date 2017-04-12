@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cimURz2" class="cimURz2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-bg-im2.cimURz2{background: url($model/UI2/question/newprotal/img/bg4.jpg); background-size: 320px 100%} .oh.cimURz2{overflow: hidden !important} .x-list-menu.cimURz2{padding-top: 15px; padding-left: 5px; width: 305px; margin: 0 auto; list-style: none} .x-list-menu.cimURz2 li.cimURz2{float: left; width: 93px; margin: 0 6px 11px 0; background-color: rgb(255, 255, 255); border-radius: 4px; box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1)} .x-list-menu.cimURz2 li.cimURz2 img.cimURz2{vertical-align: middle; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px} ul.cimURz2{padding: 0px} .x-img.cimURz2{height: 93px; width: 93px} #container.cimURz2{width: 100%; max-width: 640px; min-width: 320px; margin: 0 auto} @media screen and (min-width: 480px) {*#container { font-size: 18px } } @media screen and (min-width: 640px) {*#container { font-size: 22px } }</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cimURz2" class="cimURz2"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pb896d78ce763489f885837ec823e5e08-iosstatusbar cimURz2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cimURz2"> 
+    <div class="x-panel-top cimURz2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cimURz2"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cimURz2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;产品中心&quot;}" __cid="cimURz2"> 
+        <div class="x-titlebar-left cimURz2" __cid="cimURz2"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cimURz2" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cimURz2"> 
+            <i class="icon-chevron-left cimURz2" __cid="cimURz2"/>  
+            <span __cid="cimURz2" class="cimURz2"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cimURz2" __cid="cimURz2">产品中心</div>  
+        <div class="x-titlebar-right  cimURz2" __cid="cimURz2">
+          <div class="empty cimURz2" __cid="cimURz2"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-bg-im2 cimURz2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cimURz2"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cimURz2" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;,&quot;disableInfiniteLoad&quot;:true,&quot;disablePullToRefresh&quot;:true}" __cid="cimURz2"> 
+        <ul class="x-list-template oh x-list-menu hide cimURz2" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cimURz2"> 
+          <li xid="li1" __cid="cimURz2" class="cimURz2"> 
+            <img bind-attr-src="$model.getImageUrl($object)" class="x-img cimURz2" bind-click="open" __cid="cimURz2"/> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <div xid="parent" __cid="cimURz2" class="cimURz2"/>  
+    <style __cid="cimURz2" class="cimURz2">.x-panel.pb896d78ce763489f885837ec823e5e08-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pb896d78ce763489f885837ec823e5e08-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pb896d78ce763489f885837ec823e5e08-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pb896d78ce763489f885837ec823e5e08-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pb896d78ce763489f885837ec823e5e08-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pb896d78ce763489f885837ec823e5e08-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pb896d78ce763489f885837ec823e5e08-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pb896d78ce763489f885837ec823e5e08-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pb896d78ce763489f885837ec823e5e08-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

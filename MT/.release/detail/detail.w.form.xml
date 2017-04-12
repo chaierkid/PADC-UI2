@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cjAfmyu" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjAfmyu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/form/form,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/fragment/form/formRow5Btn2,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.change-color.cjAfmyu{background-color: rgb(240, 240, 240)} .x-output_x-edit_margin.cjAfmyu{margin-left: -50px} .x-output_x-edit_margin1.cjAfmyu{margin-left: -50px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cjAfmyu" class="cjAfmyu"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p488afb24657841c2a9207fb9f0a19492-iosstatusbar cjAfmyu" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjAfmyu"> 
+    <div class="x-panel-top cjAfmyu" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjAfmyu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cjAfmyu" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;更改单详细&quot;}" __cid="cjAfmyu"> 
+        <div class="x-titlebar-left cjAfmyu" __cid="cjAfmyu"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cjAfmyu" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cjAfmyu"> 
+            <i class="icon-chevron-left cjAfmyu" __cid="cjAfmyu"/>  
+            <span __cid="cjAfmyu" class="cjAfmyu"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cjAfmyu" __cid="cjAfmyu">更改单详细</div>  
+        <div class="x-titlebar-right  cjAfmyu" __cid="cjAfmyu">
+          <div class="empty cjAfmyu" __cid="cjAfmyu"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cjAfmyu" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjAfmyu">
+      <div component="$model/UI2/system/components/fragment/form/formRow5Btn2" xid="formRow5Btn24" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/fragment/form/formRow5Btn2'}" __cid="cjAfmyu" class="cjAfmyu"> 
+        <div class="table table-hover table-bordered cjAfmyu" xid="div29" style="background-color:#FFFFFF;" __cid="cjAfmyu"> 
+          <div class="form-horizontal container-fluid cjAfmyu" component="$model/UI2/system/components/bootstrap/form/form" xid="form1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="cjAfmyu"> 
+            <div class="form-group cjAfmyu" xid="formGroup2" __cid="cjAfmyu"> 
+              <div class="col-sm-12 cjAfmyu" xid="col1" __cid="cjAfmyu"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 change-color cjAfmyu" xid="labelEdit12" style="height:39px;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjAfmyu"> 
+                  <label class="x-label cjAfmyu" xid="label12" __cid="cjAfmyu">更改单号</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cjAfmyu" xid="output3" style="width:456px;" data-bind="component:{ref:$model.data1.ref(&quot;a&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cjAfmyu"/>
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjAfmyu" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjAfmyu"> 
+                  <label class="x-label cjAfmyu" xid="label2" __cid="cjAfmyu">图文号</label>  
+                  <div class="x-edit cjAfmyu" xid="div6" __cid="cjAfmyu"> 
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cjAfmyu" xid="output4" data-bind="component:{ref:$model.data1.ref(&quot;b&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cjAfmyu"/>
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 change-color cjAfmyu" xid="labelEdit19" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjAfmyu"> 
+                  <label class="x-label cjAfmyu" xid="label18" __cid="cjAfmyu">批次</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cjAfmyu" xid="output6" style="width:456px;" data-bind="component:{ref:$model.data1.ref(&quot;c&quot;),name:'$model/UI2/system/components/justep/output/output'}" data-config="{&quot;format&quot;:&quot;0,000.00&quot;}" __cid="cjAfmyu"/>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit x-output_x-edit_margin cjAfmyu" xid="output1" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cjAfmyu"/>
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjAfmyu" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjAfmyu"> 
+                  <label class="x-label cjAfmyu" xid="label4" __cid="cjAfmyu">架次</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cjAfmyu" xid="output7" data-bind="component:{ref:$model.data1.ref(&quot;d&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cjAfmyu"/>
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 change-color cjAfmyu" xid="labelEdit11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjAfmyu"> 
+                  <label class="x-label cjAfmyu" xid="label11" __cid="cjAfmyu">有效期</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cjAfmyu" xid="output9" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cjAfmyu"/>
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjAfmyu" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjAfmyu"> 
+                  <label class="x-label cjAfmyu" xid="label11" __cid="cjAfmyu">制发日期</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cjAfmyu" xid="output8" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cjAfmyu"/>
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 change-color cjAfmyu" xid="labelEdit14" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjAfmyu"> 
+                  <label class="x-label cjAfmyu" xid="label13" __cid="cjAfmyu">机型</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cjAfmyu" xid="output14" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cjAfmyu"/>
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjAfmyu" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjAfmyu"> 
+                  <label class="x-label cjAfmyu" xid="label5" __cid="cjAfmyu">是否LG单</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cjAfmyu" xid="output5" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cjAfmyu"/>
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 change-color cjAfmyu" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjAfmyu"> 
+                  <label class="x-label cjAfmyu" xid="label6" __cid="cjAfmyu">设计人</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cjAfmyu" xid="output2" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cjAfmyu"/>
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30  cjAfmyu" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjAfmyu"> 
+                  <label class="x-label cjAfmyu" xid="label9" __cid="cjAfmyu">是否更改技术文件</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cjAfmyu" xid="output13" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cjAfmyu"/>
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 change-color cjAfmyu" xid="labelEdit9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjAfmyu"> 
+                  <label class="x-label cjAfmyu" xid="label10" __cid="cjAfmyu">是否更改目录</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cjAfmyu" xid="output17" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cjAfmyu"/>
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30  cjAfmyu" xid="labelEdit55" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjAfmyu"> 
+                  <label class="x-label cjAfmyu" xid="label62" __cid="cjAfmyu">保留履历</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cjAfmyu" xid="output52" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cjAfmyu"/>
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cjAfmyu" class="cjAfmyu">.x-panel.p488afb24657841c2a9207fb9f0a19492-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p488afb24657841c2a9207fb9f0a19492-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p488afb24657841c2a9207fb9f0a19492-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p488afb24657841c2a9207fb9f0a19492-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p488afb24657841c2a9207fb9f0a19492-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p488afb24657841c2a9207fb9f0a19492-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p488afb24657841c2a9207fb9f0a19492-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p488afb24657841c2a9207fb9f0a19492-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p488afb24657841c2a9207fb9f0a19492-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

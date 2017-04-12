@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" class="window cu2AbUf" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cu2AbUf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cu2AbUf" class="cu2AbUf"/>  
+  <nav class="navbar navbar-default navbar-fixed-top cu2AbUf" role="navigation" __cid="cu2AbUf"> 
+    <a class="navbar-brand cu2AbUf" bind-text="$model.title" __cid="cu2AbUf"/> 
+  </nav>  
+  <div xid="containerParent" style="padding:54px 8px 54px 8px;margin:0px 0px 0px 0px;overflow:hidden;" __cid="cu2AbUf" class="cu2AbUf"/>  
+  <nav class="navbar navbar-default navbar-fixed-bottom cu2AbUf" role="navigation" __cid="cu2AbUf"> 
+    <div class="navbar-buttons-container cu2AbUf" __cid="cu2AbUf"> 
+      <span style="display:inline-block;width:80px;" xid="span1" __cid="cu2AbUf" class="cu2AbUf">应用名：</span>  
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control cu2AbUf" style="width:240px;display:inline" xid="appName" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cu2AbUf"/>  
+      <div class="btn-group-single pull-right cu2AbUf" style="display:inline-block" __cid="cu2AbUf"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-dialog-back cu2AbUf" bind-css="{hide: !$model.hasBackBtn.get()}" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;label&quot;:&quot;上一步&quot;}" __cid="cu2AbUf"> 
+          <i __cid="cu2AbUf" class="cu2AbUf"/>  
+          <span __cid="cu2AbUf" class="cu2AbUf">上一步</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-dialog-next cu2AbUf" bind-css="{hide: !$model.hasNextBtn.get()}" xid="nextBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:nextBtnClick" data-config="{&quot;label&quot;:&quot;下一步&quot;}" __cid="cu2AbUf"> 
+          <i __cid="cu2AbUf" class="cu2AbUf"/>  
+          <span __cid="cu2AbUf" class="cu2AbUf">下一步</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-dialog-finish cu2AbUf" bind-css="{hide: !$model.hasFinishBtn.get()}" xid="finishBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:finishBtnClick" data-config="{&quot;label&quot;:&quot;完成&quot;}" __cid="cu2AbUf"> 
+          <i __cid="cu2AbUf" class="cu2AbUf"/>  
+          <span __cid="cu2AbUf" class="cu2AbUf">完成</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-dialog-cancel cu2AbUf" bind-css="{hide: !$model.hasCancelBtn.get()}" xid="cancelBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:cancelBtnClick" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cu2AbUf"> 
+          <i __cid="cu2AbUf" class="cu2AbUf"/>  
+          <span __cid="cu2AbUf" class="cu2AbUf">取消</span> 
+        </a> 
+      </div> 
+    </div> 
+  </nav>  
+  <link rel="stylesheet" href="$model/UI2/system/deploy/common/common.css" __cid="cu2AbUf" class="cu2AbUf"/> 
+</div>

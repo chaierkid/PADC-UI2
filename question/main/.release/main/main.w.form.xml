@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqIJvaq" class="cqIJvaq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-white.cqIJvaq{color: rgb(255, 255, 255)} .bg-blue.cqIJvaq{background-color: rgb(0, 134, 207)} .bg-orange.cqIJvaq{background-color: rgb(219, 83, 45)} .bg-purple.cqIJvaq{background-color: rgb(98, 61, 190)} .bg-cyan.cqIJvaq{background-color: rgb(0, 190, 242)} .bg-green.cqIJvaq{background-color: rgb(0, 154, 0)} .bg-meired.cqIJvaq{background-color: rgb(180, 28, 67)} .x-img1.cqIJvaq{width: 100%; height: 220px} .x-img3.cqIJvaq{width: 40px; height: 28px} .x-cards.cqIJvaq{padding-top: 0} .row.cqIJvaq{margin: 0} .row.cqIJvaq .col.cqIJvaq{padding: 0 5px; margin-bottom: 10px} .row.cqIJvaq .col.cqIJvaq &gt; div.cqIJvaq{height: 90px; padding-top: 20px} .x-titlebar.cqIJvaq{background-color: rgba(0, 0, 0, 0.3)} .x-panel-top.cqIJvaq{z-index: 100} .x-panel.cqIJvaq &gt; .x-panel-content.cqIJvaq{top: 0 !important} .x-panel.cqIJvaq .no-iosstatusbar.cqIJvaq &gt; .x-panel-content.cqIJvaq{top: -20px !important}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cqIJvaq" class="cqIJvaq"></div>  
+  <div component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cqIJvaq" xid="popMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;menuBtn&quot;,&quot;direction&quot;:&quot;left-bottom&quot;,&quot;opacity&quot;:0.7}" __cid="cqIJvaq"> 
+    <div class="x-popMenu-overlay cqIJvaq" xid="div14" __cid="cqIJvaq"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cqIJvaq" xid="menu2" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cqIJvaq"> 
+      <li class="x-menu-item cqIJvaq" xid="item2" __cid="cqIJvaq"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cqIJvaq" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;在线客服&quot;}" __cid="cqIJvaq"> 
+          <i xid="i2" __cid="cqIJvaq" class="cqIJvaq"/>  
+          <span xid="span2" __cid="cqIJvaq" class="cqIJvaq">在线客服</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cqIJvaq" xid="divider1" __cid="cqIJvaq"/>  
+      <li class="x-menu-item cqIJvaq" xid="item3" __cid="cqIJvaq"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cqIJvaq" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;退出&quot;}" __cid="cqIJvaq"> 
+          <i xid="i3" __cid="cqIJvaq" class="cqIJvaq"/>  
+          <span xid="span3" __cid="cqIJvaq" class="cqIJvaq">退出</span> 
+        </a> 
+      </li> 
+    </ul> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcBNNv2m-iosstatusbar cqIJvaq" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqIJvaq"> 
+    <div class="x-panel-top cqIJvaq" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqIJvaq"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cqIJvaq" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;平安调查&quot;}" __cid="cqIJvaq"> 
+        <div class="x-titlebar-left cqIJvaq" __cid="cqIJvaq"></div>  
+        <div class="x-titlebar-title cqIJvaq" __cid="cqIJvaq">平安调查</div>  
+        <div class="x-titlebar-right  cqIJvaq" __cid="cqIJvaq">
+          <div class="empty cqIJvaq" __cid="cqIJvaq"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-cards cqIJvaq" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqIJvaq"> 
+      <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel cqIJvaq" xid="carousel1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" __cid="cqIJvaq"> 
+        <ol class="carousel-indicators cqIJvaq" xid="ol1" __cid="cqIJvaq"/>  
+        <div class="x-contents carousel-inner cqIJvaq" role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="imgcontents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:true}" __cid="cqIJvaq"> 
+          <div class="x-contents-content active cqIJvaq" xid="content1" url="./contents/content1.w" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqIJvaq"> 
+            <img class="img-responsive x-img1 cqIJvaq" bind-attr-src="$model.transUrl('./img/carouselBox21.jpg')" __cid="cqIJvaq"/> 
+          </div>  
+          <div class="x-contents-content cqIJvaq" xid="content2" url="./contents/content2.w" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqIJvaq"> 
+            <img class="img-responsive x-img1 cqIJvaq" bind-attr-src="$model.transUrl('./img/carouselBox21.jpg')" __cid="cqIJvaq"/> 
+          </div>  
+          <div class="x-contents-content cqIJvaq" xid="content3" url="./contents/content3.w" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqIJvaq"> 
+            <img class="img-responsive x-img1 cqIJvaq" bind-attr-src="$model.transUrl('./img/carouselBox21.jpg')" __cid="cqIJvaq"/> 
+          </div>  
+          <div class="x-contents-content cqIJvaq" xid="content4" url="./contents/content4.w" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqIJvaq"> 
+            <img class="img-responsive x-img1 cqIJvaq" bind-attr-src="$model.transUrl('./img/carouselBox21.jpg')" __cid="cqIJvaq"/> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cqIJvaq" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;}" __cid="cqIJvaq"> 
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row panel-body x-list-template hide cqIJvaq" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cqIJvaq"> 
+          <div class="col col-xs-4 cqIJvaq" xid="col7" bind-click="openPageClick" __cid="cqIJvaq"> 
+            <div xid="div1" class="text-center cqIJvaq" bind-css="val(&quot;bgColor&quot;)" __cid="cqIJvaq"> 
+              <img xid="image1" class="x-img3 cqIJvaq" bind-attr-src="$model.transUrl($object)" __cid="cqIJvaq"/>  
+              <h5 class="text-white cqIJvaq" bind-text="val(&quot;title&quot;)" __cid="cqIJvaq"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cqIJvaq" class="cqIJvaq">.x-panel.pcBNNv2m-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcBNNv2m-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcBNNv2m-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcBNNv2m-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBNNv2m-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcBNNv2m-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBNNv2m-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBNNv2m-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBNNv2m-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

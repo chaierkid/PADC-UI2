@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window caauequ" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="caauequ" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/select/checkboxGroup,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="caauequ" class="caauequ"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pd8847059e0c54af799ef257871e512c9-iosstatusbar caauequ" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="caauequ"> 
+    <div class="x-panel-top caauequ" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:60}" __cid="caauequ"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar caauequ" xid="titleBar1" style="height:100%;font-size:x-large;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;重点医院&quot;}" __cid="caauequ"> 
+        <div class="x-titlebar-left caauequ" xid="left1" __cid="caauequ"> 
+          <p xid="p1" style="background-color:red;" __cid="caauequ" class="caauequ"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-icon caauequ" xid="返回主页" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button31Click" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="caauequ"> 
+            <i xid="i9" class="icon-chevron-left caauequ" __cid="caauequ"/>  
+            <span xid="span9" __cid="caauequ" class="caauequ"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title caauequ" xid="title1" __cid="caauequ">重点医院</div>  
+        <div class="x-titlebar-right  caauequ" xid="right1" __cid="caauequ">
+          <div class="empty caauequ" __cid="caauequ"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-left caauequ" xid="button3" style="font-size:small;display:none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-edit&quot;,&quot;label&quot;:&quot;修改&quot;}" __cid="caauequ"> 
+            <i xid="i3" class="icon-edit caauequ" __cid="caauequ"/>  
+            <span xid="span3" __cid="caauequ" class="caauequ">修改</span> 
+          </a>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-left caauequ" xid="button2" style="font-size:medium;display:none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-remove&quot;,&quot;label&quot;:&quot;删除&quot;}" __cid="caauequ"> 
+            <i xid="i2" class="icon-android-remove caauequ" __cid="caauequ"/>  
+            <span xid="span2" __cid="caauequ" class="caauequ">删除</span> 
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content caauequ" xid="content3" style="font-size:medium;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caauequ"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row caauequ" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caauequ"> 
+        <div class="x-col x-col-33 x-col-center caauequ" xid="col18" __cid="caauequ"> 
+          <label xid="label9" __cid="caauequ" class="caauequ">Q1.区县名称：</label> 
+        </div>  
+        <div class="x-col caauequ" xid="col20" __cid="caauequ"> 
+          <select component="$model/UI2/system/components/justep/select/select" class="form-control caauequ" xid="select2" style="height:35px;" bind-options="data1.datas" bind-optionsValue="'name'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:$model.tabquestion.ref(&quot;fArea&quot;),name:'$model/UI2/system/components/justep/select/select'}" __cid="caauequ"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row caauequ" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caauequ"> 
+        <div class="x-col x-col-33 x-col-center caauequ" xid="col19" __cid="caauequ"> 
+          <label xid="label10" __cid="caauequ" class="caauequ">Q2.医院名称：</label> 
+        </div>  
+        <div class="x-col caauequ" xid="col21" __cid="caauequ"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control caauequ" xid="input3" style="height:35px;" data-bind="component:{ref:$model.tabquestion.ref(&quot;fStreet&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="caauequ"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row caauequ" xid="row45" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caauequ"> 
+        <div class="x-col caauequ" xid="col149" __cid="caauequ"> 
+          <label xid="label57" __cid="caauequ" class="caauequ">Q3.医院大门周围及门诊大厅环境秩序存在问题（多选）:</label> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row caauequ" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caauequ"> 
+        <div class="x-col x-col-center caauequ" xid="col7" __cid="caauequ"> 
+          <span component="$model/UI2/system/components/justep/select/checkboxGroup" class="x-checkbox-group caauequ" xid="checkboxGroup2" bind-foreach="{data:check.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{ref:$model.tabquestion.ref(&quot;fProblem&quot;),name:'$model/UI2/system/components/justep/select/checkboxGroup'}" __cid="caauequ">
+            <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox caauequ" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:ref(&quot;name&quot;),value:ref(&quot;name&quot;)}" __cid="caauequ">
+              <xhtml:input type="checkbox" __cid="caauequ" class="caauequ"/>
+              <xhtml:label __cid="caauequ" class="caauequ"/>
+            </xhtml:span>
+          </span> 
+        </div>  
+        <div class="x-col x-col-25 caauequ" xid="col14" __cid="caauequ"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row caauequ" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caauequ"> 
+        <div class="x-col x-col-33 x-col-center caauequ" xid="col23" __cid="caauequ"> 
+          <label xid="label11" style="font-weight:normal;" __cid="caauequ" class="caauequ">其他问题：</label> 
+        </div>  
+        <div class="x-col  caauequ" xid="col22" __cid="caauequ"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control caauequ" xid="input4" data-bind="component:{ref:$model.data3.ref(&quot;content&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="caauequ"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row caauequ" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caauequ"> 
+        <div class="x-col x-col-33 x-col-center caauequ" xid="col2" __cid="caauequ"> 
+          <label xid="label2" style="font-weight:normal;" __cid="caauequ" class="caauequ">具体描述：</label>
+        </div>  
+        <div class="x-col  caauequ" xid="col3" __cid="caauequ"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control caauequ" xid="input1" data-bind="component:{ref:$model.tabquestion.ref(&quot;fContent&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="caauequ"/>
+        </div> 
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row caauequ" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caauequ"> 
+        <div class="x-col caauequ" xid="col9" __cid="caauequ"> 
+          <label xid="label5" __cid="caauequ" class="caauequ">Q4.证据照片（2张以上，体现地理标志和问题事实）：</label> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row caauequ" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caauequ"> 
+        <div class="x-col x-col-33 x-col-center caauequ" xid="col10" __cid="caauequ"> 
+          <label xid="label7" style="font-weight:normal;" __cid="caauequ" class="caauequ">调查时间：</label> 
+        </div>  
+        <div class="x-col caauequ" xid="col12" __cid="caauequ"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control caauequ" xid="input2" style="height:35px;" data-bind="component:{ref:$model.tabquestion.ref(&quot;fPhotoTime&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="caauequ"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row caauequ" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caauequ"> 
+        <div class="x-col caauequ" xid="col11" __cid="caauequ"> 
+          <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple1" data-bind="component:{ref:$model.tabquestion.ref(&quot;fPhoto&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="caauequ" class="caauequ"> 
+            <div class="x-attachment caauequ" xid="div23" __cid="caauequ"> 
+              <div class="x-attachment-content x-card-border caauequ" xid="div24" __cid="caauequ"> 
+                <div class="x-doc-process caauequ" xid="div25" __cid="caauequ"> 
+                  <div class="progress-bar x-doc-process-bar caauequ" role="progressbar" style="width:0%;" xid="progressBar3" __cid="caauequ"/> 
+                </div>  
+                <div data-bind="foreach:$attachmentItems" xid="div26" __cid="caauequ" class="caauequ"> 
+                  <div class="x-attachment-cell caauequ" xid="div27" __cid="caauequ"> 
+                    <div class="x-attachment-item x-item-other caauequ" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div28" __cid="caauequ"> 
+                      <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget caauequ" xid="a3" __cid="caauequ"/> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div class="x-attachment-cell caauequ" data-bind="visible:$state.get() == 'upload'" xid="div29" __cid="caauequ"> 
+                  <div class="x-attachment-item x-item-upload caauequ" data-bind="visible:$state.get() == 'upload'" xid="div30" __cid="caauequ"/> 
+                </div>  
+                <div class="x-attachment-cell caauequ" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div31" __cid="caauequ"> 
+                  <div class="x-attachment-item x-item-remove caauequ" data-bind="click:changeState.bind($object,'remove')" xid="div32" __cid="caauequ"/> 
+                </div>  
+                <div style="clear:both;" xid="div33" __cid="caauequ" class="caauequ"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row caauequ" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caauequ"> 
+        <div class="x-col caauequ" xid="col15" __cid="caauequ"/>  
+        <div class="x-col x-col-center center-block caauequ" xid="col16" style="text-align:center;" __cid="caauequ"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-lg caauequ" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="caauequ"> 
+            <i xid="i1" __cid="caauequ" class="caauequ"/>  
+            <span xid="span1" __cid="caauequ" class="caauequ">提交</span> 
+          </a> 
+        </div>  
+        <div class="x-col caauequ" xid="col17" __cid="caauequ"/> 
+      </div> 
+    </div>  
+    <style __cid="caauequ" class="caauequ">.x-panel.pd8847059e0c54af799ef257871e512c9-iosstatusbar &gt;.x-panel-top {height: 60px;}.x-panel.pd8847059e0c54af799ef257871e512c9-iosstatusbar &gt;.x-panel-content { top: 60px;bottom: nullpx;}.x-panel.pd8847059e0c54af799ef257871e512c9-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pd8847059e0c54af799ef257871e512c9-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pd8847059e0c54af799ef257871e512c9-iosstatusbar &gt;.x-panel-top {height: 80px;}.iosstatusbar .x-panel.pd8847059e0c54af799ef257871e512c9-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pd8847059e0c54af799ef257871e512c9-iosstatusbar &gt;.x-panel-content { top: 80px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pd8847059e0c54af799ef257871e512c9-iosstatusbar &gt;.x-panel-top {height: 60px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pd8847059e0c54af799ef257871e512c9-iosstatusbar &gt;.x-panel-content {top: 60px;}</style>
+  </div> 
+</div>

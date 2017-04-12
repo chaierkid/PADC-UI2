@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cbqEJb2" class="cbqEJb2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.col-xs-4.cbqEJb2{padding-left: 10px; padding-right: 10px} .x-titlebar.cbqEJb2{background-color: rgb(23, 1, 83)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cbqEJb2" class="cbqEJb2"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card pc6viQNj-iosstatusbar cbqEJb2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cbqEJb2"> 
+    <div class="x-panel-top cbqEJb2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbqEJb2"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cbqEJb2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;工作建议&quot;}" __cid="cbqEJb2"> 
+        <div class="x-titlebar-left cbqEJb2" __cid="cbqEJb2"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cbqEJb2" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cbqEJb2"> 
+            <i class="icon-chevron-left cbqEJb2" __cid="cbqEJb2"/>  
+            <span __cid="cbqEJb2" class="cbqEJb2"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cbqEJb2" __cid="cbqEJb2">工作建议</div>  
+        <div class="x-titlebar-right  cbqEJb2" __cid="cbqEJb2">
+          <div class="empty cbqEJb2" __cid="cbqEJb2"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-cards cbqEJb2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbqEJb2"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cbqEJb2" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;image&quot;,&quot;disableInfiniteLoad&quot;:true,&quot;disablePullToRefresh&quot;:true,&quot;limit&quot;:20}" __cid="cbqEJb2"> 
+        <ul class="x-list-template hide cbqEJb2" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cbqEJb2"> 
+          <li class="col-xs-4 cbqEJb2" __cid="cbqEJb2"> 
+            <div class="thumbnail cbqEJb2" style="height:70px;" __cid="cbqEJb2"> 
+              <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple1" style="height:100%;width:100%;" data-bind="component:{ref:ref(&quot;fAttachment&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="cbqEJb2" class="cbqEJb2"> 
+                <div class="x-attachment cbqEJb2" xid="div1" __cid="cbqEJb2"> 
+                  <div class="x-attachment-content x-card-border cbqEJb2" style="border-style:dashed dashed dashed dashed;border-width:0px 0px 0px 0px;" xid="div2" __cid="cbqEJb2"> 
+                    <div class="x-doc-process cbqEJb2" xid="div3" __cid="cbqEJb2"> 
+                      <div class="progress-bar x-doc-process-bar cbqEJb2" role="progressbar" style="width:0%;" xid="progressBar1" __cid="cbqEJb2"/> 
+                    </div>  
+                    <div data-bind="foreach:$attachmentItems" xid="div4" __cid="cbqEJb2" class="cbqEJb2"> 
+                      <div class="x-attachment-cell cbqEJb2" xid="div5" __cid="cbqEJb2"> 
+                        <div class="x-attachment-item x-item-other cbqEJb2" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div6" __cid="cbqEJb2"> 
+                          <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cbqEJb2" xid="a1" __cid="cbqEJb2"/> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-attachment-cell cbqEJb2" data-bind="visible:$state.get() == 'upload'" xid="div7" __cid="cbqEJb2"> 
+                      <div class="x-attachment-item x-item-upload cbqEJb2" style="margin: 0 !important;width: 0 !important;height: 0 !important;" data-bind="visible:$state.get() == 'upload'" xid="div8" __cid="cbqEJb2"/> 
+                    </div>  
+                    <div class="x-attachment-cell cbqEJb2" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div9" __cid="cbqEJb2"> 
+                      <div class="x-attachment-item x-item-remove cbqEJb2" style="margin: 0 !important;width: 0 !important;height: 0 !important;" data-bind="click:changeState.bind($object,'remove')" xid="div10" __cid="cbqEJb2"/> 
+                    </div>  
+                    <div style="clear:both;" xid="div11" __cid="cbqEJb2" class="cbqEJb2"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cbqEJb2" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbqEJb2"> 
+        <div class="x-col cbqEJb2" xid="col4" __cid="cbqEJb2">
+          <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple2" bind-click="attachmentSimple2Click" data-bind="component:{ref:$model.data1.ref(&quot;fattach&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="cbqEJb2" class="cbqEJb2"> 
+            <div class="x-attachment cbqEJb2" xid="div12" __cid="cbqEJb2"> 
+              <div class="x-attachment-content x-card-border cbqEJb2" xid="div13" __cid="cbqEJb2"> 
+                <div class="x-doc-process cbqEJb2" xid="div14" __cid="cbqEJb2"> 
+                  <div class="progress-bar x-doc-process-bar cbqEJb2" role="progressbar" style="width:0%;" xid="progressBar2" __cid="cbqEJb2"/>
+                </div>  
+                <div data-bind="foreach:$attachmentItems" xid="div15" __cid="cbqEJb2" class="cbqEJb2"> 
+                  <div class="x-attachment-cell cbqEJb2" xid="div16" __cid="cbqEJb2"> 
+                    <div class="x-attachment-item x-item-other cbqEJb2" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div17" __cid="cbqEJb2"> 
+                      <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cbqEJb2" xid="a2" __cid="cbqEJb2"/>
+                    </div> 
+                  </div> 
+                </div>  
+                <div class="x-attachment-cell cbqEJb2" data-bind="visible:$state.get() == 'upload'" xid="div18" __cid="cbqEJb2"> 
+                  <div class="x-attachment-item x-item-upload cbqEJb2" data-bind="visible:$state.get() == 'upload'" xid="div19" __cid="cbqEJb2"/>
+                </div>  
+                <div class="x-attachment-cell cbqEJb2" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div20" __cid="cbqEJb2"> 
+                  <div class="x-attachment-item x-item-remove cbqEJb2" data-bind="click:changeState.bind($object,'remove')" xid="div21" __cid="cbqEJb2"/>
+                </div>  
+                <div style="clear:both;" xid="div22" __cid="cbqEJb2" class="cbqEJb2"/>
+              </div> 
+            </div> 
+          </div>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cbqEJb2" class="cbqEJb2">.x-panel.pc6viQNj-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc6viQNj-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc6viQNj-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc6viQNj-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6viQNj-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc6viQNj-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6viQNj-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6viQNj-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6viQNj-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" component="$model/UI2/system/components/justep/window/window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cuIrMjm" class="cuIrMjm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cuIrMjm" class="cuIrMjm"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc91c716b05964e3f89888a7da8543d45-iosstatusbar cuIrMjm" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuIrMjm"> 
+    <div class="x-panel-top cuIrMjm" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuIrMjm"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cuIrMjm" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;轮播图片&quot;}" __cid="cuIrMjm"> 
+        <div class="x-titlebar-left cuIrMjm" __cid="cuIrMjm"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cuIrMjm" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cuIrMjm"> 
+            <i class="icon-chevron-left cuIrMjm" __cid="cuIrMjm"/>  
+            <span __cid="cuIrMjm" class="cuIrMjm"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cuIrMjm" __cid="cuIrMjm">轮播图片</div>  
+        <div class="x-titlebar-right  cuIrMjm" __cid="cuIrMjm">
+          <div class="empty cuIrMjm" __cid="cuIrMjm"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cuIrMjm" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuIrMjm"> 
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cuIrMjm" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;4&quot;}" __cid="cuIrMjm"> 
+        <div class="x-control-group-title cuIrMjm" xid="controlGroupTitle1" __cid="cuIrMjm"> 
+          <span xid="span1" __cid="cuIrMjm" class="cuIrMjm">4</span> 
+        </div>  
+        <span __cid="cuIrMjm" class="cuIrMjm">2014-12-23</span> 
+      </div> 
+    </div>  
+    <style __cid="cuIrMjm" class="cuIrMjm">.x-panel.pc91c716b05964e3f89888a7da8543d45-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc91c716b05964e3f89888a7da8543d45-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc91c716b05964e3f89888a7da8543d45-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc91c716b05964e3f89888a7da8543d45-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc91c716b05964e3f89888a7da8543d45-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc91c716b05964e3f89888a7da8543d45-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc91c716b05964e3f89888a7da8543d45-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc91c716b05964e3f89888a7da8543d45-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc91c716b05964e3f89888a7da8543d45-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

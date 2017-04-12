@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cvMnuee" class="cvMnuee" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cvMnuee" class="cvMnuee"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver" style="left:40px;top:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiverReceive" __cid="cvMnuee" class="cvMnuee"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p1ed3678dd0ec4bf0bed790e5a1a2a5d0-iosstatusbar cvMnuee" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cvMnuee"> 
+    <div class="x-panel-top cvMnuee" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cvMnuee"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cvMnuee" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;行业资讯&quot;}" __cid="cvMnuee"> 
+        <div class="x-titlebar-left cvMnuee" __cid="cvMnuee"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cvMnuee" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'windowReceiver.windowCancel'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cvMnuee"> 
+            <i class="icon-chevron-left cvMnuee" __cid="cvMnuee"/>  
+            <span __cid="cvMnuee" class="cvMnuee"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cvMnuee" __cid="cvMnuee">行业资讯</div>  
+        <div class="x-titlebar-right  cvMnuee" __cid="cvMnuee"> 
+          <div class="empty cvMnuee" __cid="cvMnuee"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cvMnuee" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cvMnuee"> 
+      <div class="x-control-group cvMnuee" xid="controlGroup1" __cid="cvMnuee"> 
+        <div class="x-control-group-title cvMnuee" xid="controlGroupTitle1" __cid="cvMnuee"> 
+          <span xid="span1" __cid="cvMnuee" class="cvMnuee" data-bind="text:data.val('title')"/> 
+        </div>  
+        <span __cid="cvMnuee" class="cvMnuee" data-bind="text:data.val('wDate')"/>  
+        <div __cid="cvMnuee" class="cvMnuee" data-bind="foreach:data.datas"> 
+          <p __cid="cvMnuee" class="cvMnuee" data-bind="text:val('content')"/> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cvMnuee" class="cvMnuee">.x-panel.p1ed3678dd0ec4bf0bed790e5a1a2a5d0-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p1ed3678dd0ec4bf0bed790e5a1a2a5d0-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p1ed3678dd0ec4bf0bed790e5a1a2a5d0-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p1ed3678dd0ec4bf0bed790e5a1a2a5d0-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p1ed3678dd0ec4bf0bed790e5a1a2a5d0-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p1ed3678dd0ec4bf0bed790e5a1a2a5d0-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p1ed3678dd0ec4bf0bed790e5a1a2a5d0-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p1ed3678dd0ec4bf0bed790e5a1a2a5d0-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p1ed3678dd0ec4bf0bed790e5a1a2a5d0-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

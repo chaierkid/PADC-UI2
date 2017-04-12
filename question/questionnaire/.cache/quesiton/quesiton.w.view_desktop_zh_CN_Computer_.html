@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c7Jr2Uf" class="c7Jr2Uf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.c7Jr2Uf{color: rgb(33, 33, 33)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c7Jr2Uf" class="c7Jr2Uf"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pea99281f73c4495f9bf6b99b0d7a78a3-iosstatusbar c7Jr2Uf" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c7Jr2Uf"> 
+    <div class="x-panel-top c7Jr2Uf" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Jr2Uf"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c7Jr2Uf" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;调查问卷&quot;}" __cid="c7Jr2Uf"> 
+        <div class="x-titlebar-left c7Jr2Uf" __cid="c7Jr2Uf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Jr2Uf" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="c7Jr2Uf"> 
+            <i class="icon-chevron-left c7Jr2Uf" __cid="c7Jr2Uf"/>  
+            <span __cid="c7Jr2Uf" class="c7Jr2Uf"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c7Jr2Uf" __cid="c7Jr2Uf">调查问卷</div>  
+        <div class="x-titlebar-right  c7Jr2Uf" __cid="c7Jr2Uf"> 
+          <div class="empty c7Jr2Uf" __cid="c7Jr2Uf"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c7Jr2Uf" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Jr2Uf"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list c7Jr2Uf" xid="list1" style="width:100%;height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;,&quot;disableInfiniteLoad&quot;:false,&quot;disablePullToRefresh&quot;:false}" __cid="c7Jr2Uf"> 
+        <ul class="x-list-template hide c7Jr2Uf" xid="listTemplateUl1" style="height:70px;" __cid="c7Jr2Uf" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li class="list-group-item c7Jr2Uf" style="height:100%;" __cid="c7Jr2Uf" data-bind="event:{click:$model._callModelFn.bind($model, 'open')}"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-only-icon pull-right c7Jr2Uf" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c7Jr2Uf"> 
+              <i xid="i1" class="icon-ios7-arrow-right text-muted c7Jr2Uf" __cid="c7Jr2Uf"/>  
+              <span xid="span1" __cid="c7Jr2Uf" class="c7Jr2Uf"/> 
+            </a>  
+            <h5 class="text-black c7Jr2Uf" style="font-size:large;" __cid="c7Jr2Uf" data-bind="text:ref('title')"/> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <style __cid="c7Jr2Uf" class="c7Jr2Uf">.x-panel.pea99281f73c4495f9bf6b99b0d7a78a3-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pea99281f73c4495f9bf6b99b0d7a78a3-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pea99281f73c4495f9bf6b99b0d7a78a3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pea99281f73c4495f9bf6b99b0d7a78a3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pea99281f73c4495f9bf6b99b0d7a78a3-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pea99281f73c4495f9bf6b99b0d7a78a3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pea99281f73c4495f9bf6b99b0d7a78a3-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pea99281f73c4495f9bf6b99b0d7a78a3-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pea99281f73c4495f9bf6b99b0d7a78a3-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

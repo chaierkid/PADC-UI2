@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czay2ey" class="czay2ey" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.czay2ey{color: rgb(33, 33, 33)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="czay2ey" class="czay2ey"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p2b1f4e9fbd4c4cae8d7cd691e9d3aaeb-iosstatusbar czay2ey" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czay2ey"> 
+    <div class="x-panel-top czay2ey" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czay2ey"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar czay2ey" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;安保调查列表&quot;}" __cid="czay2ey"> 
+        <div class="x-titlebar-left czay2ey" __cid="czay2ey"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czay2ey" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="czay2ey"> 
+            <i class="icon-chevron-left czay2ey" __cid="czay2ey"/>  
+            <span __cid="czay2ey" class="czay2ey"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title czay2ey" __cid="czay2ey">安保调查列表</div>  
+        <div class="x-titlebar-right  czay2ey" __cid="czay2ey"> 
+          <div class="empty czay2ey" __cid="czay2ey"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content czay2ey" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czay2ey"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list czay2ey" xid="list1" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;,&quot;disableInfiniteLoad&quot;:false,&quot;disablePullToRefresh&quot;:false}" __cid="czay2ey"> 
+        <ul class="x-list-template hide czay2ey" xid="listTemplateUl1" style="height:70px;" __cid="czay2ey" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li class="list-group-item czay2ey" style="height:100%;width:100%;" __cid="czay2ey" data-bind="event:{click:$model._callModelFn.bind($model, 'open')}"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-only-icon pull-right czay2ey" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="czay2ey"> 
+              <i xid="i1" class="icon-ios7-arrow-right text-muted czay2ey" __cid="czay2ey"/>  
+              <span xid="span1" __cid="czay2ey" class="czay2ey"/> 
+            </a>  
+            <h5 class="text-black czay2ey" style="font-size:large;" __cid="czay2ey" data-bind="text:ref('title')"/> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <style __cid="czay2ey" class="czay2ey">.x-panel.p2b1f4e9fbd4c4cae8d7cd691e9d3aaeb-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p2b1f4e9fbd4c4cae8d7cd691e9d3aaeb-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p2b1f4e9fbd4c4cae8d7cd691e9d3aaeb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p2b1f4e9fbd4c4cae8d7cd691e9d3aaeb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p2b1f4e9fbd4c4cae8d7cd691e9d3aaeb-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p2b1f4e9fbd4c4cae8d7cd691e9d3aaeb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p2b1f4e9fbd4c4cae8d7cd691e9d3aaeb-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p2b1f4e9fbd4c4cae8d7cd691e9d3aaeb-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p2b1f4e9fbd4c4cae8d7cd691e9d3aaeb-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmmeaiy" class="cmmeaiy" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.cmmeaiy{color: rgb(33, 33, 33)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cmmeaiy" class="cmmeaiy"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pf95973048729486198d5300322851018-iosstatusbar cmmeaiy" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmmeaiy"> 
+    <div class="x-panel-top cmmeaiy" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:60}" __cid="cmmeaiy"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cmmeaiy" style="height:100%;font-size:x-large;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;力量防控列表&quot;}" __cid="cmmeaiy"> 
+        <div class="x-titlebar-left cmmeaiy" __cid="cmmeaiy"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cmmeaiy" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cmmeaiy"> 
+            <i class="icon-chevron-left cmmeaiy" __cid="cmmeaiy"/>  
+            <span __cid="cmmeaiy" class="cmmeaiy"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cmmeaiy" __cid="cmmeaiy">力量防控列表</div>  
+        <div class="x-titlebar-right  cmmeaiy" __cid="cmmeaiy"> 
+          <div class="empty cmmeaiy" __cid="cmmeaiy"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cmmeaiy" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmmeaiy"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pa87d72f78ddc42209dfa7dc061bb8605-iosstatusbar cmmeaiy" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmmeaiy"> 
+        <div class="x-panel-top cmmeaiy" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:120}" __cid="cmmeaiy"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cmmeaiy" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmmeaiy"> 
+            <div class="x-col  cmmeaiy" xid="col19" style="vertical-align:middle;height:30px;" __cid="cmmeaiy"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-left cmmeaiy" xid="button1" style="padding-top:5px;height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;,&quot;label&quot;:&quot;新建问卷&quot;}" __cid="cmmeaiy"> 
+                <i xid="i2" class="icon-android-add cmmeaiy" __cid="cmmeaiy"/>  
+                <span xid="span2" __cid="cmmeaiy" class="cmmeaiy">新建问卷</span> 
+              </a> 
+            </div>  
+            <div class="x-col  cmmeaiy" xid="col17" style="vertical-align:middle;height:30px;" __cid="cmmeaiy"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-left pull-right cmmeaiy" xid="button4" style="padding-top:5px;height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;icon&quot;:&quot;icon-android-search&quot;,&quot;label&quot;:&quot;查询&quot;}" __cid="cmmeaiy"> 
+                <i xid="i4" class="icon-android-search cmmeaiy" __cid="cmmeaiy"/>  
+                <span xid="span5" __cid="cmmeaiy" class="cmmeaiy">查询</span> 
+              </a> 
+            </div>  
+            <div class="x-col  cmmeaiy" xid="col18" style="vertical-align:middle;height:30px;" __cid="cmmeaiy"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-left cmmeaiy" xid="button8" style="padding-top:5px;height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button8Click" data-config="{&quot;icon&quot;:&quot;icon-ios7-reload&quot;,&quot;label&quot;:&quot;清空&quot;}" __cid="cmmeaiy"> 
+                <i xid="i8" class="icon-ios7-reload cmmeaiy" __cid="cmmeaiy"/>  
+                <span xid="span8" __cid="cmmeaiy" class="cmmeaiy">清空</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cmmeaiy" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmmeaiy"> 
+            <div class="x-col x-col-33 cmmeaiy" xid="col10" __cid="cmmeaiy"> 
+              <select component="$model/UI2/system/components/justep/select/select" class="form-control cmmeaiy" xid="select1" style="height:30px;" data-bind="component:{ref:$model.data1.ref(&quot;type&quot;),name:'$model/UI2/system/components/justep/select/select'},options:data2.datas,optionsValue:'name',optionsText:'id',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-events="onChange:select1Change" __cid="cmmeaiy"/> 
+            </div>  
+            <div class="x-col cmmeaiy" xid="col11" __cid="cmmeaiy"> 
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control cmmeaiy" xid="name" style="height:30px;" data-bind="component:{ref:$model.data1.ref(&quot;name&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cmmeaiy"/>  
+              <select component="$model/UI2/system/components/justep/select/select" class="form-control cmmeaiy" xid="area" style="display:none;height:30px;" data-bind="component:{ref:$model.data1.ref(&quot;area&quot;),name:'$model/UI2/system/components/justep/select/select'},options:data3.datas,optionsValue:'name',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cmmeaiy"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control cmmeaiy" xid="date" style="display:none;height:30px;" data-bind="component:{ref:$model.data1.ref(&quot;time&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cmmeaiy"/>  
+              <select component="$model/UI2/system/components/justep/select/select" class="form-control cmmeaiy" xid="status" style="display:none;height:30px;" data-bind="component:{ref:$model.data1.ref(&quot;status&quot;),name:'$model/UI2/system/components/justep/select/select'},options:data4.datas,optionsValue:'id',optionsText:'name',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cmmeaiy"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cmmeaiy" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmmeaiy"> 
+            <div class="x-col  cmmeaiy" xid="col20" __cid="cmmeaiy"> 
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output cmmeaiy" xid="output7" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cmmeaiy"/> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-content cmmeaiy" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmmeaiy"> 
+          <div class="x-list x-inner-scroll cmmeaiy" component="$model/UI2/system/components/justep/list/list" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:false,&quot;data&quot;:&quot;baasData1&quot;,&quot;limit&quot;:20}" __cid="cmmeaiy"> 
+            <div class="x-list-head cmmeaiy" __cid="cmmeaiy"/>  
+            <div class="x-list-content x-scroll-view cmmeaiy" __cid="cmmeaiy"> 
+              <div component="$model/UI2/system/components/justep/scrollView/scrollView" supportPullToRefresh="true" supportInfiniteLoad="true" class="x-scroll cmmeaiy" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;bounce&quot;:true,&quot;hScroll&quot;:false,&quot;hScrollbar&quot;:false,&quot;vScroll&quot;:true,&quot;vScrollbar&quot;:true}" __cid="cmmeaiy"> 
+                <div class="x-content-center x-pull-down container cmmeaiy" __cid="cmmeaiy"> 
+                  <i class="x-pull-down-img glyphicon x-icon-pull-down cmmeaiy" __cid="cmmeaiy"/>  
+                  <span class="x-pull-down-label cmmeaiy" __cid="cmmeaiy">下拉刷新...</span> 
+                </div>  
+                <div class="x-scroll-content cmmeaiy" __cid="cmmeaiy"> 
+                  <ul class="x-list-template hide cmmeaiy" __cid="cmmeaiy" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                    <li class="list-group-item cmmeaiy" style="font-size:large;" __cid="cmmeaiy" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
+                      <div class="x-row x-row-center cmmeaiy" component="$model/UI2/system/components/justep/row/row" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmmeaiy"> 
+                        <div class="x-col x-col-33 x-col-center cmmeaiy" style="vertical-align:middle;text-align:left;" __cid="cmmeaiy"> 
+                          <label xid="label1" style="font-weight:normal;" __cid="cmmeaiy" class="cmmeaiy">区县名称：</label> 
+                        </div>  
+                        <div class="x-col x-col-center cmmeaiy" xid="col1" __cid="cmmeaiy"> 
+                          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output1" style="font-weight:bold;" data-bind="component:{ref:ref(&quot;fArea&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmmeaiy" class="cmmeaiy"/> 
+                        </div> 
+                      </div>  
+                      <div class="x-row x-row-center cmmeaiy" component="$model/UI2/system/components/justep/row/row" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmmeaiy"> 
+                        <div class="x-col x-col-33 x-col-center cmmeaiy" xid="col8" __cid="cmmeaiy"> 
+                          <label xid="label6" style="font-weight:normal;" __cid="cmmeaiy" class="cmmeaiy">点位名称：</label> 
+                        </div>  
+                        <div class="x-col cmmeaiy" xid="col9" style="font-weight:bold;" __cid="cmmeaiy"> 
+                          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output6" data-bind="component:{ref:ref(&quot;fStreet&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmmeaiy" class="cmmeaiy"/> 
+                        </div> 
+                      </div>  
+                      <div class="x-row x-row-center cmmeaiy" component="$model/UI2/system/components/justep/row/row" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmmeaiy"> 
+                        <div class="x-col x-col-33 x-col-center cmmeaiy" style="vertical-align:middle;text-align:left;" xid="col7" __cid="cmmeaiy"> 
+                          <label xid="label3" style="font-weight:normal;" __cid="cmmeaiy" class="cmmeaiy">访员：</label> 
+                        </div>  
+                        <div class="x-col x-col-center cmmeaiy" xid="col6" __cid="cmmeaiy"> 
+                          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output3" style="font-weight:bold;" data-bind="component:{ref:ref(&quot;fCreator&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmmeaiy" class="cmmeaiy"/> 
+                        </div> 
+                      </div>  
+                      <div class="x-row x-row-center cmmeaiy" component="$model/UI2/system/components/justep/row/row" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmmeaiy"> 
+                        <div class="x-col x-col-33 x-col-center cmmeaiy" xid="col14" __cid="cmmeaiy"> 
+                          <label xid="label7" style="font-weight:normal;" __cid="cmmeaiy" class="cmmeaiy">填报时间：</label> 
+                        </div>  
+                        <div class="x-col cmmeaiy" xid="col15" style="font-weight:bold;" __cid="cmmeaiy"> 
+                          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output8" data-bind="component:{ref:ref(&quot;fCreateDate&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmmeaiy" class="cmmeaiy"/> 
+                        </div> 
+                      </div>  
+                      <div class="x-row x-row-center cmmeaiy" component="$model/UI2/system/components/justep/row/row" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmmeaiy"> 
+                        <div class="x-col x-col-20 x-col-center cmmeaiy" xid="col3" __cid="cmmeaiy"> 
+                          <label xid="label2" style="font-weight:normal;" __cid="cmmeaiy" class="cmmeaiy">状态：</label> 
+                        </div>  
+                        <div class="x-col cmmeaiy" xid="col2" style="font-weight:bold;font-size:small;" __cid="cmmeaiy"> 
+                          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output2" data-bind="component:{ref:ref(&quot;fStatus2&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmmeaiy" class="cmmeaiy"/> 
+                        </div>  
+                        <div class="x-col cmmeaiy" xid="col4" style="font-weight:bold;font-size:small;" __cid="cmmeaiy"> 
+                          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output4" data-bind="component:{ref:ref(&quot;fStatus&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmmeaiy" class="cmmeaiy"/> 
+                        </div>  
+                        <div class="x-col cmmeaiy" xid="col5" style="font-weight:bold;font-size:small;" __cid="cmmeaiy"> 
+                          <span component="$model/UI2/system/components/justep/output/output" data="taskData" xid="output5" data-bind="component:{ref:ref(&quot;fStatus3&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmmeaiy" class="cmmeaiy"/> 
+                        </div> 
+                      </div> 
+                    </li> 
+                  </ul> 
+                </div>  
+                <div class="x-content-center x-pull-up cmmeaiy" __cid="cmmeaiy"> 
+                  <span class="x-pull-up-label cmmeaiy" __cid="cmmeaiy">加载更多...</span> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cmmeaiy" class="cmmeaiy">.x-panel.pa87d72f78ddc42209dfa7dc061bb8605-iosstatusbar &gt;.x-panel-top {height: 120px;}.x-panel.pa87d72f78ddc42209dfa7dc061bb8605-iosstatusbar &gt;.x-panel-content { top: 120px;bottom: nullpx;}.x-panel.pa87d72f78ddc42209dfa7dc061bb8605-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pa87d72f78ddc42209dfa7dc061bb8605-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pa87d72f78ddc42209dfa7dc061bb8605-iosstatusbar &gt;.x-panel-top {height: 140px;}.iosstatusbar .x-panel.pa87d72f78ddc42209dfa7dc061bb8605-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pa87d72f78ddc42209dfa7dc061bb8605-iosstatusbar &gt;.x-panel-content { top: 140px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pa87d72f78ddc42209dfa7dc061bb8605-iosstatusbar &gt;.x-panel-top {height: 120px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pa87d72f78ddc42209dfa7dc061bb8605-iosstatusbar &gt;.x-panel-content {top: 120px;}</style> 
+      </div> 
+    </div>  
+    <style __cid="cmmeaiy" class="cmmeaiy">.x-panel.pf95973048729486198d5300322851018-iosstatusbar &gt;.x-panel-top {height: 60px;}.x-panel.pf95973048729486198d5300322851018-iosstatusbar &gt;.x-panel-content { top: 60px;bottom: nullpx;}.x-panel.pf95973048729486198d5300322851018-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pf95973048729486198d5300322851018-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pf95973048729486198d5300322851018-iosstatusbar &gt;.x-panel-top {height: 80px;}.iosstatusbar .x-panel.pf95973048729486198d5300322851018-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pf95973048729486198d5300322851018-iosstatusbar &gt;.x-panel-content { top: 80px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pf95973048729486198d5300322851018-iosstatusbar &gt;.x-panel-top {height: 60px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pf95973048729486198d5300322851018-iosstatusbar &gt;.x-panel-content {top: 60px;}</style> 
+  </div> 
+</div>

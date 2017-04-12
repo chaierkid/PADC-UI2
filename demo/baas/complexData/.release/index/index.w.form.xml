@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window demo-simpleData cqmiiem" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqmiiem" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/button/buttonGroup,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cqmiiem" class="cqmiiem"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p8674ff6cdebe45669614baa6a8dc4e1b-iosstatusbar cqmiiem" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqmiiem"> 
+    <div class="x-panel-top cqmiiem" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqmiiem"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cqmiiem" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;复合数据&quot;}" __cid="cqmiiem"> 
+        <div class="x-titlebar-left cqmiiem" xid="div1" __cid="cqmiiem"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cqmiiem" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cqmiiem"> 
+            <i xid="i9" __cid="cqmiiem" class="cqmiiem"/>  
+            <span xid="span9" __cid="cqmiiem" class="cqmiiem"/> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cqmiiem" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'userData.save'}" __cid="cqmiiem"> 
+            <i xid="i4" __cid="cqmiiem" class="cqmiiem"/>  
+            <span xid="span4" __cid="cqmiiem" class="cqmiiem"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cqmiiem" xid="div2" __cid="cqmiiem">复合数据</div>  
+        <div class="x-titlebar-right  cqmiiem" xid="div3" __cid="cqmiiem">
+          <div class="empty cqmiiem" __cid="cqmiiem"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cqmiiem" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'userData.new'}" data-config="{&quot;target&quot;:&quot;detailContent&quot;}" __cid="cqmiiem"> 
+            <i xid="i1" __cid="cqmiiem" class="cqmiiem"/>  
+            <span xid="span1" __cid="cqmiiem" class="cqmiiem"/> 
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cqmiiem" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqmiiem"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cqmiiem" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cqmiiem"> 
+        <div class="x-contents-content active cqmiiem" xid="listContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqmiiem"> 
+          <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel p63955a76b952445db418c26b0f58bb61-iosstatusbar cqmiiem" xid="panel2" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqmiiem"> 
+            <div class="x-panel-top cqmiiem" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:48}" __cid="cqmiiem"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cqmiiem" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqmiiem"> 
+                <div class="x-col cqmiiem" xid="col11" __cid="cqmiiem"> 
+                  <div class="input-group cqmiiem" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cqmiiem"> 
+                    <input type="text" class="form-control cqmiiem" component="$model/UI2/system/components/justep/input/input" xid="searchInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-events="onChange:{operation:'userData.refresh'}" __cid="cqmiiem"/>  
+                    <div class="input-group-btn cqmiiem" xid="div4" __cid="cqmiiem"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-icon cqmiiem" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'userData.refresh'}" data-config="{&quot;icon&quot;:&quot;icon-android-search&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqmiiem"> 
+                        <i xid="i6" class="icon-android-search cqmiiem" __cid="cqmiiem"/>  
+                        <span xid="span10" __cid="cqmiiem" class="cqmiiem"/> 
+                      </a> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-panel-content cqmiiem" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqmiiem"> 
+              <div class="x-scroll cqmiiem" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cqmiiem"> 
+                <div class="x-content-center x-pull-down container cqmiiem" xid="div5" __cid="cqmiiem"> 
+                  <i class="x-pull-down-img glyphicon x-icon-pull-down cqmiiem" xid="i3" __cid="cqmiiem"/>  
+                  <span class="x-pull-down-label cqmiiem" xid="span3" __cid="cqmiiem">下拉刷新...</span> 
+                </div>  
+                <div class="x-scroll-content cqmiiem" xid="div6" __cid="cqmiiem"> 
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list cqmiiem" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;userData&quot;}" __cid="cqmiiem"> 
+                    <ul class="x-list-template hide cqmiiem" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cqmiiem"> 
+                      <li xid="li1" bind-css="{'bg-info' : $object == $model.userData.getCurrentRow()}" __cid="cqmiiem" class="cqmiiem"> 
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cqmiiem" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqmiiem"> 
+                          <div class="x-col x-col-67 cqmiiem" xid="col1" __cid="cqmiiem"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output text-primary cqmiiem" xid="output3" data-bind="component:{ref:ref('fID'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cqmiiem"/>
+                          </div>  
+                          <div class="x-col cqmiiem" xid="col2" __cid="cqmiiem"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output text-danger cqmiiem" xid="output1" bind-text="'订单数：' + val('orderCount')" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cqmiiem"/> 
+                          </div> 
+                        </div>  
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cqmiiem" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqmiiem"> 
+                          <div class="x-col x-col-67 cqmiiem" xid="col4" __cid="cqmiiem"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output cqmiiem" xid="output4" data-bind="component:{ref:ref('fName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cqmiiem"/> 
+                          </div>  
+                          <div class="x-col cqmiiem" xid="col5" __cid="cqmiiem"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output cqmiiem" xid="output5" data-bind="component:{ref:ref('fPhoneNumber'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cqmiiem"/> 
+                          </div> 
+                        </div>  
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cqmiiem" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqmiiem"> 
+                          <div class="x-col cqmiiem" xid="col14" __cid="cqmiiem"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output cqmiiem" xid="output2" data-bind="component:{ref:ref('fAddress'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cqmiiem"/>
+                          </div> 
+                        </div> 
+                      </li> 
+                    </ul> 
+                  </div> 
+                </div>  
+                <div class="x-content-center x-pull-up cqmiiem" xid="div7" __cid="cqmiiem"> 
+                  <span class="x-pull-up-label cqmiiem" xid="span5" __cid="cqmiiem">加载更多...</span> 
+                </div> 
+              </div> 
+            </div>  
+            <style __cid="cqmiiem" class="cqmiiem">.x-panel.p63955a76b952445db418c26b0f58bb61-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p63955a76b952445db418c26b0f58bb61-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p63955a76b952445db418c26b0f58bb61-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p63955a76b952445db418c26b0f58bb61-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p63955a76b952445db418c26b0f58bb61-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p63955a76b952445db418c26b0f58bb61-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p63955a76b952445db418c26b0f58bb61-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p63955a76b952445db418c26b0f58bb61-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p63955a76b952445db418c26b0f58bb61-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+          </div> 
+        </div>  
+        <div class="x-contents-content cqmiiem" xid="detailContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqmiiem"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cqmiiem" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqmiiem"> 
+            <div class="x-col cqmiiem" xid="col26" __cid="cqmiiem"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cqmiiem" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqmiiem"> 
+                <div class="x-col cqmiiem" xid="col29" __cid="cqmiiem"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cqmiiem" xid="labelInput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cqmiiem"> 
+                    <label class="x-label cqmiiem" xid="label6" __cid="cqmiiem">fID</label>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cqmiiem" xid="input1" data-bind="component:{ref:userData.ref('fID'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cqmiiem"/> 
+                  </div> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cqmiiem" xid="row14" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqmiiem"> 
+                <div class="x-col cqmiiem" xid="col38" __cid="cqmiiem"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cqmiiem" xid="labelInput3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cqmiiem"> 
+                    <label class="x-label cqmiiem" xid="label8" __cid="cqmiiem">fName</label>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cqmiiem" xid="input4" data-bind="component:{ref:userData.ref('fName'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cqmiiem"/> 
+                  </div> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cqmiiem" xid="row15" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqmiiem"> 
+                <div class="x-col cqmiiem" xid="col39" __cid="cqmiiem"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cqmiiem" xid="labelInput4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cqmiiem"> 
+                    <label class="x-label cqmiiem" xid="label9" __cid="cqmiiem">fPhoneNumber</label>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cqmiiem" xid="input5" data-bind="component:{ref:userData.ref('fPhoneNumber'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cqmiiem"/> 
+                  </div> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cqmiiem" xid="row16" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqmiiem"> 
+                <div class="x-col cqmiiem" xid="col40" __cid="cqmiiem"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cqmiiem" xid="labelInput5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cqmiiem"> 
+                    <label class="x-label cqmiiem" xid="label10" __cid="cqmiiem">fAddress</label>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cqmiiem" xid="input6" data-bind="component:{ref:userData.ref('fAddress'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cqmiiem"/> 
+                  </div> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cqmiiem" xid="row17" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqmiiem"> 
+                <div class="x-col cqmiiem" xid="col42" __cid="cqmiiem"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cqmiiem" xid="labelInput9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cqmiiem"> 
+                    <label class="x-label cqmiiem" xid="label12" __cid="cqmiiem">orderCount</label>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cqmiiem" xid="input10" data-bind="component:{ref:userData.ref('orderCount'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cqmiiem"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cqmiiem" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqmiiem"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cqmiiem" xid="buttonGroup1" style="height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;selected&quot;:&quot;listButton&quot;,&quot;tabbed&quot;:true}" __cid="cqmiiem"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cqmiiem" xid="listButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;列表&quot;,&quot;target&quot;:&quot;listContent&quot;}" __cid="cqmiiem"> 
+          <i xid="i5" __cid="cqmiiem" class="cqmiiem"/>  
+          <span xid="span6" __cid="cqmiiem" class="cqmiiem">列表</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cqmiiem" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;详细&quot;,&quot;target&quot;:&quot;detailContent&quot;}" __cid="cqmiiem"> 
+          <i xid="i7" __cid="cqmiiem" class="cqmiiem"/>  
+          <span xid="span7" __cid="cqmiiem" class="cqmiiem">详细</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cqmiiem" class="cqmiiem">.x-panel.p8674ff6cdebe45669614baa6a8dc4e1b-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p8674ff6cdebe45669614baa6a8dc4e1b-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p8674ff6cdebe45669614baa6a8dc4e1b-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p8674ff6cdebe45669614baa6a8dc4e1b-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p8674ff6cdebe45669614baa6a8dc4e1b-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p8674ff6cdebe45669614baa6a8dc4e1b-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p8674ff6cdebe45669614baa6a8dc4e1b-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p8674ff6cdebe45669614baa6a8dc4e1b-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p8674ff6cdebe45669614baa6a8dc4e1b-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

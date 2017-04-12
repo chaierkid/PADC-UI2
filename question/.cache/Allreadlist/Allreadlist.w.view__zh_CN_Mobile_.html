@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:mobile" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cFbEfMj" class="cFbEfMj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/button/buttonGroup,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cFbEfMj" class="cFbEfMj"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p531081758be64fa2b1702eea654d0a7b-iosstatusbar cFbEfMj" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cFbEfMj"> 
+    <div class="x-panel-top cFbEfMj" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFbEfMj"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cFbEfMj" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;调查列表&quot;}" __cid="cFbEfMj"> 
+        <div class="x-titlebar-left cFbEfMj" __cid="cFbEfMj"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cFbEfMj" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cFbEfMj"> 
+            <i class="icon-chevron-left cFbEfMj" __cid="cFbEfMj"/>  
+            <span __cid="cFbEfMj" class="cFbEfMj"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cFbEfMj" __cid="cFbEfMj">调查列表</div>  
+        <div class="x-titlebar-right  cFbEfMj" __cid="cFbEfMj"> 
+          <div class="empty cFbEfMj" __cid="cFbEfMj"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cFbEfMj" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFbEfMj"> 
+      <div xid="mainList" class="x-list cFbEfMj" component="$model/UI2/system/components/justep/list/list" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:false,&quot;data&quot;:&quot;mainData&quot;,&quot;limit&quot;:6}" __cid="cFbEfMj"> 
+        <div class="x-list-head cFbEfMj" __cid="cFbEfMj"/>  
+        <ul class="x-list-template hide cFbEfMj" __cid="cFbEfMj" data-bind="foreach:{data:$model.foreach_mainList($element),afterRender:$model.foreach_afterRender_mainList.bind($model,$element)}"> 
+          <li __cid="cFbEfMj" class="cFbEfMj"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center cFbEfMj" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFbEfMj"> 
+              <div class="x-col cFbEfMj" style="text-align: left;" __cid="cFbEfMj"> 
+                <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cFbEfMj" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{ref:ref('calcCheckBox'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cFbEfMj"> 
+                  <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cFbEfMj" class="cFbEfMj"></input>  
+                  <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cFbEfMj" class="cFbEfMj"></label> 
+                </span> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-col x-col-90 cFbEfMj" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},event:{click:$model._callModelFn.bind($model, 'row1Click')}" __cid="cFbEfMj"> 
+                <div class="x-row cFbEfMj" component="$model/UI2/system/components/justep/row/row" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFbEfMj"> 
+                  <div class="x-col cFbEfMj" __cid="cFbEfMj"> 
+                    <span class="font-bold x-output cFbEfMj" component="$model/UI2/system/components/justep/output/output" data="mainData" data-bind="component:{ref:ref('fHospitalCode'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cFbEfMj"/> 
+                  </div>  
+                  <div class="x-col cFbEfMj" xid="col5" __cid="cFbEfMj"> 
+                    <span class="font-bold x-output cFbEfMj" component="$model/UI2/system/components/justep/output/output" data="mainData" xid="output1" data-bind="component:{ref:ref('fHospitalName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cFbEfMj"/> 
+                  </div> 
+                </div>  
+                <div class="x-row cFbEfMj" component="$model/UI2/system/components/justep/row/row" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFbEfMj"> 
+                  <div class="x-col cFbEfMj" __cid="cFbEfMj"> 
+                    <span class="font-bold x-output cFbEfMj" component="$model/UI2/system/components/justep/output/output" data="mainData" data-bind="component:{ref:ref('fSurveydate'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cFbEfMj"/> 
+                  </div>  
+                  <div class="x-col cFbEfMj" xid="col6" __cid="cFbEfMj"> 
+                    <span class="font-bold x-output cFbEfMj" component="$model/UI2/system/components/justep/output/output" data="mainData" xid="output2" data-bind="component:{ref:ref('fUserName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cFbEfMj"/> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-col font-gray cFbEfMj" style="text-align: right" __cid="cFbEfMj" data-bind="event:{click:$model._callModelFn.bind($model, 'row2Click')}"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-only-icon cFbEfMj" xid="editBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cFbEfMj"> 
+                  <i class="icon-chevron-right cFbEfMj" __cid="cFbEfMj"/>  
+                  <span __cid="cFbEfMj" class="cFbEfMj"/> 
+                </a> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cFbEfMj" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFbEfMj"> 
+      <div class="btn-group-lg btn-group-justified cFbEfMj" component="$model/UI2/system/components/justep/button/buttonGroup" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" __cid="cFbEfMj"/>  
+      <div class="btn-group-lg btn-group-justified cFbEfMj" component="$model/UI2/system/components/justep/button/buttonGroup" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" __cid="cFbEfMj"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cFbEfMj" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okEditClick" __cid="cFbEfMj"> 
+          <i xid="i2" __cid="cFbEfMj" class="cFbEfMj"/>  
+          <span xid="span2" __cid="cFbEfMj" class="cFbEfMj">删除</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cFbEfMj" class="cFbEfMj">.x-panel.p531081758be64fa2b1702eea654d0a7b-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p531081758be64fa2b1702eea654d0a7b-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p531081758be64fa2b1702eea654d0a7b-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p531081758be64fa2b1702eea654d0a7b-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p531081758be64fa2b1702eea654d0a7b-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p531081758be64fa2b1702eea654d0a7b-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p531081758be64fa2b1702eea654d0a7b-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p531081758be64fa2b1702eea654d0a7b-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p531081758be64fa2b1702eea654d0a7b-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

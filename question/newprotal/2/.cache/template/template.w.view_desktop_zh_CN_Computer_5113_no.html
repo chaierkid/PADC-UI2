@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cRBBjQb" class="cRBBjQb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cRBBjQb" class="cRBBjQb"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver" style="left:40px;top:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiverReceive" __cid="cRBBjQb" class="cRBBjQb"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full paad3f3d1a2844b5b9677541960bd7164-iosstatusbar cRBBjQb" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRBBjQb"> 
+    <div class="x-panel-top cRBBjQb" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRBBjQb"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cRBBjQb" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;成功案例&quot;}" __cid="cRBBjQb"> 
+        <div class="x-titlebar-left cRBBjQb" __cid="cRBBjQb"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cRBBjQb" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'windowReceiver.windowCancel'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cRBBjQb"> 
+            <i class="icon-chevron-left cRBBjQb" __cid="cRBBjQb"/>  
+            <span __cid="cRBBjQb" class="cRBBjQb"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cRBBjQb" __cid="cRBBjQb">成功案例</div>  
+        <div class="x-titlebar-right  cRBBjQb" __cid="cRBBjQb"> 
+          <div class="empty cRBBjQb" __cid="cRBBjQb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cRBBjQb" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRBBjQb"> 
+      <div class="x-control-group cRBBjQb" xid="controlGroup1" __cid="cRBBjQb"> 
+        <div class="x-control-group-title cRBBjQb" xid="controlGroupTitle1" __cid="cRBBjQb"> 
+          <span xid="span1" __cid="cRBBjQb" class="cRBBjQb" data-bind="text:data.val('title')"/> 
+        </div>  
+        <span __cid="cRBBjQb" class="cRBBjQb" data-bind="text:data.val('wDate')"/>  
+        <div __cid="cRBBjQb" class="cRBBjQb" data-bind="foreach:data.datas"> 
+          <p __cid="cRBBjQb" class="cRBBjQb" data-bind="text:val('content')"/> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cRBBjQb" class="cRBBjQb">.x-panel.paad3f3d1a2844b5b9677541960bd7164-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.paad3f3d1a2844b5b9677541960bd7164-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.paad3f3d1a2844b5b9677541960bd7164-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.paad3f3d1a2844b5b9677541960bd7164-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.paad3f3d1a2844b5b9677541960bd7164-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.paad3f3d1a2844b5b9677541960bd7164-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.paad3f3d1a2844b5b9677541960bd7164-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.paad3f3d1a2844b5b9677541960bd7164-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.paad3f3d1a2844b5b9677541960bd7164-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

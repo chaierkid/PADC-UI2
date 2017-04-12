@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c3imEVb" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c3imEVb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/form/form,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">@import url($model/UI2/system/components/designerCommon/css/common.css); .form-horizontal.c3imEVb .form-group.c3imEVb{margin-left: 0px; margin-right: 0px} .template-output-control.c3imEVb{text-overflow: ellipsis; width: 360px; overflow: hidden}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c3imEVb" class="c3imEVb"></div>  
+  <div class="form-horizontal container-fluid  data-form scroll c3imEVb" component="$model/UI2/system/components/bootstrap/form/form" xid="form1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="c3imEVb">
+    <div component="$model/UI2/system/components/justep/panel/panel" xid="panel1" class="x-panel x-full p1e30135c905648978cda8d831020d639-iosstatusbar c3imEVb" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c3imEVb"> 
+      <div class="x-panel-content x-flex x-flex-column c3imEVb" xid="content1" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c3imEVb"> 
+        <div class="x-control-group c3imEVb" style="height:254px;" __cid="c3imEVb"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 c3imEVb" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3imEVb"> 
+            <label class="x-label c3imEVb" xid="label11" __cid="c3imEVb">服务URL</label>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c3imEVb" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:selectUrl" data-config="{&quot;label&quot;:&quot;...&quot;}" __cid="c3imEVb"> 
+              <i xid="i1" __cid="c3imEVb" class="c3imEVb"/>  
+              <span xid="span1" __cid="c3imEVb" class="c3imEVb">...</span>
+            </a>
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c3imEVb" xid="input2" bind-disable="$model.type!=='service'" data-bind="component:{ref:serviceURL,name:'$model/UI2/system/components/justep/input/input'}" __cid="c3imEVb"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 c3imEVb" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3imEVb"> 
+            <label class="x-label c3imEVb" xid="label19" __cid="c3imEVb">表</label>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c3imEVb" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:selectTable" data-config="{&quot;label&quot;:&quot;...&quot;}" __cid="c3imEVb"> 
+              <i xid="i2" __cid="c3imEVb" class="c3imEVb"/>  
+              <span xid="span2" __cid="c3imEVb" class="c3imEVb">...</span>
+            </a>
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c3imEVb" xid="input6" bind-disable="$model.type!=='service'" data-bind="component:{ref:table,name:'$model/UI2/system/components/justep/input/input'}" __cid="c3imEVb"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 c3imEVb" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3imEVb"> 
+            <label class="x-label c3imEVb" xid="label12" __cid="c3imEVb">QueryAction</label>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c3imEVb" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:selectQueryAction" data-config="{&quot;label&quot;:&quot;...&quot;}" __cid="c3imEVb"> 
+              <i xid="i1" __cid="c3imEVb" class="c3imEVb"/>  
+              <span xid="span1" __cid="c3imEVb" class="c3imEVb">...</span>
+            </a>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c3imEVb" xid="input3" bind-disable="$model.type!=='service'" data-bind="component:{ref:queryAction,name:'$model/UI2/system/components/justep/input/input'}" __cid="c3imEVb"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 c3imEVb" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3imEVb"> 
+            <label class="x-label c3imEVb" xid="label13" __cid="c3imEVb">SaveAction</label>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c3imEVb" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:selectSaveAction" data-config="{&quot;label&quot;:&quot;...&quot;}" __cid="c3imEVb"> 
+              <i xid="i1" __cid="c3imEVb" class="c3imEVb"/>  
+              <span xid="span1" __cid="c3imEVb" class="c3imEVb">...</span>
+            </a>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c3imEVb" xid="input4" data-bind="component:{ref:saveAction,name:'$model/UI2/system/components/justep/input/input'}" __cid="c3imEVb"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 c3imEVb" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3imEVb"> 
+            <label class="x-label c3imEVb" xid="label3" __cid="c3imEVb">baasDataXid</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c3imEVb" xid="xidIinput" data-bind="component:{ref:baasDataXid,name:'$model/UI2/system/components/justep/input/input'}" __cid="c3imEVb"/>
+          </div>
+        </div> 
+      </div>  
+      <style __cid="c3imEVb" class="c3imEVb">.x-panel.p1e30135c905648978cda8d831020d639-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.p1e30135c905648978cda8d831020d639-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p1e30135c905648978cda8d831020d639-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p1e30135c905648978cda8d831020d639-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p1e30135c905648978cda8d831020d639-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p1e30135c905648978cda8d831020d639-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p1e30135c905648978cda8d831020d639-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p1e30135c905648978cda8d831020d639-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p1e30135c905648978cda8d831020d639-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+    </div>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="selectBaasDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/system/templates/common/selectBaas.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;选择baas&quot;}" __cid="c3imEVb" class="c3imEVb">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay c3imEVb" __cid="c3imEVb"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog c3imEVb" style="display:none;" __cid="c3imEVb">
+      <xhtml:div class="x-dialog-title c3imEVb" __cid="c3imEVb">
+        <xhtml:button class="close c3imEVb" __cid="c3imEVb">
+          <xhtml:span __cid="c3imEVb" class="c3imEVb">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text c3imEVb" __cid="c3imEVb">选择baas</xhtml:div>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body c3imEVb" __cid="c3imEVb"/>
+    </xhtml:div>
+  </span>
+</div>

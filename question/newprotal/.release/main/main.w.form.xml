@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQFBb6n" class="cQFBb6n" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-bg-img.cQFBb6n{background: url($model/UI2/question/newprotal/img/bg2.jpg); background-size: 100% 100%} .grid92.cQFBb6n{width: 100%; max-width: 640px; min-width: 320px; margin: 0 auto} .grid92.cQFBb6n .grid.cQFBb6n{overflow: hidden !important; margin: 4.5% 0 0 3%} .grid.cQFBb6n .cell.cQFBb6n{float: left; width: 30.9%; margin: 0 2% 5% 0} .grid.cQFBb6n .cell.cQFBb6n .card.cQFBb6n{display: block; height: 5.71em; text-align: center} .grid.cQFBb6n .cell.cQFBb6n .card.cQFBb6n img.cQFBb6n{height: 2.65em; margin: 10% 0 4%; vertical-align: middle} .grid.cQFBb6n &gt; div.cQFBb6n:nth-child(1){background-color: rgb(29, 128, 144)} .grid.cQFBb6n &gt; div.cQFBb6n:nth-child(2){background-color: rgb(68, 129, 211)} .grid.cQFBb6n &gt; div.cQFBb6n:nth-child(3){background-color: rgb(145, 27, 151)} .grid.cQFBb6n &gt; div.cQFBb6n:nth-child(4){background-color: rgb(29, 146, 30)} .grid.cQFBb6n &gt; div.cQFBb6n:nth-child(5){background-color: rgb(196, 100, 70)} .grid.cQFBb6n &gt; div.cQFBb6n:nth-child(6){background-color: rgb(164, 53, 83)} .grid.cQFBb6n &gt; div.cQFBb6n:nth-child(7){background-color: rgb(129, 52, 168)} .grid.cQFBb6n &gt; div.cQFBb6n:nth-child(8){background-color: rgb(37, 89, 163)} .grid.cQFBb6n &gt; div.cQFBb6n:last-child{background: rgb(228, 226, 227); background: -webkit-linear-gradient(rgb(228, 226, 227) 0%, rgb(199, 198, 198) 100%)} .grid.cQFBb6n &gt; div.cQFBb6n:last-child span.cQFBb6n{color: rgb(97, 97, 97)} .grid.cQFBb6n .cell.cQFBb6n .card.cQFBb6n .title.cQFBb6n{display: inline-block; width: 100%; height: 1.38em; color: rgb(255, 255, 255); font-weight: bold; overflow: hidden} @media screen and (min-width: 320px) {*.grid92 { font-size: 18px } } @media screen and (min-width: 640px) {*.grid92 { font-size: 22px } }</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model1" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cQFBb6n" class="cQFBb6n"/>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p6571c06a172a4dbfa00c4f11a6151cd0-iosstatusbar cQFBb6n" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQFBb6n"> 
+    <div class="x-panel-top cQFBb6n" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQFBb6n"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cQFBb6n" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;首页&quot;}" __cid="cQFBb6n"> 
+        <div class="x-titlebar-left cQFBb6n" __cid="cQFBb6n"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cQFBb6n" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cQFBb6n"> 
+            <i class="icon-chevron-left cQFBb6n" __cid="cQFBb6n"/>  
+            <span __cid="cQFBb6n" class="cQFBb6n"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cQFBb6n" __cid="cQFBb6n">首页</div>  
+        <div class="x-titlebar-right  cQFBb6n" __cid="cQFBb6n">
+          <div class="empty cQFBb6n" __cid="cQFBb6n"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link  cQFBb6n" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;icon&quot;:&quot;icon-android-reminder&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cQFBb6n"> 
+            <i class="icon-android-reminder cQFBb6n" xid="i6" __cid="cQFBb6n"> 
+              <span class="badge cQFBb6n" xid="badge1" style="vertical-align:super;background-color:red;color:#FFFF80;font-family:Arial;" __cid="cQFBb6n">0</span> 
+            </i>  
+            <span xid="span19" __cid="cQFBb6n" class="cQFBb6n"/> 
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-bg-img cQFBb6n" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQFBb6n"> 
+      <div class="grid92 cQFBb6n" __cid="cQFBb6n"> 
+        <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel cQFBb6n" xid="carousel1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" __cid="cQFBb6n"> 
+          <ol class="carousel-indicators cQFBb6n" xid="ol1" __cid="cQFBb6n"/>  
+          <div class="x-contents carousel-inner cQFBb6n" role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="contents1" style="height:240px;" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:true}" __cid="cQFBb6n"> 
+            <div class="x-contents-content active cQFBb6n" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQFBb6n"> 
+              <img class="image-wall cQFBb6n" src="$model/UI2/question/newprotal/img/carouselBox21.jpg" url="./contents/content1.w" style="height:240px;" __cid="cQFBb6n"/> 
+            </div>  
+            <div class="x-contents-content cQFBb6n" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQFBb6n"> 
+              <img class="image-wall cQFBb6n" src="$model/UI2/question/newprotal/img/carouselBox21.jpg" bind-click="open" url="./contents/content1.w" style="height:240px;" __cid="cQFBb6n"/> 
+            </div>  
+            <div class="x-contents-content cQFBb6n" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQFBb6n"> 
+              <img class="image-wall cQFBb6n" src="$model/UI2/question/newprotal/img/carouselBox21.jpg" bind-click="open" url="./contents/content1.w" style="height:240px;" __cid="cQFBb6n"/> 
+            </div>  
+            <div class="x-contents-content cQFBb6n" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQFBb6n"> 
+              <img class="image-wall cQFBb6n" src="$model/UI2/question/newprotal/img/carouselBox21.jpg" bind-click="open" url="./contents/content1.w" style="height:240px;" __cid="cQFBb6n"/> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row grid cQFBb6n" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cQFBb6n"> 
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cQFBb6n" xid="col1" __cid="cQFBb6n"> 
+            <div class="card cQFBb6n" url="./channel/menu11Pic1.w" bind-click="div1Click" xid="div13" __cid="cQFBb6n"> 
+              <img src="$model/UI2/question/newprotal/img/menu11Pic1.png" xid="image11" __cid="cQFBb6n" class="cQFBb6n"/>  
+              <span class="title cQFBb6n" xid="span11" style="font-size:14px;" __cid="cQFBb6n">金属材料</span> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cQFBb6n" xid="col2" __cid="cQFBb6n"> 
+            <div class="card cQFBb6n" url="./channel/menu14Pic2.w" bind-click="div2Click" xid="div14" __cid="cQFBb6n"> 
+              <img src="$model/UI2/question/newprotal/img/menu11Pic2.png" xid="image12" __cid="cQFBb6n" class="cQFBb6n"/>  
+              <span class="title cQFBb6n" xid="span12" style="font-size:14px;" __cid="cQFBb6n">机械设备</span> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cQFBb6n" xid="col3" __cid="cQFBb6n"> 
+            <div class="card cQFBb6n" url="./channel/menu11Pic3.w" bind-click="div3Click" xid="div15" __cid="cQFBb6n"> 
+              <img src="$model/UI2/question/newprotal/img/menu11Pic3.png" xid="image13" __cid="cQFBb6n" class="cQFBb6n"/>  
+              <span class="title cQFBb6n" xid="span13" style="font-size:14px;" __cid="cQFBb6n">电子元器件</span> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cQFBb6n" xid="col4" __cid="cQFBb6n"> 
+            <div class="card cQFBb6n" url="./channel/menu11Pic4.w" bind-click="div4Click" xid="div16" __cid="cQFBb6n"> 
+              <img src="$model/UI2/question/newprotal/img/menu12Pic2.png" xid="image14" __cid="cQFBb6n" class="cQFBb6n"/>  
+              <span class="title cQFBb6n" xid="span14" style="font-size:16px;" __cid="cQFBb6n">标准件</span> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cQFBb6n" xid="col5" __cid="cQFBb6n"> 
+            <div class="card cQFBb6n" url="./channel/menu13Pic1.w" bind-click="div5Click" xid="div17" __cid="cQFBb6n"> 
+              <img src="$model/UI2/question/newprotal/img/menu13Pic1.png" xid="image15" __cid="cQFBb6n" class="cQFBb6n"/>  
+              <span class="title cQFBb6n" xid="span15" style="font-size:16px;" __cid="cQFBb6n">产成品及附件</span> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cQFBb6n" xid="col6" __cid="cQFBb6n"> 
+            <div class="card cQFBb6n" url="./channel/menu14Pic1.w" bind-click="div6Click" xid="div18" __cid="cQFBb6n"> 
+              <img src="$model/UI2/question/newprotal/img/menu13Pic3.png" xid="image16" __cid="cQFBb6n" class="cQFBb6n"/>  
+              <span class="title cQFBb6n" xid="span16" style="font-size:16px;" __cid="cQFBb6n">工具工装</span> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cQFBb6n" xid="col8" __cid="cQFBb6n"> 
+            <div class="card cQFBb6n" xid="div77" bind-click="div77Click" __cid="cQFBb6n"> 
+              <img src="$model/UI2/question/newprotal/img/menu11Pic1.png" xid="image2" __cid="cQFBb6n" class="cQFBb6n"/>  
+              <span class="title cQFBb6n" xid="span2" style="font-size:14px;" __cid="cQFBb6n">未阅需求单</span> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cQFBb6n" xid="col11" __cid="cQFBb6n"> 
+            <div class="card cQFBb6n" url="./channel/menu11Pic1.w" xid="div19" bind-click="div19Click" __cid="cQFBb6n"> 
+              <img src="$model/UI2/question/newprotal/img/menu14Pic2.png" xid="image17" __cid="cQFBb6n" class="cQFBb6n"/>  
+              <span class="title cQFBb6n" xid="span17" style="font-size:14px;" __cid="cQFBb6n">已阅需求单</span> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cQFBb6n" xid="col12" __cid="cQFBb6n"> 
+            <div class="card cQFBb6n" xid="div20" bind-click="div20Click" __cid="cQFBb6n"> 
+              <img src="$model/UI2/question/newprotal/img/menu13Pic1.png" xid="image18" __cid="cQFBb6n" class="cQFBb6n"/>  
+              <span class="title cQFBb6n" xid="span18" style="font-size:14px;" __cid="cQFBb6n">新闻公告</span> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cQFBb6n" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQFBb6n"/>
+    <style __cid="cQFBb6n" class="cQFBb6n">.x-panel.p6571c06a172a4dbfa00c4f11a6151cd0-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p6571c06a172a4dbfa00c4f11a6151cd0-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p6571c06a172a4dbfa00c4f11a6151cd0-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p6571c06a172a4dbfa00c4f11a6151cd0-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p6571c06a172a4dbfa00c4f11a6151cd0-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p6571c06a172a4dbfa00c4f11a6151cd0-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p6571c06a172a4dbfa00c4f11a6151cd0-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p6571c06a172a4dbfa00c4f11a6151cd0-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p6571c06a172a4dbfa00c4f11a6151cd0-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

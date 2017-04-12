@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cJnAr2a" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJnAr2a" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cJnAr2a" class="cJnAr2a"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pe721c6fe7b1843a3963c8ee7c058e6b9-iosstatusbar cJnAr2a" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJnAr2a"> 
+    <div class="x-panel-top cJnAr2a" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJnAr2a"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cJnAr2a" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;二级联动&quot;}" __cid="cJnAr2a"> 
+        <div class="x-titlebar-left cJnAr2a" __cid="cJnAr2a"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cJnAr2a" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cJnAr2a"> 
+            <i class="icon-chevron-left cJnAr2a" __cid="cJnAr2a"/>  
+            <span __cid="cJnAr2a" class="cJnAr2a"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cJnAr2a" __cid="cJnAr2a">二级联动</div>  
+        <div class="x-titlebar-right  cJnAr2a" __cid="cJnAr2a">
+          <div class="empty cJnAr2a" __cid="cJnAr2a"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cJnAr2a" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJnAr2a"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cJnAr2a" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cJnAr2a"> 
+        <div class="x-contents-content active cJnAr2a" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cJnAr2a"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cJnAr2a" xid="row1" style="margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJnAr2a"> 
+            <div class="x-col x-col-fixed cJnAr2a" xid="col1" style="width:auto;" __cid="cJnAr2a"> 
+              <span xid="span1" bind-text="$model.categoryData.label(&quot;name&quot;)" __cid="cJnAr2a" class="cJnAr2a"/> 
+            </div>  
+            <div class="x-col cJnAr2a" xid="col2" __cid="cJnAr2a"> 
+              <select component="$model/UI2/system/components/justep/select/select" bind-optionsCaption="'请选择...'" class="form-control cJnAr2a" xid="category" bind-options="categoryData.datas" bind-optionsValue="'value'" style="margin-top:-5px;" bind-optionsText="'name'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'}" data-events="onChange:categoryChange" __cid="cJnAr2a"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cJnAr2a" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJnAr2a"> 
+            <div class="x-col x-col-fixed cJnAr2a" xid="col4" style="width:auto;" __cid="cJnAr2a"> 
+              <span xid="span2" bind-text="$model.novelData.label(&quot;name&quot;)" __cid="cJnAr2a" class="cJnAr2a"/> 
+            </div>  
+            <div class="x-col cJnAr2a" xid="col5" __cid="cJnAr2a"> 
+              <select component="$model/UI2/system/components/justep/select/select" class="form-control cJnAr2a" xid="novel" data-bind="component:{name:'$model/UI2/system/components/justep/select/select',labelRef:$model.novelData.ref(&quot;name&quot;)},                  options: novel,                  optionsText: 'name',                  optionsValue: 'value',             optionsCaption='请选择...'             " bind-optionsCaption="'请选择'" style="margin-top:-5px;" data-events="onChange:novelChange" __cid="cJnAr2a"/> 
+            </div> 
+          </div>  
+          <span xid="categorySpan" style="margin-top:20px;margin-left:10px;" __cid="cJnAr2a" class="cJnAr2a"/>  
+          <span xid="novelSpan" __cid="cJnAr2a" class="cJnAr2a"/> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cJnAr2a" class="cJnAr2a">.x-panel.pe721c6fe7b1843a3963c8ee7c058e6b9-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pe721c6fe7b1843a3963c8ee7c058e6b9-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pe721c6fe7b1843a3963c8ee7c058e6b9-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pe721c6fe7b1843a3963c8ee7c058e6b9-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pe721c6fe7b1843a3963c8ee7c058e6b9-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pe721c6fe7b1843a3963c8ee7c058e6b9-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pe721c6fe7b1843a3963c8ee7c058e6b9-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pe721c6fe7b1843a3963c8ee7c058e6b9-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pe721c6fe7b1843a3963c8ee7c058e6b9-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

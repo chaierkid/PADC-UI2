@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciuimye" class="ciuimye" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-block.ciuimye{color: rgb(33, 33, 33)} .x-img1.ciuimye{width: 100%; height: 160px} .x-titlebar.ciuimye{background-color: rgb(23, 1, 83)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ciuimye" class="ciuimye"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJfm6jm-iosstatusbar ciuimye" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciuimye"> 
+    <div class="x-panel-top ciuimye" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciuimye"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ciuimye" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;促销活动&quot;}" __cid="ciuimye"> 
+        <div class="x-titlebar-left ciuimye" __cid="ciuimye"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciuimye" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="ciuimye"> 
+            <i class="icon-chevron-left ciuimye" __cid="ciuimye"/>  
+            <span __cid="ciuimye" class="ciuimye"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title ciuimye" __cid="ciuimye">促销活动</div>  
+        <div class="x-titlebar-right  ciuimye" __cid="ciuimye"> 
+          <div class="empty ciuimye" __cid="ciuimye"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content ciuimye" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciuimye"> 
+      <div class="x-scroll ciuimye" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="ciuimye"> 
+        <div class="x-content-center x-pull-down container ciuimye" xid="div1" __cid="ciuimye"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down ciuimye" xid="i1" __cid="ciuimye"/>  
+          <span class="x-pull-down-label ciuimye" xid="span2" __cid="ciuimye">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content ciuimye" xid="div2" __cid="ciuimye"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list ciuimye" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;,&quot;limit&quot;:5}" __cid="ciuimye"> 
+            <ul class="x-list-template hide ciuimye" xid="listTemplateUl1" __cid="ciuimye" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li1" class="list-group-item ciuimye" __cid="ciuimye" data-bind="event:{click:$model._callModelFn.bind($model, 'open')}"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right ciuimye" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciuimye"> 
+                  <i xid="i2" class="icon-ios7-arrow-right text-muted ciuimye" __cid="ciuimye"/>  
+                  <span xid="span1" __cid="ciuimye" class="ciuimye"/> 
+                </a>  
+                <h5 class="text-block ciuimye" __cid="ciuimye" data-bind="text:ref('title')"/> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up ciuimye" xid="div3" __cid="ciuimye"> 
+          <span class="x-pull-up-label ciuimye" xid="span3" __cid="ciuimye">加载更多...</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="ciuimye" class="ciuimye">.x-panel.pcJfm6jm-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcJfm6jm-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcJfm6jm-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJfm6jm-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJfm6jm-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcJfm6jm-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJfm6jm-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJfm6jm-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJfm6jm-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%" class="no-js">  
+  <head xmlns=""> 
+    <meta charset="utf-8"/>  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>  
+    <meta name="apple-mobile-web-app-capable" content="yes"/>  
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>  
+    <meta name="format-detection" content="telephone=no"/>  
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>  
+    <script src="../../../v_106d2b0c3186404aba1e0912f720eecfl_zh_CNs_d_m/system/lib/base/modernizr-2.8.3.min.js"/>  
+    <script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>  
+    <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" &amp;&amp; (mode!="2") &amp;&amp; (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents &amp;&amp; x5AppAgents.length &gt; 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i &lt; version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i &lt;= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i&lt;items.length; i++){
+							if (mode == "3"){
+								if (items[i] &amp;&amp; (items[i].indexOf("v_") === 0) 
+										&amp;&amp; (items[i].indexOf("l_") !== -1)
+										&amp;&amp; (items[i].indexOf("s_") !== -1)
+										&amp;&amp; (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] &amp;&amp; (items[i].indexOf("v-")===0) &amp;&amp; (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&amp;" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&amp;url=" + path;
+						if (query)
+							url += "&amp;" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) &amp;&amp; (xhr.status == 200) &amp;&amp; xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+									versionInfo.resourceInfo.isNewVersion = true;
+								};
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async &amp;&amp; (xhr.status == 200) &amp;&amp; xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") &amp;&amp; window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (versionInfo.resourceInfo &amp;&amp; versionInfo.resourceInfo.version &amp;&amp; (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									if (query){
+										path = path + "?" + query;
+									}
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>  
+    <link rel="stylesheet" href="../../../v_ce48408e57dd486c97fe169eee2f9ed6l_zh_CNs_d_m/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"/>
+    <link rel="stylesheet" href="../../../v_5d3778dd49fa4654bea2ee75f766310fl_zh_CNs_d_m/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/dataTables/css/dataTables,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"/>
+  </head>  
+  <body xmlns="" style="width:100%;height:100%;margin: 0;"> 
+    <script intro="none"/>  
+    <div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block">
+      <div class="main13 cmm6ja2" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmm6ja2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/dataOperation/dataOperation,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/shell/shell,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/bootstrap/panel/panel,">  
+        <style xmlns:xhtml="http://www.w3.org/1999/xhtml">h4.cmm6ja2, h5.cmm6ja2, .h5.cmm6ja2, .h6.cmm6ja2{color: rgb(85, 85, 85)} .text-white.cmm6ja2{color: rgb(255, 255, 255)} .text-success.cmm6ja2{color: rgb(50, 189, 96)} .text-danger.cmm6ja2{color: rgb(255, 119, 103)} .x-titlebar.cmm6ja2{background-color: rgba(0, 0, 0, 0)} .x-titlebar.cmm6ja2 .x-titlebar-title.cmm6ja2{padding: 6px 0} .x-titlebar.cmm6ja2 .x-titlebar-right.cmm6ja2 .btn.cmm6ja2{padding-left: 0} .x-inputText.cmm6ja2{background-color: rgba(255, 255, 255, 0.8)} .form-control-feedback.cmm6ja2{height: 34px; line-height: 34px} .x-cards.cmm6ja2{padding-top: 0px} .img5.cmm6ja2{width: 48px; height: 48px} .img1.cmm6ja2{height: 170px} .btn.cmm6ja2 i.cmm6ja2{font-size: 20px} .x-noborder.table.cmm6ja2 &gt; tbody.cmm6ja2 &gt; tr.cmm6ja2 &gt; td.cmm6ja2{border: 0} .x-fill.table.cmm6ja2 &gt; tbody.cmm6ja2 &gt; tr.cmm6ja2 &gt; td.cmm6ja2{padding: 0} .table-bordered.cmm6ja2 &gt; thead.cmm6ja2 &gt; tr.cmm6ja2 &gt; th.cmm6ja2, .table-bordered.cmm6ja2 &gt; tbody.cmm6ja2 &gt; tr.cmm6ja2 &gt; th.cmm6ja2, .table-bordered.cmm6ja2 &gt; tfoot.cmm6ja2 &gt; tr.cmm6ja2 &gt; th.cmm6ja2, .table-bordered.cmm6ja2 &gt; thead.cmm6ja2 &gt; tr.cmm6ja2 &gt; td.cmm6ja2, .table-bordered.cmm6ja2 &gt; tbody.cmm6ja2 &gt; tr.cmm6ja2 &gt; td.cmm6ja2, .table-bordered.cmm6ja2 &gt; tfoot.cmm6ja2 &gt; tr.cmm6ja2 &gt; td.cmm6ja2{border: 1px solid rgba(90, 90, 90, 0.05)} .iSale.cmm6ja2{min-height: 60vw} .iSale.cmm6ja2 td.cmm6ja2{position: relative} .iSale.cmm6ja2 td.cmm6ja2 &gt; img.cmm6ja2{width: 100%} .iSale.cmm6ja2 td.cmm6ja2 &gt; .text.cmm6ja2{width: 100%; position: absolute; left: 0; bottom: 0} .iSale.cmm6ja2 td.cmm6ja2 &gt; .text.cmm6ja2 h5.cmm6ja2:last-child{font-weight: bold} .x-tuniu.btn-group.cmm6ja2{background-color: rgb(255, 255, 255)} .x-tuniu.btn-group.cmm6ja2 .btn.cmm6ja2{border-top: 0} .x-tuniu.btn-group.cmm6ja2 .btn.cmm6ja2 span.cmm6ja2{font-size: 12px; font-weight: normal} .x-card.btn-group.cmm6ja2 .btn.active.cmm6ja2{color: rgb(50, 189, 96); padding: 0; border-top: 0} .x-tuniu.panel.cmm6ja2{margin-bottom: 10px} .x-tuniu.panel.cmm6ja2 &gt; .panel-heading.cmm6ja2 .panel-title.cmm6ja2{color: rgb(51, 51, 51)} .x-tuniu.cmm6ja2 .panel-heading.cmm6ja2, .x-tuniu.cmm6ja2 ul.cmm6ja2{border-bottom: 0} .x-tuniu.cmm6ja2 .list-group-item.cmm6ja2{border-radius: 0} .x-tuniu.cmm6ja2 .list-group-item.cmm6ja2:last-child{border-bottom: 0} .x-tuniu.cmm6ja2 .x-nobarder.cmm6ja2{border: 0} .iEnsure.cmm6ja2{margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(90, 90, 90, 0.1)} .iEnsure.cmm6ja2 .badge.cmm6ja2{display: block; width: 120px; line-height: 20px; margin: 0 auto; background-color: rgb(176, 186, 196); font-size: 14px; border-radius: 15px} .iEnsure.cmm6ja2 .btn-group.cmm6ja2{width: 80%; margin: 0 auto} .iEnsure.cmm6ja2 .btn-group.cmm6ja2 .btn.cmm6ja2{color: rgb(176, 186, 196)} .top-trans.cmm6ja2 .x-panel-top.cmm6ja2{z-index: 100} .top-trans.cmm6ja2 .text-success.cmm6ja2{color: white} .top-trans.x-panel.cmm6ja2 &gt; .x-panel-content.cmm6ja2{top: 0 !important} .top-trans.x-panel.cmm6ja2 .no-iosstatusbar.cmm6ja2 &gt; .x-panel-content.cmm6ja2{top: -20px !important}</style>  
+        <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" style="left:120px;top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:{&quot;operation&quot;:&quot;dataOperation1.setValue&quot;,&quot;args&quot;:{&quot;data&quot;:&quot;js:'data'&quot;,&quot;col&quot;:&quot;js:\&quot;cityName\&quot;&quot;,&quot;value&quot;:&quot;js:$event.fName&quot;}}" data-config="{&quot;showTitle&quot;:true,&quot;title&quot;:&quot;选择城市&quot;}" __cid="cmm6ja2" class="cmm6ja2"> 
+          <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cmm6ja2" __cid="cmm6ja2"></div>  
+          <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cmm6ja2" style="display:none;" showTitle="true" __cid="cmm6ja2">  
+            <div class="x-dialog-title cmm6ja2" __cid="cmm6ja2"> 
+              <button class="close cmm6ja2" __cid="cmm6ja2"> 
+                <span __cid="cmm6ja2" class="cmm6ja2">×</span> 
+              </button>  
+              <div class="x-dialog-title-text cmm6ja2" __cid="cmm6ja2">选择城市</div> 
+            </div>  
+            <div class="x-dialog-body cmm6ja2" __cid="cmm6ja2"/> 
+          </div> 
+        </span>  
+        <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cmm6ja2" class="cmm6ja2"> 
+          <div component="$model/UI2/system/components/justep/shell/shell" xid="shell" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/shell/shell'}" __cid="cmm6ja2" class="cmm6ja2"/> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card top-trans pcfbe8bc4ad6741d0a3cc2b5e9c3c2657-iosstatusbar cmm6ja2" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'},css:{'top-trans': 0===$model.data.val(&quot;useTopClass&quot;)}" __cid="cmm6ja2"> 
+          <div class="x-panel-top cmm6ja2" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmm6ja2"> 
+            <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cmm6ja2" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cmm6ja2"> 
+              <div class="x-titlebar-left text-success cmm6ja2" xid="div1" __cid="cmm6ja2"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cmm6ja2" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-location-outline&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cmm6ja2"> 
+                  <i xid="i1" class="icon-ios7-location-outline cmm6ja2" __cid="cmm6ja2"/>  
+                  <span xid="span1" __cid="cmm6ja2" class="cmm6ja2"/> 
+                </a>  
+                <span xid="cityName" class="h5 text-success cmm6ja2" __cid="cmm6ja2" data-bind="text:$model.data.ref(&quot;cityName&quot;),event:{click:$model._callModelFn.bind($model, {&quot;operation&quot;:&quot;windowDialog.open&quot;,&quot;args&quot;:{&quot;option&quot;:&quot;js:{src:$model.toUrl('$UI/demo/tuniu/city.w')}&quot;}})}">昆明</span> 
+              </div>  
+              <div class="x-titlebar-title cmm6ja2" __cid="cmm6ja2"> 
+                <div class="form-group has-feedback text-muted cmm6ja2" __cid="cmm6ja2"> 
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-inputText cmm6ja2" xid="key" data-bind="component:{ref:$model.data.ref(&quot;inputVal&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cmm6ja2"/>  
+                  <i class="icon-ios7-search-strong form-control-feedback cmm6ja2" xid="col1" __cid="cmm6ja2"/> 
+                </div> 
+              </div>  
+              <div class="x-titlebar-right  text-success cmm6ja2" xid="div3" __cid="cmm6ja2"> 
+                <div class="empty cmm6ja2" __cid="cmm6ja2"/>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cmm6ja2" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-telephone-outline&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cmm6ja2"> 
+                  <i xid="i2" class="icon-ios7-telephone-outline cmm6ja2" __cid="cmm6ja2"/>  
+                  <span xid="span3" __cid="cmm6ja2" class="cmm6ja2"/> 
+                </a> 
+              </div> 
+            </div> 
+          </div>  
+          <div class="x-panel-content x-cards cmm6ja2" xid="content" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmm6ja2"> 
+            <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cmm6ja2" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-events="onActiveChange:{&quot;operation&quot;:&quot;dataOperation1.setValue&quot;,&quot;args&quot;:{&quot;data&quot;:&quot;js:'data'&quot;,&quot;col&quot;:&quot;js:\&quot;useTopClass\&quot;&quot;,&quot;value&quot;:&quot;js:$event.to&quot;}}" data-config="{&quot;active&quot;:0}" __cid="cmm6ja2"> 
+              <div class="x-contents-content active cmm6ja2" xid="homeContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cmm6ja2"> 
+                <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel iBanner cmm6ja2" xid="carousel1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" __cid="cmm6ja2"> 
+                  <ol class="carousel-indicators cmm6ja2" xid="ol1" __cid="cmm6ja2"/>  
+                  <div class="x-contents carousel-inner cmm6ja2" role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="bannerContents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:true}" __cid="cmm6ja2"> 
+                    <div class="x-contents-content active cmm6ja2" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cmm6ja2"> 
+                      <img alt="" xid="image1" id="image1" class="image-wall img1 cmm6ja2" src="../../../v_1d85f579a53a4b9fabaf0760bed440afl_zh_CNs_d_m/demo/tuniu/img/4.jpg" __cid="cmm6ja2"/> 
+                    </div>  
+                    <div class="x-contents-content cmm6ja2" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cmm6ja2"> 
+                      <img alt="" xid="image2" id="image2" class="image-wall img1 cmm6ja2" src="../../../v_bbdcd184d4aa4b1fa1f742a72a3a1489l_zh_CNs_d_m/demo/tuniu/img/2.jpg" __cid="cmm6ja2"/> 
+                    </div>  
+                    <div class="x-contents-content cmm6ja2" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cmm6ja2"> 
+                      <img alt="" xid="image13" id="image13" class="image-wall img1 cmm6ja2" src="../../../v_3e3b41b39dd1462baf08f80b4f0be40al_zh_CNs_d_m/demo/tuniu/img/3.jpg" __cid="cmm6ja2"/> 
+                    </div>  
+                    <div class="x-contents-content cmm6ja2" xid="content6" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cmm6ja2"> 
+                      <img alt="" xid="image14" id="image14" class="image-wall img1 cmm6ja2" src="../../../v_0e8ed95576744508abaae658bc86ab87l_zh_CNs_d_m/demo/tuniu/img/1.jpg" __cid="cmm6ja2"/> 
+                    </div>  
+                    <div class="x-contents-content cmm6ja2" xid="content7" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cmm6ja2"> 
+                      <img alt="" xid="image15" id="image15" class="image-wall img1 cmm6ja2" src="../../../v_c9c668ba689543afb0dde160b726daecl_zh_CNs_d_m/demo/tuniu/img/5.jpg" __cid="cmm6ja2"/> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card x-tuniu p43039bd519984bcd9cd22d18b3f4b395-iosstatusbar cmm6ja2" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmm6ja2"> 
+                  <table class="table x-noborder cmm6ja2" component="$model/UI2/system/components/bootstrap/table/table" xid="table1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cmm6ja2"> 
+                    <tbody class="x-list-template cmm6ja2" xid="listTemplate1" __cid="cmm6ja2" data-bind="event:{click:$model._callModelFn.bind($model, {&quot;operation&quot;:&quot;shell.showPage&quot;,&quot;args&quot;:{&quot;url&quot;:&quot;js:'searchList'&quot;}})}"> 
+                      <tr xid="tr2" class="text-center cmm6ja2" __cid="cmm6ja2"> 
+                        <td xid="td1" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image37" class="img5 img-responsive center-block cmm6ja2" src="../../../v_5d9f87fb85cf4706a69a5e193421a5fbl_zh_CNs_d_m/demo/tuniu/img/home_group.png" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div32" class="h6 cmm6ja2" __cid="cmm6ja2" data-bind="text:'跟团游'">跟团游</div> 
+                        </td>  
+                        <td xid="td2" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image33" class="img5 img-responsive center-block cmm6ja2" src="../../../v_9d2977688a514893985a943aaa62a820l_zh_CNs_d_m/demo/tuniu/img/home_self_service.png" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div33" class="h6 cmm6ja2" __cid="cmm6ja2" data-bind="text:'自助游'">自助游</div> 
+                        </td>  
+                        <td xid="td3" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image34" class="img5 img-responsive center-block cmm6ja2" src="../../../v_250b273ef9364689a7cb8d323f33f612l_zh_CNs_d_m/demo/tuniu/img/home_ship.png" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div31" class="h6 cmm6ja2" __cid="cmm6ja2" data-bind="text:'游轮'">游轮</div> 
+                        </td>  
+                        <td xid="td4" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image35" class="img5 img-responsive center-block cmm6ja2" src="../../../v_b577f305cb1944f38c302b0988313746l_zh_CNs_d_m/demo/tuniu/img/home_drive.png" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div37" class="h6 cmm6ja2" __cid="cmm6ja2" data-bind="text:'自驾游'">自驾游</div> 
+                        </td>  
+                        <td xid="td5" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image36" class="img5 img-responsive center-block cmm6ja2" src="../../../v_6d6929c131254164aa536bf9e01e567fl_zh_CNs_d_m/demo/tuniu/img/home_ticket.png" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div38" class="h6 cmm6ja2" __cid="cmm6ja2" data-bind="text:'自驾游'">自驾游</div> 
+                        </td> 
+                      </tr>  
+                      <tr xid="tr3" class="text-center cmm6ja2" __cid="cmm6ja2"> 
+                        <td xid="td8" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image42" class="img5 center-block cmm6ja2" src="../../../v_0c62574c4786452a842688647144f87el_zh_CNs_d_m/demo/tuniu/img/home_visa.png" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div44" class="h6 cmm6ja2" __cid="cmm6ja2" data-bind="text:'签证'">签证</div> 
+                        </td>  
+                        <td xid="td9" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image41" class="img5 center-block cmm6ja2" src="../../../v_e16e6dca3a494737bd71ed97db66e348l_zh_CNs_d_m/demo/tuniu/img/home_hotel.png" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div40" class="h6 cmm6ja2" __cid="cmm6ja2" data-bind="text:'酒店'">酒店</div> 
+                        </td>  
+                        <td xid="td10" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image39" class="img5 center-block cmm6ja2" src="../../../v_358e4d71d0a844a6a03201a5c111f265l_zh_CNs_d_m/demo/tuniu/img/home_plane.png" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div45" class="h6 cmm6ja2" __cid="cmm6ja2" data-bind="text:'机票'">机票</div> 
+                        </td>  
+                        <td xid="td11" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image43" class="img5 center-block cmm6ja2" src="../../../v_975bf4795b9a46ea932b94e56d68a657l_zh_CNs_d_m/demo/tuniu/img/home_train.png" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div42" class="h6 cmm6ja2" __cid="cmm6ja2" data-bind="text:'火车票'">火车票</div> 
+                        </td>  
+                        <td xid="td12" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image40" class="img5 center-block cmm6ja2" src="../../../v_4da0223aeb3645d0b98d101d60ffa17cl_zh_CNs_d_m/demo/tuniu/img/home_hotspot.png" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div43" class="h6 cmm6ja2" __cid="cmm6ja2" data-bind="text:'客服'">客服</div> 
+                        </td> 
+                      </tr> 
+                    </tbody> 
+                  </table>  
+                  <style __cid="cmm6ja2" class="cmm6ja2">.x-panel.p43039bd519984bcd9cd22d18b3f4b395-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.p43039bd519984bcd9cd22d18b3f4b395-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p43039bd519984bcd9cd22d18b3f4b395-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p43039bd519984bcd9cd22d18b3f4b395-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p43039bd519984bcd9cd22d18b3f4b395-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p43039bd519984bcd9cd22d18b3f4b395-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p43039bd519984bcd9cd22d18b3f4b395-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p43039bd519984bcd9cd22d18b3f4b395-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p43039bd519984bcd9cd22d18b3f4b395-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-tuniu pa39ef834081049168cbdb68131067dd6-iosstatusbar cmm6ja2" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmm6ja2"> 
+                  <table class="table table-bordered x-fill cmm6ja2" component="$model/UI2/system/components/bootstrap/table/table" xid="table3" style="height:34.35468895078923vw;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cmm6ja2"> 
+                    <tbody class="x-list-template cmm6ja2" xid="listTemplate2" __cid="cmm6ja2" data-bind="event:{click:$model._callModelFn.bind($model, {&quot;operation&quot;:&quot;shell.showPage&quot;,&quot;args&quot;:{&quot;url&quot;:&quot;js:'searchList'&quot;}})}"> 
+                      <tr xid="tr5" __cid="cmm6ja2" class="cmm6ja2"> 
+                        <td xid="td13" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image44" class="img-responsive cmm6ja2" src="../../../v_582ed824c8664bec9a4b9109451e17fdl_zh_CNs_d_m/demo/tuniu/img/activity1.jpg" __cid="cmm6ja2"/> 
+                          </a> 
+                        </td>  
+                        <td xid="td14" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image45" class="img-responsive cmm6ja2" src="../../../v_59c186e0916549a9bd39832333b8f097l_zh_CNs_d_m/demo/tuniu/img/activity2.jpg" __cid="cmm6ja2"/> 
+                          </a> 
+                        </td>  
+                        <td xid="td15" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image46" class="img-responsive cmm6ja2" src="../../../v_5980fb6bf0e247ad86ac251c0e152326l_zh_CNs_d_m/demo/tuniu/img/activity3.jpg" __cid="cmm6ja2"/> 
+                          </a> 
+                        </td> 
+                      </tr>  
+                      <tr xid="tr6" __cid="cmm6ja2" class="cmm6ja2"> 
+                        <td xid="td17" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image49" class="img-responsive cmm6ja2" src="../../../v_b868931dfa9941c3804aeaf6ee087d6cl_zh_CNs_d_m/demo/tuniu/img/activity4.jpg" __cid="cmm6ja2"/> 
+                          </a> 
+                        </td>  
+                        <td xid="td18" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image47" class="img-responsive cmm6ja2" src="../../../v_e979fee59bdc4da6aef24fc0ce54f02bl_zh_CNs_d_m/demo/tuniu/img/activity5.jpg" __cid="cmm6ja2"/> 
+                          </a> 
+                        </td>  
+                        <td xid="td19" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image48" class="img-responsive cmm6ja2" src="../../../v_2372a053352b43d3b74a1b9187ea4e2dl_zh_CNs_d_m/demo/tuniu/img/activity6.jpg" __cid="cmm6ja2"/> 
+                          </a> 
+                        </td> 
+                      </tr> 
+                    </tbody> 
+                  </table>  
+                  <style __cid="cmm6ja2" class="cmm6ja2">.x-panel.pa39ef834081049168cbdb68131067dd6-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pa39ef834081049168cbdb68131067dd6-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pa39ef834081049168cbdb68131067dd6-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pa39ef834081049168cbdb68131067dd6-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pa39ef834081049168cbdb68131067dd6-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pa39ef834081049168cbdb68131067dd6-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pa39ef834081049168cbdb68131067dd6-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pa39ef834081049168cbdb68131067dd6-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pa39ef834081049168cbdb68131067dd6-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+                </div>  
+                <div class="panel panel-default x-card x-tuniu cmm6ja2" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="cmm6ja2"> 
+                  <div class="panel-heading text-muted cmm6ja2" xid="heading2" __cid="cmm6ja2"> 
+                    <h4 class="panel-title cmm6ja2" xid="h42" __cid="cmm6ja2">手机特卖
+                      <span xid="span20" class="text-success pull-right cmm6ja2" __cid="cmm6ja2" data-bind="event:{click:$model._callModelFn.bind($model, {&quot;operation&quot;:&quot;shell.showPage&quot;,&quot;args&quot;:{&quot;url&quot;:&quot;js:'searchList'&quot;}})}">更多&gt;</span> 
+                    </h4> 
+                  </div>  
+                  <table class="table x-noborder iSale cmm6ja2" component="$model/UI2/system/components/bootstrap/table/table" xid="table4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cmm6ja2"> 
+                    <tbody class="x-list-template cmm6ja2" xid="listTemplate3" __cid="cmm6ja2" data-bind="event:{click:$model._callModelFn.bind($model, {&quot;operation&quot;:&quot;shell.showPage&quot;,&quot;args&quot;:{&quot;url&quot;:&quot;js:'searchList'&quot;}})}"> 
+                      <tr xid="tr4" __cid="cmm6ja2" class="cmm6ja2"> 
+                        <td xid="td6" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image22" class="img-rounded img-responsive center-block cmm6ja2" src="../../../v_d1ed1b15d8854be9b174a0c1b50314d5l_zh_CNs_d_m/demo/tuniu/img/a1.jpg" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div15" class="text text-center cmm6ja2" __cid="cmm6ja2"> 
+                            <h4 xid="h43" class="text-white cmm6ja2" __cid="cmm6ja2">限时秒杀</h4>  
+                            <h5 xid="h51" class="text-white cmm6ja2" __cid="cmm6ja2">长城</h5>  
+                            <h5 xid="h54" class="text-danger cmm6ja2" __cid="cmm6ja2">￥2922</h5> 
+                          </div> 
+                        </td>  
+                        <td xid="td7" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image23" class="img-rounded img-responsive center-block cmm6ja2" src="../../../v_65e5dc3da5ed4932ab01931f4b0bc055l_zh_CNs_d_m/demo/tuniu/img/a2.jpg" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div17" class="text text-center cmm6ja2" __cid="cmm6ja2"> 
+                            <h4 xid="h44" class="text-white cmm6ja2" __cid="cmm6ja2">尾货物价</h4>  
+                            <h5 xid="h56" class="text-white cmm6ja2" __cid="cmm6ja2">泰国</h5>  
+                            <h5 xid="h55" class="text-danger cmm6ja2" __cid="cmm6ja2">￥2129</h5> 
+                          </div> 
+                        </td>  
+                        <td xid="td16" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image24" class="img-rounded img-responsive center-block cmm6ja2" src="../../../v_2fa356889cff4760a92be1f8e73024bbl_zh_CNs_d_m/demo/tuniu/img/a3.jpg" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div18" class="text text-center cmm6ja2" __cid="cmm6ja2"> 
+                            <h4 xid="h45" class="text-white cmm6ja2" __cid="cmm6ja2">专场精选</h4>  
+                            <h5 xid="h58" class="text-white cmm6ja2" __cid="cmm6ja2">说走就走</h5>  
+                            <h5 xid="h57" class="text-danger cmm6ja2" __cid="cmm6ja2">￥3472</h5> 
+                          </div> 
+                        </td> 
+                      </tr>  
+                      <tr xid="tr7" __cid="cmm6ja2" class="cmm6ja2"> 
+                        <td xid="td20" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image25" class="img-rounded img-responsive center-block cmm6ja2" src="../../../v_b6288c5a9067419eb6a29770c4f0fe68l_zh_CNs_d_m/demo/tuniu/img/a4.jpg" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div19" class="text text-center cmm6ja2" __cid="cmm6ja2"> 
+                            <h4 xid="h46" class="text-white cmm6ja2" __cid="cmm6ja2">预售钜惠</h4>  
+                            <h5 xid="h510" class="text-white cmm6ja2" __cid="cmm6ja2">早订早惠</h5>  
+                            <h5 xid="h59" class="text-danger cmm6ja2" __cid="cmm6ja2">￥2510</h5> 
+                          </div> 
+                        </td>  
+                        <td xid="td21" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image26" class="img-rounded img-responsive center-block cmm6ja2" src="../../../v_c763d24d769e45d48f962c80c819997cl_zh_CNs_d_m/demo/tuniu/img/a5.jpg" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div20" class="text text-center cmm6ja2" __cid="cmm6ja2"> 
+                            <h4 xid="h47" class="text-white cmm6ja2" __cid="cmm6ja2">超值爆款</h4>  
+                            <h5 xid="h512" class="text-white cmm6ja2" __cid="cmm6ja2">黄河</h5>  
+                            <h5 xid="h511" class="text-danger cmm6ja2" __cid="cmm6ja2">￥2999</h5> 
+                          </div> 
+                        </td>  
+                        <td xid="td22" __cid="cmm6ja2" class="cmm6ja2"> 
+                          <a __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image27" class="img-rounded img-responsive center-block cmm6ja2" src="../../../v_effadc0db93c4ac9a3871dc49aec065cl_zh_CNs_d_m/demo/tuniu/img/a6.jpg" __cid="cmm6ja2"/> 
+                          </a>  
+                          <div xid="div21" class="text text-center cmm6ja2" __cid="cmm6ja2"> 
+                            <h4 xid="h48" class="text-white cmm6ja2" __cid="cmm6ja2">老于推荐</h4>  
+                            <h5 xid="h514" class="text-white cmm6ja2" __cid="cmm6ja2">苏州园林</h5>  
+                            <h5 xid="h513" class="text-danger cmm6ja2" __cid="cmm6ja2">￥1160</h5> 
+                          </div> 
+                        </td> 
+                      </tr> 
+                    </tbody> 
+                  </table> 
+                </div>  
+                <div class="panel panel-default x-card x-tuniu cmm6ja2" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="cmm6ja2"> 
+                  <div class="panel-heading cmm6ja2" xid="heading1" __cid="cmm6ja2"> 
+                    <h4 class="panel-title cmm6ja2" xid="h41" __cid="cmm6ja2">产品经理推荐
+                      <span xid="span7" class="text-success pull-right cmm6ja2" __cid="cmm6ja2" data-bind="event:{click:$model._callModelFn.bind($model, {&quot;operation&quot;:&quot;shell.showPage&quot;,&quot;args&quot;:{&quot;url&quot;:&quot;js:'searchList'&quot;}})}">更多&gt;</span> 
+                    </h4> 
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list cmm6ja2" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;productData&quot;,&quot;limit&quot;:6}" __cid="cmm6ja2"> 
+                    <ul class="x-list-template hide cmm6ja2" xid="listTemplateUl1" __cid="cmm6ja2" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)},event:{click:$model._callModelFn.bind($model, {&quot;operation&quot;:&quot;shell.showPage&quot;,&quot;args&quot;:{&quot;url&quot;:&quot;js:'detail'&quot;}})}"> 
+                      <li xid="li1" class="list-group-item x-flex cmm6ja2" __cid="cmm6ja2"> 
+                        <div xid="div8" class="media-left cmm6ja2" __cid="cmm6ja2"> 
+                          <a xid="a1" __cid="cmm6ja2" class="cmm6ja2"> 
+                            <img alt="" xid="image4" class="img-rounded img-responsive cmm6ja2" style="width:64px" __cid="cmm6ja2" data-bind="attr:{src:$model.getImageUrl(val('fImg'))}"/> 
+                          </a> 
+                        </div>  
+                        <div class="x-flex1 cmm6ja2" xid="col26" __cid="cmm6ja2"> 
+                          <span xid="span21" style="text-align: justify;" __cid="cmm6ja2" class="cmm6ja2" data-bind="text:ref('fTitle')"/> 
+                        </div>  
+                        <div class=" cmm6ja2" xid="col25" __cid="cmm6ja2"> 
+                          <div xid="div34" class="text-danger text-right cmm6ja2" __cid="cmm6ja2"> 
+                            <span xid="span22" __cid="cmm6ja2" class="cmm6ja2">￥</span>  
+                            <span xid="span23" __cid="cmm6ja2" class="cmm6ja2" data-bind="text:ref('fPrice')"/> 
+                          </div>  
+                          <div xid="div35" class="text-muted text-right cmm6ja2" __cid="cmm6ja2"> 
+                            <span xid="span24" __cid="cmm6ja2" class="cmm6ja2" data-bind="text:ref('fSatisfaction')"/>  
+                            <span xid="span25" __cid="cmm6ja2" class="cmm6ja2">%满意</span> 
+                          </div> 
+                        </div> 
+                      </li> 
+                    </ul> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card x-tuniu panel-heading p692d8d813f4e4a34a56bfe77879d3e72-iosstatusbar cmm6ja2" xid="panel6" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmm6ja2"> 
+                  <h5 xid="h52" __cid="cmm6ja2" class="cmm6ja2">北京起步科技有限公司</h5>  
+                  <p xid="p2" __cid="cmm6ja2" class="cmm6ja2"> 
+                    <span xid="span27" class="text-muted cmm6ja2" __cid="cmm6ja2">客服电话：</span>  
+                    <span xid="span28" class="text-success cmm6ja2" __cid="cmm6ja2">400-797-5098（免长途费）</span> 
+                  </p>  
+                  <p xid="p3" __cid="cmm6ja2" class="cmm6ja2"> 
+                    <span xid="span30" class="text-muted cmm6ja2" __cid="cmm6ja2">营业时间：周一至周日： 9：00－18：00</span> 
+                  </p>  
+                  <p xid="p4" __cid="cmm6ja2" class="cmm6ja2"> 
+                    <span xid="span32" class="text-muted cmm6ja2" __cid="cmm6ja2">公司地址：</span>  
+                    <span xid="span31" class="text-success cmm6ja2" __cid="cmm6ja2">朝阳区东三环南路98号高和蓝峰大厦18层</span> 
+                  </p>  
+                  <div xid="div48" class="iEnsure cmm6ja2" __cid="cmm6ja2"> 
+                    <span xid="span34" class="badge cmm6ja2" __cid="cmm6ja2">三大阳光保证</span>  
+                    <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cmm6ja2" xid="buttonGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cmm6ja2"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cmm6ja2" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-lightbulb&quot;,&quot;label&quot;:&quot;阳光行程&quot;}" __cid="cmm6ja2"> 
+                        <i xid="i9" class="icon-ios7-lightbulb cmm6ja2" __cid="cmm6ja2"/>  
+                        <span xid="span35" __cid="cmm6ja2" class="cmm6ja2">阳光行程</span> 
+                      </a>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cmm6ja2" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-heart&quot;,&quot;label&quot;:&quot;阳光价格&quot;}" __cid="cmm6ja2"> 
+                        <i xid="i10" class="icon-ios7-heart cmm6ja2" __cid="cmm6ja2"/>  
+                        <span xid="span36" __cid="cmm6ja2" class="cmm6ja2">阳光价格</span> 
+                      </a>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cmm6ja2" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-leaf&quot;,&quot;label&quot;:&quot;阳光服务&quot;}" __cid="cmm6ja2"> 
+                        <i xid="i11" class="icon-leaf cmm6ja2" __cid="cmm6ja2"/>  
+                        <span xid="span37" __cid="cmm6ja2" class="cmm6ja2">阳光服务</span> 
+                      </a> 
+                    </div> 
+                  </div>  
+                  <style __cid="cmm6ja2" class="cmm6ja2">.x-panel.p692d8d813f4e4a34a56bfe77879d3e72-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.p692d8d813f4e4a34a56bfe77879d3e72-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p692d8d813f4e4a34a56bfe77879d3e72-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p692d8d813f4e4a34a56bfe77879d3e72-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p692d8d813f4e4a34a56bfe77879d3e72-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p692d8d813f4e4a34a56bfe77879d3e72-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p692d8d813f4e4a34a56bfe77879d3e72-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p692d8d813f4e4a34a56bfe77879d3e72-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p692d8d813f4e4a34a56bfe77879d3e72-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+                </div> 
+              </div>  
+              <div class="x-contents-content cmm6ja2" xid="purposeContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cmm6ja2"> 
+                <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cmm6ja2" xid="purposeContainer" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;src&quot;:&quot;$model/UI2/demo/tuniu/index-purpose.w&quot;}" __cid="cmm6ja2"> 
+                  <div class="x-purpose window x-full-screen container-fluid main13 cBJvQBz" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cBJvQBz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,"> 
+                    <style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.cBJvQBz{background-color: rgb(250, 250, 250)} .img6.cBJvQBz{width: 24px} .img1.cBJvQBz{width: 100%; height: 100px} .text-white.cBJvQBz{color: rgb(255, 255, 255)} .container-fluid.cBJvQBz{padding: 0} .x-purpose.cBJvQBz .col-xs-9.cBJvQBz, .x-purpose.cBJvQBz .col-xs-3.cBJvQBz{margin: 0; padding: 0} .x-purpose.cBJvQBz .x-list.cBJvQBz{height: 100%; overflow-y: scroll} .x-purpose.cBJvQBz .panel-heading.cBJvQBz{border-bottom-color: rgb(225, 225, 225); padding-left: 0; padding-right: 0} .x-purpose.cBJvQBz .panel-body.cBJvQBz{padding-top: 10px; padding-bottom: 0} .x-purpose.cBJvQBz .panel.cBJvQBz{border-radius: 0} .x-purpose.cBJvQBz .x-active.cBJvQBz{background-color: rgb(51, 189, 97); color: rgb(255, 255, 255)} .x-purpose.cBJvQBz .x-active.cBJvQBz .panel-heading.cBJvQBz{border-bottom-color: rgb(51, 189, 97)} .x-purpose.cBJvQBz .x-block.cBJvQBz{position: relative; margin-bottom: 10px; background: url(../../../v_11db68c1d6a0464dbbe7ae8217b32b2al_zh_CNs_d_m/demo/tuniu/img/loading.jpg) no-repeat; filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')"; -moz-background-size: 100% 100%; background-size: 100% 100%} .x-purpose.cBJvQBz .x-block.cBJvQBz h5.cBJvQBz{display: block; width: 100%; line-height: 30px; margin: 0; position: absolute; left: 0; bottom: 0; background-color: rgb(51, 51, 51); opacity: 0.8} .o-box.cBJvQBz, .o-box.cBJvQBz &gt; .col.cBJvQBz{height: 100%; margin: 0; padding: 0} .o-box.cBJvQBz &gt; .col.cBJvQBz{overflow: auto}</style>  
+                    <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cBJvQBz" class="cBJvQBz"/>  
+                    <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p4c72697e9cb043898d50204324e849e6-iosstatusbar cBJvQBz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBJvQBz"> 
+                      <div class="x-panel-content cBJvQBz" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBJvQBz"> 
+                        <div component="$model/UI2/system/components/bootstrap/row/row" class="row o-box cBJvQBz" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cBJvQBz"> 
+                          <div class="col col-xs-3 panel cBJvQBz" xid="col1" __cid="cBJvQBz"> 
+                            <div component="$model/UI2/system/components/justep/list/list" class="x-list cBJvQBz" xid="list4" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;placeOneData&quot;}" __cid="cBJvQBz"> 
+                              <ul xid="listTemplateUl4" class="x-list-template hide cBJvQBz" __cid="cBJvQBz" data-bind="foreach:{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element)}"> 
+                                <li xid="li3" class="text-center panel-body cBJvQBz" __cid="cBJvQBz" data-bind="css:{'x-active':val('fID')==data.val('fID')}"> 
+                                  <div class="panel-heading cBJvQBz" xid="div2" __cid="cBJvQBz"> 
+                                    <a __cid="cBJvQBz" class="cBJvQBz"> 
+                                      <img src="" alt="" class="img6 cBJvQBz" xid="image1" __cid="cBJvQBz" data-bind="attr:{src:$model.getLeftImageUrl($object)}"/> 
+                                    </a>  
+                                    <div xid="div3" __cid="cBJvQBz" class="cBJvQBz" data-bind="text:ref('fTitle')"/> 
+                                  </div> 
+                                </li> 
+                              </ul> 
+                            </div> 
+                          </div>  
+                          <div class="col col-xs-9 cBJvQBz" xid="col4" __cid="cBJvQBz"> 
+                            <div component="$model/UI2/system/components/justep/list/list" class="x-list panel-body cBJvQBz" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;placeTwoData&quot;,&quot;filter&quot;:&quot;$row.val(\&quot;fOneID\&quot;)==$model.comp('placeOneData').val(\&quot;fID\&quot;)&quot;}" __cid="cBJvQBz"> 
+                              <ul xid="listTemplateUl3" class="x-list-template hide cBJvQBz" __cid="cBJvQBz" data-bind="foreach:{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)},event:{click:$model._callModelFn.bind($model, 'listClick')}"> 
+                                <li xid="li4" class="text-center x-block cBJvQBz" __cid="cBJvQBz"> 
+                                  <a __cid="cBJvQBz" class="cBJvQBz"> 
+                                    <h5 xid="h52" class="text-white cBJvQBz" __cid="cBJvQBz" data-bind="text:ref('fTitle')"/> 
+                                  </a>  
+                                  <img alt="" xid="image32" class="img-responsive img1 cBJvQBz" __cid="cBJvQBz" data-bind="attr:{src:$model.getImageUrl(val(&quot;fImg&quot;))}"/> 
+                                </li> 
+                              </ul> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <style __cid="cBJvQBz" class="cBJvQBz">.x-panel.p4c72697e9cb043898d50204324e849e6-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.p4c72697e9cb043898d50204324e849e6-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p4c72697e9cb043898d50204324e849e6-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p4c72697e9cb043898d50204324e849e6-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p4c72697e9cb043898d50204324e849e6-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p4c72697e9cb043898d50204324e849e6-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p4c72697e9cb043898d50204324e849e6-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p4c72697e9cb043898d50204324e849e6-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p4c72697e9cb043898d50204324e849e6-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-contents-content cmm6ja2" xid="classContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cmm6ja2"> 
+                <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cmm6ja2" xid="classContainer" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;src&quot;:&quot;$model/UI2/demo/tuniu/index-class.w&quot;}" __cid="cmm6ja2"> 
+                  <div class="main13 crUNVNr" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="crUNVNr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,"> 
+                    <style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.crUNVNr{background-color: rgb(250, 250, 250)} .img5.crUNVNr{width: 48px; height: 48px}</style>  
+                    <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="crUNVNr" class="crUNVNr"/>  
+                    <div component="$model/UI2/system/components/justep/list/list" class="x-list crUNVNr" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;classData&quot;}" __cid="crUNVNr"> 
+                      <ul class="x-list-template hide crUNVNr" xid="listTemplateUl2" __cid="crUNVNr" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)},event:{click:$model._callModelFn.bind($model, 'listClick')}"> 
+                        <li xid="li2" class="list-group-item x-flex crUNVNr" __cid="crUNVNr"> 
+                          <div xid="div2" class="media-left crUNVNr" __cid="crUNVNr"> 
+                            <a xid="a2" __cid="crUNVNr" class="crUNVNr"> 
+                              <img alt="" xid="image3" class="img-rounded img-responsive img5 crUNVNr" __cid="crUNVNr" data-bind="attr:{src:$model.getImageUrl(val('fImg'))}"/> 
+                            </a> 
+                          </div>  
+                          <div class="x-flex1 crUNVNr" xid="div1" __cid="crUNVNr"> 
+                            <h4 style="text-align: justify;" xid="h41" __cid="crUNVNr" class="crUNVNr" data-bind="text:ref('fTitle')"/>  
+                            <span class="text-muted crUNVNr" style="text-align: justify;" xid="span1" __cid="crUNVNr" data-bind="text:ref('fNote')"/> 
+                          </div>  
+                          <div class="text-muted crUNVNr" xid="div3" __cid="crUNVNr"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-only-icon crUNVNr" xid="button27" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-forward&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="crUNVNr"> 
+                              <i xid="i33" class="text-muted icon-ios7-arrow-forward crUNVNr" __cid="crUNVNr"/>  
+                              <span xid="span11" __cid="crUNVNr" class="crUNVNr"/> 
+                            </a> 
+                          </div> 
+                        </li> 
+                      </ul> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-contents-content cmm6ja2" xid="userContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cmm6ja2"> 
+                <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cmm6ja2" xid="userContainer" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;src&quot;:&quot;$model/UI2/demo/tuniu/index-user.w&quot;}" __cid="cmm6ja2"> 
+                  <div class="main13 cMNNRVb" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cMNNRVb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,"> 
+                    <style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.cMNNRVb{background-color: rgb(250, 250, 250)} .user.cMNNRVb{height: 150px; background-color: rgb(240, 240, 240)} .user.cMNNRVb .btn.cMNNRVb{width: 100px; margin: 60px 5px 0 5px}</style>  
+                    <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cMNNRVb" class="cMNNRVb"/>  
+                    <div xid="div28" class="text-center user cMNNRVb" __cid="cMNNRVb"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-success cMNNRVb" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;登录&quot;}" __cid="cMNNRVb"> 
+                        <i xid="i17" __cid="cMNNRVb" class="cMNNRVb"/>  
+                        <span xid="span42" __cid="cMNNRVb" class="cMNNRVb">登录</span> 
+                      </a>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-warning cMNNRVb" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;注册&quot;}" __cid="cMNNRVb"> 
+                        <i xid="i18" __cid="cMNNRVb" class="cMNNRVb"/>  
+                        <span xid="span43" __cid="cMNNRVb" class="cMNNRVb">注册</span> 
+                      </a> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card x-tuniu pe0ae33f869674b72baab93a8e09dba0d-iosstatusbar cMNNRVb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cMNNRVb"> 
+                      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cMNNRVb" xid="buttonGroup3" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cMNNRVb"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cMNNRVb" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-chatbubble-working&quot;,&quot;label&quot;:&quot;同团聊&quot;}" __cid="cMNNRVb"> 
+                          <i xid="i13" class="icon-chatbubble-working icon text-muted cMNNRVb" __cid="cMNNRVb"/>  
+                          <span xid="span38" class="text-muted cMNNRVb" __cid="cMNNRVb">同团聊</span> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cMNNRVb" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-document&quot;,&quot;label&quot;:&quot;我的订单&quot;}" __cid="cMNNRVb"> 
+                          <i xid="i14" class="icon-document icon text-muted cMNNRVb" __cid="cMNNRVb"/>  
+                          <span xid="span39" class="text-muted cMNNRVb" __cid="cMNNRVb">我的订单</span> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cMNNRVb" xid="button9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-bag&quot;,&quot;label&quot;:&quot;商城&quot;}" __cid="cMNNRVb"> 
+                          <i xid="i15" class="icon-bag icon text-muted cMNNRVb" __cid="cMNNRVb"/>  
+                          <span xid="span40" class="text-muted cMNNRVb" __cid="cMNNRVb">商城</span> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cMNNRVb" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-star-outline&quot;,&quot;label&quot;:&quot;我的收藏&quot;}" __cid="cMNNRVb"> 
+                          <i xid="i16" class="icon-ios7-star-outline icon text-muted cMNNRVb" __cid="cMNNRVb"/>  
+                          <span xid="span41" class="text-muted cMNNRVb" __cid="cMNNRVb">我的收藏</span> 
+                        </a> 
+                      </div>  
+                      <style __cid="cMNNRVb" class="cMNNRVb">.x-panel.pe0ae33f869674b72baab93a8e09dba0d-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pe0ae33f869674b72baab93a8e09dba0d-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pe0ae33f869674b72baab93a8e09dba0d-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pe0ae33f869674b72baab93a8e09dba0d-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pe0ae33f869674b72baab93a8e09dba0d-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pe0ae33f869674b72baab93a8e09dba0d-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pe0ae33f869674b72baab93a8e09dba0d-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pe0ae33f869674b72baab93a8e09dba0d-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pe0ae33f869674b72baab93a8e09dba0d-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+                    </div>  
+                    <ul class="list-group x-tuniu cMNNRVb" xid="ul1" __cid="cMNNRVb"> 
+                      <li class="list-group-item cMNNRVb" xid="li1" __cid="cMNNRVb">我的小金库 
+                        <span class="pull-right text-muted cMNNRVb" xid="span1" __cid="cMNNRVb">抵用卷、旅游卷 
+                          <i xid="i6" class="icon-ios7-arrow-forward cMNNRVb" __cid="cMNNRVb"/> 
+                        </span>  
+                        <i xid="i7" class="icon-ios7-box-outline cMNNRVb" __cid="cMNNRVb"/> 
+                      </li>  
+                      <li class="list-group-item cMNNRVb" xid="li2" __cid="cMNNRVb">会员俱乐部 
+                        <span class="pull-right text-muted cMNNRVb" xid="span2" __cid="cMNNRVb">活动、权益 
+                          <i xid="i8" class="icon-ios7-arrow-forward cMNNRVb" __cid="cMNNRVb"/> 
+                        </span>  
+                        <i xid="i9" class="icon-social-reddit-outline cMNNRVb" __cid="cMNNRVb"/> 
+                      </li>  
+                      <li class="list-group-item cMNNRVb" xid="li3" __cid="cMNNRVb">活动 
+                        <span class="pull-right text-muted cMNNRVb" xid="span3" __cid="cMNNRVb">抢购、红包、夺宝 
+                          <i xid="i10" class="icon-ios7-arrow-forward cMNNRVb" __cid="cMNNRVb"/> 
+                        </span>  
+                        <i xid="i11" class="icon-ios7-cart-outline cMNNRVb" __cid="cMNNRVb"/> 
+                      </li>  
+                      <li class="list-group-item cMNNRVb" xid="li4" __cid="cMNNRVb">资料管家 
+                        <span class="pull-right text-muted cMNNRVb" xid="span4" __cid="cMNNRVb">个人资料、常旅资料 
+                          <i xid="i12" class="icon-ios7-arrow-forward cMNNRVb" __cid="cMNNRVb"/> 
+                        </span>  
+                        <i xid="i20" class="icon-android-storage cMNNRVb" __cid="cMNNRVb"/> 
+                      </li>  
+                      <li class="list-group-item cMNNRVb" xid="li5" __cid="cMNNRVb">牛拉牛 
+                        <span class="pull-right text-muted cMNNRVb" xid="span5" __cid="cMNNRVb"> 
+                          <i xid="i21" class="icon-ios7-arrow-forward cMNNRVb" __cid="cMNNRVb"/> 
+                        </span>  
+                        <i xid="i22" class="icon-social-freebsd-devil cMNNRVb" __cid="cMNNRVb"/> 
+                      </li>  
+                      <li class="list-group-item cMNNRVb" xid="li6" __cid="cMNNRVb">社区 
+                        <span class="pull-right text-muted cMNNRVb" xid="span6" __cid="cMNNRVb">抵用卷、旅游卷 
+                          <i xid="i23" class="icon-ios7-arrow-forward cMNNRVb" __cid="cMNNRVb"/> 
+                        </span>  
+                        <i xid="i24" class="icon-ios7-people-outline cMNNRVb" __cid="cMNNRVb"/> 
+                      </li>  
+                      <li class="list-group-item cMNNRVb" xid="li7" __cid="cMNNRVb">其它 
+                        <span class="pull-right text-muted cMNNRVb" xid="span7" __cid="cMNNRVb"> 
+                          <i xid="i25" class="icon-ios7-arrow-forward cMNNRVb" __cid="cMNNRVb"/> 
+                        </span>  
+                        <i xid="i19" class="icon-ios7-more-outline cMNNRVb" __cid="cMNNRVb"/> 
+                      </li> 
+                    </ul> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div class="x-panel-bottom cmm6ja2" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmm6ja2"> 
+            <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-card x-tuniu cmm6ja2" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cmm6ja2"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top active cmm6ja2" xid="homeBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-home&quot;,&quot;label&quot;:&quot;首页&quot;,&quot;target&quot;:&quot;homeContent&quot;}" __cid="cmm6ja2"> 
+                <i xid="i4" class="icon-home icon cmm6ja2" __cid="cmm6ja2"/>  
+                <span xid="span6" __cid="cmm6ja2" class="cmm6ja2">首页</span> 
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cmm6ja2" xid="purposeBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-earth&quot;,&quot;label&quot;:&quot;目的地&quot;,&quot;target&quot;:&quot;purposeContent&quot;}" __cid="cmm6ja2"> 
+                <i xid="i3" class="icon icon-android-earth cmm6ja2" __cid="cmm6ja2"/>  
+                <span xid="span5" __cid="cmm6ja2" class="cmm6ja2">目的地</span> 
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cmm6ja2" xid="classBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-sort&quot;,&quot;label&quot;:&quot;分类&quot;,&quot;target&quot;:&quot;classContent&quot;}" __cid="cmm6ja2"> 
+                <i xid="i5" class="icon icon-android-sort cmm6ja2" __cid="cmm6ja2"/>  
+                <span xid="span4" __cid="cmm6ja2" class="cmm6ja2">分类</span> 
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cmm6ja2" xid="userBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-contact-outline&quot;,&quot;label&quot;:&quot;我的&quot;,&quot;target&quot;:&quot;userContent&quot;}" __cid="cmm6ja2"> 
+                <i xid="i6" class="icon icon-ios7-contact-outline cmm6ja2" __cid="cmm6ja2"/>  
+                <span xid="span71" __cid="cmm6ja2" class="cmm6ja2">我的</span> 
+              </a> 
+            </div> 
+          </div>  
+          <style __cid="cmm6ja2" class="cmm6ja2">.x-panel.pcfbe8bc4ad6741d0a3cc2b5e9c3c2657-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcfbe8bc4ad6741d0a3cc2b5e9c3c2657-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcfbe8bc4ad6741d0a3cc2b5e9c3c2657-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcfbe8bc4ad6741d0a3cc2b5e9c3c2657-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfbe8bc4ad6741d0a3cc2b5e9c3c2657-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcfbe8bc4ad6741d0a3cc2b5e9c3c2657-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfbe8bc4ad6741d0a3cc2b5e9c3c2657-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfbe8bc4ad6741d0a3cc2b5e9c3c2657-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfbe8bc4ad6741d0a3cc2b5e9c3c2657-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+        </div> 
+      </div>
+    </div>  
+    <div id="downloadGCF" style="display:none;padding:50px;"> 
+      <span>您使用的浏览器需要下载插件才能使用,</span>  
+      <a id="downloadGCFLink" href="#">下载地址</a>  
+      <p>(安装后请重新打开浏览器)</p> 
+    </div>  
+    <script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() &amp;&amp; (browser.getVersion() &lt; 10) &amp;&amp; !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>  
+    <script id="_metaJS" src="../../../v_e69783b7fa654a2d87bff0f6abb7b041l_zh_CNs_d_m/system/config/meta.js"> </script>  
+    <script id="_requireJS" src="../../../v_b1efa214132d49f5b924532a86a85f21l_zh_CNs_d_m/system/lib/require/require.2.1.10.js"> </script>  
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../v_8b00ff3183c34c01bbe8a7dac355d2b9l_zh_CNs_d_m/system/core.min.js"></script>
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../v_efc2bb6f5a3b46558846b1a4c0e5117cl_zh_CNs_d_m/system/common.min.js"></script>
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../v_e168d90637724a83b9be63aba0238634l_zh_CNs_d_m/system/components/comp.min.js"></script>
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../v_e99b95870da842d9aba3cdd3a6932fc4l_zh_CNs_d_m/system/components/comp2.min.js"></script>
+    <script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &amp;&amp;
+                                    !(node.attachEvent.toString &amp;&amp; node.attachEvent.toString().indexOf('[native code') &lt; 0) &amp;&amp;
+                                    !(typeof opera !== 'undefined' &amp;&amp; opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url &amp;&amp; window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url &amp;&amp; window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10.js";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&amp;&amp; (items[items.length-1].indexOf("l_") !== -1)
+    								&amp;&amp; (items[items.length-1].indexOf("s_") !== -1)
+    								&amp;&amp; (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls &amp;&amp; urls.length&gt;0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i&lt;urls.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("&lt;script  src='" + url + "'/&gt;");
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles &amp;&amp; styles.length&gt;0){
+            				for (var i=0; i&lt;styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("&lt;link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/&gt;");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i&lt;items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] &amp;&amp; (items[i].indexOf("v_")===0)
+            								&amp;&amp; (items[i].indexOf("l_")!==-1)
+            								&amp;&amp; (items[i].indexOf("s_")!==-1)
+            								&amp;&amp; (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i&lt;loadeds.length; i++){
+    							if (loadeds[i] &amp;&amp; (loadeds[i].indexOf(newUrl)!==-1)){
+    								return true;
+    							}
+    						}
+            			}
+    					return false;
+            		},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i&lt;scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_179896006dae4f858ab05c17d7791b3al_zh_CNs_d_m/demo/tuniu',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_179896006dae4f858ab05c17d7791b3al_zh_CNs_d_m',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_179896006dae4f858ab05c17d7791b3al_zh_CNs_d_m',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_179896006dae4f858ab05c17d7791b3al_zh_CNs_d_m/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_179896006dae4f858ab05c17d7791b3al_zh_CNs_d_m/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_179896006dae4f858ab05c17d7791b3al_zh_CNs_d_m/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator &amp;&amp; navigator.splashscreen &amp;&amp; navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+						setTimeout(function(){
+							versionChecker.check();			
+						},1000);
+    	            }, false);
+    				var context = {};
+    				context.model = '$model/UI2/demo/tuniu/index_main.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow &amp;&amp; window.parent &amp;&amp; window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid &amp;&amp; pwindow 
+    						&amp;&amp; pwindow.__justep &amp;&amp; pwindow.__justep.windowOpeners
+    						&amp;&amp; pwindow.__justep.windowOpeners[ownerid]
+    						&amp;&amp; $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					$(window).unload(function(event){
+    						if(winOpener &amp;&amp; winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script> 
+  </body> 
+</html>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window ciui2am" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciui2am" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/dialog/dialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.list-group-item.ciui2am{border: none}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ciui2am" class="ciui2am"/>  
+  <span component="$model/UI2/system/components/justep/dialog/dialog" xid="dialog1" style="top:9px;left:59px;" data-bind="component:{name:'$model/UI2/system/components/justep/dialog/dialog'}" __cid="ciui2am" class="ciui2am">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay ciui2am" __cid="ciui2am"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog ciui2am" style="display:none;" __cid="ciui2am">
+      <xhtml:div class="x-dialog-title ciui2am" __cid="ciui2am">
+        <xhtml:button class="close ciui2am" __cid="ciui2am">
+          <xhtml:span __cid="ciui2am" class="ciui2am">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text ciui2am" __cid="ciui2am"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body ciui2am" __cid="ciui2am"/>
+    </xhtml:div>
+  </span>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pce7546c330fb4752a3159724452467cb-iosstatusbar ciui2am" xid="panel1" style="background-image: url($model/UI2/question/img/1背景.jpg);background-size:cover;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciui2am"> 
+    <div class="x-panel-top ciui2am" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:60}" __cid="ciui2am">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ciui2am" xid="titleBar1" style="height:100%;font-size:x-large;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="ciui2am"> 
+        <div class="x-titlebar-left ciui2am" xid="left1" __cid="ciui2am">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left ciui2am" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;首页&quot;}" __cid="ciui2am"> 
+            <i xid="i3" class="icon-chevron-left ciui2am" __cid="ciui2am"/>  
+            <span xid="span2" __cid="ciui2am" class="ciui2am">首页</span>
+          </a>
+        </div>  
+        <div class="x-titlebar-title ciui2am" xid="title1" __cid="ciui2am">
+          <span xid="span1" style="font-weight:normal;" __cid="ciui2am" class="ciui2am">登录</span>
+        </div>  
+        <div class="x-titlebar-right  ciui2am" xid="right1" __cid="ciui2am">
+          <div class="empty ciui2am" __cid="ciui2am"/>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-content ciui2am" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciui2am">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ciui2am" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciui2am"> 
+        <div class="x-col ciui2am" xid="col13" __cid="ciui2am"/>  
+        <div class="x-col ciui2am" xid="col14" __cid="ciui2am"/>  
+        <div class="x-col ciui2am" xid="col15" __cid="ciui2am"/>
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ciui2am" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciui2am"> 
+        <div class="x-col ciui2am" xid="col23" __cid="ciui2am"/>  
+        <div class="x-col ciui2am" xid="col24" __cid="ciui2am"/>  
+        <div class="x-col ciui2am" xid="col25" __cid="ciui2am"/>
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ciui2am" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciui2am"> 
+        <div class="x-col x-col-20 ciui2am" xid="col2" __cid="ciui2am"/>  
+        <div class="x-col ciui2am" xid="col16" __cid="ciui2am">
+          <input type="text" class="form-control ciui2am" component="$model/UI2/system/components/justep/input/input" xid="nameInput" style="font-size:large;background-color:transparent;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;账号&quot;}" __cid="ciui2am"/>
+        </div>  
+        <div class="x-col x-col-20 ciui2am" xid="col17" __cid="ciui2am"/>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ciui2am" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciui2am"> 
+        <div class="x-col ciui2am" xid="col26" __cid="ciui2am"/>  
+        <div class="x-col ciui2am" xid="col27" __cid="ciui2am"/>  
+        <div class="x-col ciui2am" xid="col28" __cid="ciui2am"/>
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ciui2am" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciui2am"> 
+        <div class="x-col x-col-20 ciui2am" xid="col5" __cid="ciui2am"/>  
+        <div class="x-col ciui2am" xid="col18" __cid="ciui2am">
+          <input component="$model/UI2/system/components/justep/input/password" class="form-control ciui2am" xid="passwordInput" style="font-size:large;background-color:transparent;color:#FFFFFF;" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;密码&quot;}" __cid="ciui2am"/>
+        </div>  
+        <div class="x-col x-col-20 ciui2am" xid="col19" __cid="ciui2am"/>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ciui2am" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciui2am"> 
+        <div class="x-col ciui2am" xid="col20" __cid="ciui2am"/>  
+        <div class="x-col ciui2am" xid="col21" __cid="ciui2am"/>  
+        <div class="x-col ciui2am" xid="col22" __cid="ciui2am"/>
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ciui2am" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciui2am"> 
+        <div class="x-col ciui2am" xid="col7" __cid="ciui2am"/>  
+        <div class="x-col ciui2am" xid="col8" __cid="ciui2am">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block ciui2am" xid="loginBtn" style="font-size:large;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:loginBtnClick" data-config="{&quot;label&quot;:&quot;登录&quot;}" __cid="ciui2am"> 
+            <i xid="i1" __cid="ciui2am" class="ciui2am"/>  
+            <span xid="span6" __cid="ciui2am" class="ciui2am">登录</span>
+          </a>
+        </div>  
+        <div class="x-col ciui2am" xid="col9" __cid="ciui2am"/>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ciui2am" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciui2am"> 
+        <div class="x-col ciui2am" xid="col29" __cid="ciui2am"/>  
+        <div class="x-col ciui2am" xid="col30" __cid="ciui2am"/>  
+        <div class="x-col ciui2am" xid="col31" __cid="ciui2am"/>
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ciui2am" xid="row4" style="display:none;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciui2am"> 
+        <div class="x-col ciui2am" xid="col10" __cid="ciui2am"/>  
+        <div class="x-col x-col-center ciui2am" xid="col11" style="text-align:center;" __cid="ciui2am">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block ciui2am" xid="registerBtn" style="font-size:large;background-color:#FFFFFF;color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:registerBtnClick" data-config="{&quot;label&quot;:&quot;注册&quot;}" __cid="ciui2am"> 
+            <i xid="i2" __cid="ciui2am" class="ciui2am"/>  
+            <span xid="span7" __cid="ciui2am" class="ciui2am">注册</span>
+          </a>
+        </div>  
+        <div class="x-col ciui2am" xid="col12" __cid="ciui2am"/>
+      </div> 
+    </div>  
+    <style __cid="ciui2am" class="ciui2am">.x-panel.pce7546c330fb4752a3159724452467cb-iosstatusbar &gt;.x-panel-top {height: 60px;}.x-panel.pce7546c330fb4752a3159724452467cb-iosstatusbar &gt;.x-panel-content { top: 60px;bottom: nullpx;}.x-panel.pce7546c330fb4752a3159724452467cb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pce7546c330fb4752a3159724452467cb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pce7546c330fb4752a3159724452467cb-iosstatusbar &gt;.x-panel-top {height: 80px;}.iosstatusbar .x-panel.pce7546c330fb4752a3159724452467cb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pce7546c330fb4752a3159724452467cb-iosstatusbar &gt;.x-panel-content { top: 80px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pce7546c330fb4752a3159724452467cb-iosstatusbar &gt;.x-panel-top {height: 60px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pce7546c330fb4752a3159724452467cb-iosstatusbar &gt;.x-panel-content {top: 60px;}</style>
+  </div>
+</div>

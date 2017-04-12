@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" class="window cqUFnEv" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqUFnEv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/designerCommon/grid/grid,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">@import url($model/UI2/system/components/designerCommon/css/common.css);</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cqUFnEv" class="cqUFnEv"></div>  
+  <div class="row form-navbar1 cqUFnEv" style="margin-top:12px" __cid="cqUFnEv"> 
+    <label for="text1" class="control-label col-xs-2 cqUFnEv" style="padding-top:10px;margin-left:15px" xid="control" __cid="cqUFnEv">详细页标题：</label>  
+    <div class="col-xs-4 cqUFnEv" xid="col1" __cid="cqUFnEv"> 
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control cqUFnEv" xid="titleInput" placeholder="请输入标题" data-bind="component:{ref:title,name:'$model/UI2/system/components/justep/input/input'}" __cid="cqUFnEv"/> 
+    </div> 
+  </div>  
+  <div class="row form-navbar2 cqUFnEv" __cid="cqUFnEv"> 
+    <ul class="nav navbar-nav cqUFnEv" style="margin-left:15px" __cid="cqUFnEv"> 
+      <li __cid="cqUFnEv" class="cqUFnEv"> 
+        <a bind-click="addClick" href="#" role="button" __cid="cqUFnEv" class="cqUFnEv">
+          <i class="glyphicon glyphicon-plus cqUFnEv" __cid="cqUFnEv"/>添加关系
+        </a> 
+      </li>  
+      <li __cid="cqUFnEv" class="cqUFnEv"> 
+        <a bind-click="deleteClick" href="#" role="button" __cid="cqUFnEv" class="cqUFnEv">
+          <i class="glyphicon glyphicon-minus cqUFnEv" __cid="cqUFnEv"/>删除
+        </a> 
+      </li>  
+      <li __cid="cqUFnEv" class="cqUFnEv"> 
+        <a bind-click="upClick" href="#" role="button" __cid="cqUFnEv" class="cqUFnEv">
+          <i class="glyphicon glyphicon-arrow-up cqUFnEv" __cid="cqUFnEv"/>上移
+        </a> 
+      </li>  
+      <li __cid="cqUFnEv" class="cqUFnEv"> 
+        <a bind-click="downClick" href="#" role="button" __cid="cqUFnEv" class="cqUFnEv">
+          <i class="glyphicon glyphicon-arrow-down cqUFnEv" __cid="cqUFnEv"/>下移
+        </a> 
+      </li> 
+    </ul> 
+  </div>  
+  <div component="$model/UI2/system/components/designerCommon/grid/grid" xid="grid" data="formData" style="visibility:hidden;width:95%;" class="grid-height cqUFnEv" editable="true" config="{&quot;altrows&quot;:true,&quot;columns&quot;:[{&quot;columntype&quot;:&quot;textbox&quot;,&quot;dataField&quot;:&quot;name&quot;,&quot;text&quot;:&quot;关系名称&quot;},{&quot;columntype&quot;:&quot;textbox&quot;,&quot;dataField&quot;:&quot;dataType&quot;,&quot;text&quot;:&quot;关系类型&quot;},{&quot;columntype&quot;:&quot;textbox&quot;,&quot;dataField&quot;:&quot;labelName&quot;,&quot;text&quot;:&quot;关系标签&quot;},{&quot;columntype&quot;:&quot;dropdownlist&quot;,&quot;dataField&quot;:&quot;colEditor&quot;,&quot;text&quot;:&quot;编辑器(*)&quot;}],&quot;dataXID&quot;:&quot;formData&quot;,&quot;editable&quot;:true,&quot;enabletooltips&quot;:true,&quot;selectionmode&quot;:&quot;singlerow&quot;}" data-bind="component:{name:'$model/UI2/system/components/designerCommon/grid/grid'}" data-events="onCreateEditor_colEditor:gridColEditor" __cid="cqUFnEv"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:windowDialogReceive" data-config="{&quot;height&quot;:&quot;90%&quot;,&quot;src&quot;:&quot;$model/UI2/system/templates/common/selectColsDialog.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;width&quot;:&quot;90%&quot;}" __cid="cqUFnEv" class="cqUFnEv">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cqUFnEv" __cid="cqUFnEv"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cqUFnEv" style="display:none;" __cid="cqUFnEv">
+      <xhtml:div class="x-dialog-title cqUFnEv" __cid="cqUFnEv">
+        <xhtml:button class="close cqUFnEv" __cid="cqUFnEv">
+          <xhtml:span __cid="cqUFnEv" class="cqUFnEv">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cqUFnEv" __cid="cqUFnEv"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cqUFnEv" __cid="cqUFnEv"/>
+    </xhtml:div>
+  </span>
+</div>

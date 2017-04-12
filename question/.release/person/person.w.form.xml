@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:mobile" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cR32Y3e" class="cR32Y3e" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/gridSelect/gridSelect,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.font-gray.cR32Y3e{color: gray} .font-bold.cR32Y3e{font-weight: bold}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cR32Y3e" class="cR32Y3e"></div>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cR32Y3e" xid="contents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cR32Y3e"> 
+    <div class="x-contents-content active cR32Y3e" xid="list" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cR32Y3e"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pd11ab27d268e4a9badb7b5bc1a6cd272-iosstatusbar cR32Y3e" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cR32Y3e"> 
+        <div class="x-panel-top cR32Y3e" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cR32Y3e">
+          <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cR32Y3e" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;人员列表&quot;}" __cid="cR32Y3e"> 
+            <div class="x-titlebar-left cR32Y3e" xid="left1" __cid="cR32Y3e">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cR32Y3e" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cR32Y3e"> 
+                <i xid="i3" class="icon-chevron-left cR32Y3e" __cid="cR32Y3e"/>  
+                <span xid="span3" __cid="cR32Y3e" class="cR32Y3e"/>
+              </a>
+            </div>  
+            <div class="x-titlebar-title cR32Y3e" xid="title1" __cid="cR32Y3e">人员列表</div>  
+            <div class="x-titlebar-right  cR32Y3e" xid="right1" __cid="cR32Y3e">
+              <div class="empty cR32Y3e" __cid="cR32Y3e"/>
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cR32Y3e" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;icon&quot;:&quot;icon-plus&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cR32Y3e"> 
+                <i xid="i1" class="icon-plus cR32Y3e" __cid="cR32Y3e"/>  
+                <span xid="span1" __cid="cR32Y3e" class="cR32Y3e"/>
+              </a>
+            </div>
+          </div>
+        </div>  
+        <div class="x-panel-content cR32Y3e" xid="content3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cR32Y3e">
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cR32Y3e" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;mainData&quot;}" __cid="cR32Y3e"> 
+            <ul class="x-list-template hide cR32Y3e" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cR32Y3e"> 
+              <li xid="li1" __cid="cR32Y3e" class="cR32Y3e">
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cR32Y3e" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cR32Y3e"> 
+                  <div class="x-col x-col-10 x-col-center cR32Y3e" xid="col1" style="text-align:left;" __cid="cR32Y3e">
+                    <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cR32Y3e" xid="checkbox1" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{ref:ref(&quot;calcCheckBox&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cR32Y3e">
+                      <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cR32Y3e" class="cR32Y3e"/>
+                      <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cR32Y3e" class="cR32Y3e"/>
+                    </span>
+                  </div>  
+                  <div class="x-col cR32Y3e" xid="col2" __cid="cR32Y3e">
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cR32Y3e" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cR32Y3e"> 
+                      <div class="x-col cR32Y3e" xid="col5" __cid="cR32Y3e">
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cR32Y3e" xid="output1" data-bind="component:{ref:ref(&quot;fUserName&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cR32Y3e"/>
+                      </div>  
+                      <div class="x-col cR32Y3e" xid="col6" __cid="cR32Y3e">
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cR32Y3e" xid="output2" data-bind="component:{ref:ref(&quot;fUserType&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cR32Y3e"/>
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cR32Y3e" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cR32Y3e"> 
+                      <div class="x-col cR32Y3e" xid="col8" __cid="cR32Y3e">
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cR32Y3e" xid="output3" data-bind="component:{ref:ref(&quot;fPassword&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cR32Y3e"/>
+                      </div> 
+                    </div>
+                  </div> 
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>  
+        <div class="x-panel-bottom cR32Y3e" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cR32Y3e">
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group-lg btn-group-justified cR32Y3e" xid="buttonGroup1" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cR32Y3e">
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cR32Y3e" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;删除&quot;}" __cid="cR32Y3e"> 
+              <i xid="i4" __cid="cR32Y3e" class="cR32Y3e"/>  
+              <span xid="span4" __cid="cR32Y3e" class="cR32Y3e">删除</span>
+            </a>
+          </div>
+        </div>
+        <style __cid="cR32Y3e" class="cR32Y3e">.x-panel.pd11ab27d268e4a9badb7b5bc1a6cd272-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pd11ab27d268e4a9badb7b5bc1a6cd272-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pd11ab27d268e4a9badb7b5bc1a6cd272-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pd11ab27d268e4a9badb7b5bc1a6cd272-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pd11ab27d268e4a9badb7b5bc1a6cd272-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pd11ab27d268e4a9badb7b5bc1a6cd272-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pd11ab27d268e4a9badb7b5bc1a6cd272-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pd11ab27d268e4a9badb7b5bc1a6cd272-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pd11ab27d268e4a9badb7b5bc1a6cd272-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div>
+    </div>  
+    <div class="x-contents-content cR32Y3e" xid="detail" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cR32Y3e">
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p68e7b8c0c90543798a7bce5320eaa4bc-iosstatusbar cR32Y3e" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cR32Y3e"> 
+        <div class="x-panel-top cR32Y3e" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cR32Y3e">
+          <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cR32Y3e" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;新增用户名&quot;}" __cid="cR32Y3e"> 
+            <div class="x-titlebar-left cR32Y3e" xid="left2" __cid="cR32Y3e">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cR32Y3e" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button7Click" data-config="{&quot;icon&quot;:&quot;linear linear-volumehigh&quot;}" __cid="cR32Y3e"> 
+                <i xid="i8" class="linear linear-volumehigh cR32Y3e" __cid="cR32Y3e"/>  
+                <span xid="span8" __cid="cR32Y3e" class="cR32Y3e"/>
+              </a>
+            </div>  
+            <div class="x-titlebar-title cR32Y3e" xid="title2" __cid="cR32Y3e">新增用户名</div>  
+            <div class="x-titlebar-right  cR32Y3e" xid="right2" __cid="cR32Y3e">
+              <div class="empty cR32Y3e" __cid="cR32Y3e"/>
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cR32Y3e" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button6Click" data-config="{&quot;icon&quot;:&quot;linear linear-bubble&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cR32Y3e"> 
+                <i xid="i7" class="linear linear-bubble cR32Y3e" __cid="cR32Y3e"/>  
+                <span xid="span7" __cid="cR32Y3e" class="cR32Y3e"/>
+              </a>
+            </div>
+          </div>
+        </div>  
+        <div class="x-panel-content cR32Y3e" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cR32Y3e">
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cR32Y3e" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cR32Y3e"> 
+            <label class="x-label cR32Y3e" xid="label1" __cid="cR32Y3e">用户名：</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cR32Y3e" xid="input1" data-bind="component:{ref:$model.mainData.ref(&quot;fUserName&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cR32Y3e"/>
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cR32Y3e" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cR32Y3e"> 
+            <label class="x-label cR32Y3e" xid="label2" __cid="cR32Y3e">密码：</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cR32Y3e" xid="input2" data-bind="component:{ref:$model.mainData.ref(&quot;fPassword&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cR32Y3e"/>
+          </div>  
+          <div class="x-gridSelect cR32Y3e" component="$model/UI2/system/components/justep/gridSelect/gridSelect" xid="gridSelect1" data-config="{&quot;autoOptionWidth&quot;:false,&quot;disabled&quot;:false,&quot;inputChangeable&quot;:false,&quot;inputFilterable&quot;:false,&quot;optionCfg&quot;:{&quot;colModel&quot;:[{&quot;name&quot;:&quot;label&quot;}],&quot;data&quot;:&quot;data1&quot;,&quot;label&quot;:&quot;label&quot;,&quot;value&quot;:&quot;value&quot;,&quot;xid&quot;:&quot;option1&quot;},&quot;optionHeight&quot;:300}" data-bind="component:{ref:$model.mainData.ref(&quot;fUserType&quot;),name:'$model/UI2/system/components/justep/gridSelect/gridSelect'}" __cid="cR32Y3e"> 
+            <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-gridSelect-option cR32Y3e" __cid="cR32Y3e"/>
+            <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" class="form-control x-gridSelect-input cR32Y3e" __cid="cR32Y3e"/>
+            <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-gridSelect-clear icon-close-circled hide cR32Y3e" __cid="cR32Y3e"/>
+          </div>
+        </div>  
+        <style __cid="cR32Y3e" class="cR32Y3e">.x-panel.p68e7b8c0c90543798a7bce5320eaa4bc-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p68e7b8c0c90543798a7bce5320eaa4bc-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p68e7b8c0c90543798a7bce5320eaa4bc-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p68e7b8c0c90543798a7bce5320eaa4bc-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p68e7b8c0c90543798a7bce5320eaa4bc-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p68e7b8c0c90543798a7bce5320eaa4bc-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p68e7b8c0c90543798a7bce5320eaa4bc-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p68e7b8c0c90543798a7bce5320eaa4bc-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p68e7b8c0c90543798a7bce5320eaa4bc-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cim2emy" class="cim2emy" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-bg-img3.cim2emy{background: url(@justepContextPath@/v_5113_nol_zh_CNs_desktopd_pc/question/newprotal/img/bg3.jpg); background-size: 320px 100%} .x-grid-caseMenu.cim2emy{padding-top: 15px; padding-left: 5px; width: 305px; margin: 0 auto; list-style: none} .x-grid-caseMenu.cim2emy .cell.cim2emy{float: left; width: 93px; margin: 0 6px 11px 0; background-color: rgb(255, 255, 255); border-radius: 4px; box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1)} .x-grid-caseMenu.cim2emy .cell.cim2emy img.cim2emy{vertical-align: middle; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px} .x-grid-caseMenu.cim2emy .cell.cim2emy span.cim2emy{display: inline-block; width: 93px; line-height: 31px; margin-top: 10px; text-align: center; color: rgb(115, 115, 115); font-weight: bold; overflow: hidden; font-size: 12px}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cim2emy" class="cim2emy"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pefe3fd8e956c42188a557b21e3ca84ea-iosstatusbar cim2emy" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cim2emy"> 
+    <div class="x-panel-top cim2emy" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cim2emy"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cim2emy" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;成功案例&quot;}" __cid="cim2emy"> 
+        <div class="x-titlebar-left cim2emy" __cid="cim2emy"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cim2emy" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cim2emy"> 
+            <i class="icon-chevron-left cim2emy" __cid="cim2emy"/>  
+            <span __cid="cim2emy" class="cim2emy"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cim2emy" __cid="cim2emy">成功案例</div>  
+        <div class="x-titlebar-right  cim2emy" __cid="cim2emy"> 
+          <div class="empty cim2emy" __cid="cim2emy"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-bg-img3 cim2emy" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cim2emy"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cim2emy" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;}" __cid="cim2emy"> 
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row x-list-template x-grid-caseMenu hide cim2emy" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'},foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cim2emy"> 
+          <div class="col cell cim2emy" xid="col1" __cid="cim2emy" data-bind="event:{click:$model._callModelFn.bind($model, 'open')}"> 
+            <img height="71" width="93" __cid="cim2emy" class="cim2emy" data-bind="attr:{src:$model.getImageUrl($object)}"/>  
+            <span __cid="cim2emy" class="cim2emy" data-bind="text:ref('title')"/> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="parent" __cid="cim2emy" class="cim2emy"/> 
+    </div>  
+    <style __cid="cim2emy" class="cim2emy">.x-panel.pefe3fd8e956c42188a557b21e3ca84ea-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pefe3fd8e956c42188a557b21e3ca84ea-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pefe3fd8e956c42188a557b21e3ca84ea-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pefe3fd8e956c42188a557b21e3ca84ea-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pefe3fd8e956c42188a557b21e3ca84ea-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pefe3fd8e956c42188a557b21e3ca84ea-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pefe3fd8e956c42188a557b21e3ca84ea-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pefe3fd8e956c42188a557b21e3ca84ea-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pefe3fd8e956c42188a557b21e3ca84ea-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

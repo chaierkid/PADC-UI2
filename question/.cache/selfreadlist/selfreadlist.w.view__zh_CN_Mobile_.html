@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:mobile" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cz67vya" class="cz67vya" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/button/buttonGroup,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.font-gray.cz67vya{color: gray} .font-bold.cz67vya{font-weight: bold}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cz67vya" class="cz67vya"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pefcb035eb4234322acc6b41e92b61e94-iosstatusbar cz67vya" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cz67vya"> 
+    <div class="x-panel-top cz67vya" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cz67vya"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cz67vya" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;调查列表&quot;}" __cid="cz67vya"> 
+        <div class="x-titlebar-left cz67vya" __cid="cz67vya"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cz67vya" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-sad&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cz67vya"> 
+            <i class="linear linear-sad cz67vya" __cid="cz67vya"/>  
+            <span __cid="cz67vya" class="cz67vya"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cz67vya" __cid="cz67vya">调查列表</div>  
+        <div class="x-titlebar-right  cz67vya" __cid="cz67vya"> 
+          <div class="empty cz67vya" __cid="cz67vya"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cz67vya" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cz67vya"> 
+      <div xid="mainList" class="x-list cz67vya" component="$model/UI2/system/components/justep/list/list" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:false,&quot;data&quot;:&quot;mainData&quot;,&quot;limit&quot;:-1}" __cid="cz67vya"> 
+        <div class="x-list-head cz67vya" __cid="cz67vya"/>  
+        <ul class="x-list-template hide cz67vya" __cid="cz67vya" data-bind="foreach:{data:$model.foreach_mainList($element),afterRender:$model.foreach_afterRender_mainList.bind($model,$element)}"> 
+          <li __cid="cz67vya" class="cz67vya"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center cz67vya" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cz67vya"> 
+              <div class="x-col cz67vya" style="text-align: left;" __cid="cz67vya"> 
+                <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cz67vya" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{ref:ref('calcCheckBox'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cz67vya"> 
+                  <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cz67vya" class="cz67vya"></input>  
+                  <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cz67vya" class="cz67vya"></label> 
+                </span> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-col x-col-90 cz67vya" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},event:{click:$model._callModelFn.bind($model, 'row1Click')}" __cid="cz67vya"> 
+                <div class="x-row cz67vya" component="$model/UI2/system/components/justep/row/row" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cz67vya"> 
+                  <div class="x-col cz67vya" __cid="cz67vya"> 
+                    <span class="font-bold x-output cz67vya" component="$model/UI2/system/components/justep/output/output" data="mainData" data-bind="component:{ref:ref('fHospitalCode'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cz67vya"/> 
+                  </div>  
+                  <div class="x-col cz67vya" xid="col5" __cid="cz67vya"> 
+                    <span class="font-bold x-output cz67vya" component="$model/UI2/system/components/justep/output/output" data="mainData" xid="output1" data-bind="component:{ref:ref('fHospitalName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cz67vya"/> 
+                  </div> 
+                </div>  
+                <div class="x-row cz67vya" component="$model/UI2/system/components/justep/row/row" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cz67vya"> 
+                  <div class="x-col cz67vya" __cid="cz67vya"> 
+                    <span class="font-bold x-output cz67vya" component="$model/UI2/system/components/justep/output/output" data="mainData" data-bind="component:{ref:ref('fSurveydate'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cz67vya"/> 
+                  </div>  
+                  <div class="x-col cz67vya" xid="col6" __cid="cz67vya"> 
+                    <span class="font-bold x-output cz67vya" component="$model/UI2/system/components/justep/output/output" data="mainData" xid="output2" data-bind="component:{ref:ref('fUserName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cz67vya"/> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-col font-gray cz67vya" style="text-align: right" __cid="cz67vya" data-bind="event:{click:$model._callModelFn.bind($model, 'row2Click')}"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-only-icon cz67vya" xid="editBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cz67vya"> 
+                  <i class="icon-chevron-right cz67vya" __cid="cz67vya"/>  
+                  <span __cid="cz67vya" class="cz67vya"/> 
+                </a> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cz67vya" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cz67vya"> 
+      <div class="btn-group-lg btn-group-justified cz67vya" component="$model/UI2/system/components/justep/button/buttonGroup" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" __cid="cz67vya"/>  
+      <div class="btn-group-lg btn-group-justified cz67vya" component="$model/UI2/system/components/justep/button/buttonGroup" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" __cid="cz67vya"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cz67vya" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okEditClick" __cid="cz67vya"> 
+          <i xid="i2" __cid="cz67vya" class="cz67vya"/>  
+          <span xid="span2" __cid="cz67vya" class="cz67vya">删除</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cz67vya" class="cz67vya">.x-panel.pefcb035eb4234322acc6b41e92b61e94-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pefcb035eb4234322acc6b41e92b61e94-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pefcb035eb4234322acc6b41e92b61e94-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pefcb035eb4234322acc6b41e92b61e94-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pefcb035eb4234322acc6b41e92b61e94-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pefcb035eb4234322acc6b41e92b61e94-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pefcb035eb4234322acc6b41e92b61e94-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pefcb035eb4234322acc6b41e92b61e94-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pefcb035eb4234322acc6b41e92b61e94-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

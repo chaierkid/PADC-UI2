@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c67JvQz" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c67JvQz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/toggle,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/bar/bar,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="c67JvQz" class="c67JvQz"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pf6e546641cac49b3989f8664d6694788-iosstatusbar c67JvQz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c67JvQz"> 
+    <div class="x-panel-top c67JvQz" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c67JvQz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c67JvQz" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;街面秩序&quot;}" __cid="c67JvQz"> 
+        <div class="x-titlebar-left c67JvQz" xid="left1" __cid="c67JvQz"> 
+          <p xid="p1" style="background-color:red;" __cid="c67JvQz" class="c67JvQz"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-icon c67JvQz" xid="返回主页" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button31Click" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="c67JvQz"> 
+            <i xid="i9" class="icon-chevron-left c67JvQz" __cid="c67JvQz"/>  
+            <span xid="span9" __cid="c67JvQz" class="c67JvQz"/> 
+          </a>  
+          <label xid="label19" __cid="c67JvQz" class="c67JvQz">首页</label> 
+        </div>  
+        <div class="x-titlebar-title c67JvQz" xid="title1" __cid="c67JvQz">街面秩序</div>  
+        <div class="x-titlebar-right  c67JvQz" xid="right1" __cid="c67JvQz"> 
+          <div class="empty c67JvQz" __cid="c67JvQz"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c67JvQz" xid="content3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c67JvQz"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full c67JvQz" xid="contents3" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="c67JvQz"> 
+        <div class="x-contents-content active c67JvQz" xid="Q1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c67JvQz"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 c67JvQz" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c67JvQz"> 
+            <label class="x-label c67JvQz" xid="label1" __cid="c67JvQz">调查区域：</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c67JvQz" xid="fHospitalCode" data-bind="component:{ref:$model.tabquestion.ref(&quot;fHospitalCode&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="c67JvQz"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 c67JvQz" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c67JvQz"> 
+            <label class="x-label c67JvQz" xid="label2" __cid="c67JvQz">调查点位：</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c67JvQz" xid="fHospitalName" data-bind="component:{ref:$model.tabquestion.ref(&quot;fHospitalName&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="c67JvQz"/> 
+          </div>  
+          <h4 xid="h411" __cid="c67JvQz" class="c67JvQz">Q1该医院周边是否存在摆摊挂牌现象？</h4>  
+          <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle c67JvQz" xid="fQ1" ON="是" OFF="否" checkedValue="是" uncheckedValue="否" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;是&quot;,&quot;disabled&quot;:false,&quot;label&quot;:{&quot;off&quot;:&quot;否&quot;,&quot;on&quot;:&quot;是&quot;},&quot;uncheckedValue&quot;:&quot;否&quot;}" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ1&quot;),name:'$model/UI2/system/components/justep/button/toggle'}" __cid="c67JvQz"> 
+            <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="c67JvQz" class="c67JvQz"></input>  
+            <label xmlns:xhtml="http://www.w3.org/1999/xhtml" data-on="是" data-off="否" __cid="c67JvQz" class="c67JvQz">  
+              <span __cid="c67JvQz" class="c67JvQz"/> 
+            </label> 
+          </span>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 c67JvQz" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c67JvQz"> 
+            <label class="x-label c67JvQz" xid="label3" __cid="c67JvQz">调查区域：</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c67JvQz" xid="input1" data-bind="component:{ref:$model.tabquestion.ref(&quot;fHospitalCode&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="c67JvQz"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/bar/bar" class="x-bar c67JvQz" xid="bar2" data-bind="component:{name:'$model/UI2/system/components/justep/bar/bar'}" __cid="c67JvQz"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm center-block c67JvQz" xid="button2" style="background-color:transparent;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;下一步&quot;}" __cid="c67JvQz"> 
+              <i xid="i3" __cid="c67JvQz" class="c67JvQz"/>  
+              <span xid="span3" __cid="c67JvQz" class="c67JvQz">下一步</span> 
+            </a> 
+          </div> 
+        </div>  
+        <div class="x-contents-content c67JvQz" xid="Q1_1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c67JvQz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c67JvQz" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button10Click" data-config="{&quot;icon&quot;:&quot;linear linear-database&quot;}" __cid="c67JvQz"> 
+            <i xid="i10" class="linear linear-database c67JvQz" __cid="c67JvQz"/>  
+            <span xid="span10" __cid="c67JvQz" class="c67JvQz"/> 
+          </a>  
+          <label xid="label20" __cid="c67JvQz" class="c67JvQz">返回上一页</label>  
+          <h4 xid="h41" __cid="c67JvQz" class="c67JvQz">Q1_1如果存在摆摊挂牌现象，请问您是哪一种，请记录并拍照（多选）。</h4>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c67JvQz" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c67JvQz"> 
+            <div class="x-col x-col-20 x-col-center c67JvQz" xid="col4" __cid="c67JvQz"> 
+              <label xid="label8" __cid="c67JvQz" class="c67JvQz">1.代办挂号</label> 
+            </div>  
+            <div class="x-col x-col-10 x-col-center c67JvQz" xid="x-col-5" __cid="c67JvQz"> 
+              <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox c67JvQz" xid="fQ1_1_1" checkedValue="是" value="否" checked="true" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;是&quot;,&quot;disabled&quot;:false,&quot;value&quot;:&quot;否&quot;}" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ1_1_1&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="c67JvQz"> 
+                <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="否" __cid="c67JvQz" class="c67JvQz"></input>  
+                <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="c67JvQz" class="c67JvQz"></label> 
+              </span> 
+            </div>  
+            <div class="x-col c67JvQz" xid="col6" __cid="c67JvQz"> 
+              <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="fQ1_1_1Ph" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ1_1_1Ph&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;accept&quot;:&quot;*/*&quot;,&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="c67JvQz" class="c67JvQz"> 
+                <div class="x-attachment c67JvQz" xid="div1" __cid="c67JvQz"> 
+                  <div class="x-attachment-content x-card-border c67JvQz" xid="div2" __cid="c67JvQz"> 
+                    <div class="x-doc-process c67JvQz" xid="div3" __cid="c67JvQz"> 
+                      <div class="progress-bar x-doc-process-bar c67JvQz" role="progressbar" style="width:0%;" xid="progressBar1" __cid="c67JvQz"/> 
+                    </div>  
+                    <div data-bind="foreach:$attachmentItems" xid="div4" __cid="c67JvQz" class="c67JvQz"> 
+                      <div class="x-attachment-cell c67JvQz" xid="div5" __cid="c67JvQz"> 
+                        <div class="x-attachment-item x-item-other c67JvQz" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div6" __cid="c67JvQz"> 
+                          <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget c67JvQz" xid="a1" __cid="c67JvQz"/> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div7" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-upload c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div8" __cid="c67JvQz"/> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div9" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-remove c67JvQz" data-bind="click:changeState.bind($object,'remove')" xid="div10" __cid="c67JvQz"/> 
+                    </div>  
+                    <div style="clear:both;" xid="div11" __cid="c67JvQz" class="c67JvQz"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c67JvQz" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c67JvQz"> 
+            <div class="x-col x-col-20 x-col-center c67JvQz" xid="col7" __cid="c67JvQz"> 
+              <label xid="label9" __cid="c67JvQz" class="c67JvQz">2.代办票据</label> 
+            </div>  
+            <div xid="x-col-6" class="x-col x-col-10 x-col-center c67JvQz" __cid="c67JvQz"> 
+              <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox c67JvQz" xid="fQ1_1_2" value="是" checkedValue="是" uncheckedValue="否" checked="true" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;是&quot;,&quot;disabled&quot;:false,&quot;uncheckedValue&quot;:&quot;否&quot;,&quot;value&quot;:&quot;是&quot;}" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ1_1_2&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="c67JvQz"> 
+                <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="是" __cid="c67JvQz" class="c67JvQz"></input>  
+                <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="c67JvQz" class="c67JvQz"></label> 
+              </span> 
+            </div>  
+            <div class="x-col c67JvQz" xid="col9" __cid="c67JvQz"> 
+              <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="fQ1_1_2Ph" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ1_1_2Ph&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;accept&quot;:&quot;*/*&quot;,&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="c67JvQz" class="c67JvQz"> 
+                <div class="x-attachment c67JvQz" xid="div22" __cid="c67JvQz"> 
+                  <div class="x-attachment-content x-card-border c67JvQz" xid="div21" __cid="c67JvQz"> 
+                    <div class="x-doc-process c67JvQz" xid="div20" __cid="c67JvQz"> 
+                      <div class="progress-bar x-doc-process-bar c67JvQz" role="progressbar" style="width:0%;" xid="progressBar2" __cid="c67JvQz"/> 
+                    </div>  
+                    <div data-bind="foreach:$attachmentItems" xid="div19" __cid="c67JvQz" class="c67JvQz"> 
+                      <div class="x-attachment-cell c67JvQz" xid="div18" __cid="c67JvQz"> 
+                        <div class="x-attachment-item x-item-other c67JvQz" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div17" __cid="c67JvQz"> 
+                          <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget c67JvQz" xid="a2" __cid="c67JvQz"/> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div16" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-upload c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div15" __cid="c67JvQz"/> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div14" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-remove c67JvQz" data-bind="click:changeState.bind($object,'remove')" xid="div12" __cid="c67JvQz"/> 
+                    </div>  
+                    <div style="clear:both;" xid="div13" __cid="c67JvQz" class="c67JvQz"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c67JvQz" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c67JvQz"> 
+            <div class="x-col x-col-20 x-col-center c67JvQz" xid="col10" __cid="c67JvQz"> 
+              <label xid="label10" __cid="c67JvQz" class="c67JvQz">3.代办复印病历</label> 
+            </div>  
+            <div class="x-col x-col-10 x-col-center c67JvQz" xid="x-col-7" __cid="c67JvQz"> 
+              <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox c67JvQz" xid="fQ1_1_3" value="是" checkedValue="是" uncheckedValue="否" checked="true" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;是&quot;,&quot;disabled&quot;:false,&quot;uncheckedValue&quot;:&quot;否&quot;,&quot;value&quot;:&quot;是&quot;}" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ1_1_3&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="c67JvQz"> 
+                <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="是" __cid="c67JvQz" class="c67JvQz"></input>  
+                <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="c67JvQz" class="c67JvQz"></label> 
+              </span> 
+            </div>  
+            <div class="x-col c67JvQz" xid="col12" __cid="c67JvQz"> 
+              <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="fQ1_1_3Ph" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ1_1_3Ph&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;accept&quot;:&quot;*/*&quot;,&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="c67JvQz" class="c67JvQz"> 
+                <div class="x-attachment c67JvQz" xid="div33" __cid="c67JvQz"> 
+                  <div class="x-attachment-content x-card-border c67JvQz" xid="div32" __cid="c67JvQz"> 
+                    <div class="x-doc-process c67JvQz" xid="div31" __cid="c67JvQz"> 
+                      <div class="progress-bar x-doc-process-bar c67JvQz" role="progressbar" style="width:0%;" xid="progressBar3" __cid="c67JvQz"/> 
+                    </div>  
+                    <div data-bind="foreach:$attachmentItems" xid="div30" __cid="c67JvQz" class="c67JvQz"> 
+                      <div class="x-attachment-cell c67JvQz" xid="div29" __cid="c67JvQz"> 
+                        <div class="x-attachment-item x-item-other c67JvQz" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div28" __cid="c67JvQz"> 
+                          <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget c67JvQz" xid="a3" __cid="c67JvQz"/> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div27" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-upload c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div26" __cid="c67JvQz"/> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div25" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-remove c67JvQz" data-bind="click:changeState.bind($object,'remove')" xid="div23" __cid="c67JvQz"/> 
+                    </div>  
+                    <div style="clear:both;" xid="div24" __cid="c67JvQz" class="c67JvQz"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c67JvQz" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c67JvQz"> 
+            <div class="x-col x-col-20 x-col-center c67JvQz" xid="col13" __cid="c67JvQz"> 
+              <label xid="label11" __cid="c67JvQz" class="c67JvQz">4.其他（注明并拍照）</label>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row c67JvQz" xid="row52" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c67JvQz"> 
+                <div class="x-col c67JvQz" xid="col169" __cid="c67JvQz"> 
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control c67JvQz" xid="fQ11" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ1_1_4Context&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="c67JvQz"/> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="x-col-8" class="x-col x-col-10 x-col-center c67JvQz" __cid="c67JvQz"> 
+              <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox c67JvQz" xid="fQ1_1_4" value="是" checkedValue="是" uncheckedValue="否" checked="true" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;是&quot;,&quot;disabled&quot;:false,&quot;uncheckedValue&quot;:&quot;否&quot;,&quot;value&quot;:&quot;是&quot;}" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ1_1_4&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="c67JvQz"> 
+                <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="是" __cid="c67JvQz" class="c67JvQz"></input>  
+                <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="c67JvQz" class="c67JvQz"></label> 
+              </span> 
+            </div>  
+            <div class="x-col x-col-center c67JvQz" xid="col15" __cid="c67JvQz"> 
+              <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="fQ1_1_4Ph" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ1_1_4Ph&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;accept&quot;:&quot;*/*&quot;,&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="c67JvQz" class="c67JvQz"> 
+                <div class="x-attachment c67JvQz" xid="div44" __cid="c67JvQz"> 
+                  <div class="x-attachment-content x-card-border c67JvQz" xid="div43" __cid="c67JvQz"> 
+                    <div class="x-doc-process c67JvQz" xid="div42" __cid="c67JvQz"> 
+                      <div class="progress-bar x-doc-process-bar c67JvQz" role="progressbar" style="width:0%;" xid="progressBar4" __cid="c67JvQz"/> 
+                    </div>  
+                    <div data-bind="foreach:$attachmentItems" xid="div41" __cid="c67JvQz" class="c67JvQz"> 
+                      <div class="x-attachment-cell c67JvQz" xid="div40" __cid="c67JvQz"> 
+                        <div class="x-attachment-item x-item-other c67JvQz" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div39" __cid="c67JvQz"> 
+                          <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget c67JvQz" xid="a4" __cid="c67JvQz"/> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div38" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-upload c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div37" __cid="c67JvQz"/> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div36" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-remove c67JvQz" data-bind="click:changeState.bind($object,'remove')" xid="div34" __cid="c67JvQz"/> 
+                    </div>  
+                    <div style="clear:both;" xid="div35" __cid="c67JvQz" class="c67JvQz"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/bar/bar" class="x-bar c67JvQz" xid="bar1" data-bind="component:{name:'$model/UI2/system/components/justep/bar/bar'}" __cid="c67JvQz"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm center-block c67JvQz" xid="button4" style="background-color:transparent;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;下一步&quot;}" __cid="c67JvQz"> 
+              <i xid="i4" __cid="c67JvQz" class="c67JvQz"/>  
+              <span xid="span4" __cid="c67JvQz" class="c67JvQz">下一步</span> 
+            </a> 
+          </div> 
+        </div>  
+        <div class="x-contents-content c67JvQz" xid="Q6_1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c67JvQz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c67JvQz" xid="button15" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button15Click" data-config="{&quot;icon&quot;:&quot;linear linear-database&quot;}" __cid="c67JvQz"> 
+            <i xid="i16" class="linear linear-database c67JvQz" __cid="c67JvQz"/>  
+            <span xid="span16" __cid="c67JvQz" class="c67JvQz"/> 
+          </a>  
+          <label xid="label32" __cid="c67JvQz" class="c67JvQz">返回上一页</label>  
+          <h4 xid="h410" __cid="c67JvQz" class="c67JvQz">Q6_1请问是哪一种，请记录并录像（多选）</h4>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c67JvQz" xid="row45" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c67JvQz"> 
+            <div class="x-col x-col-20 x-col-center c67JvQz" xid="col149" __cid="c67JvQz"> 
+              <label xid="label57" __cid="c67JvQz" class="c67JvQz">1.代办挂号</label> 
+            </div>  
+            <div class="x-col x-col-10 x-col-center c67JvQz" xid="col150" __cid="c67JvQz"> 
+              <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox c67JvQz" xid="fQ6_1_1" checkedValue="是" value="否" checked="true" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;是&quot;,&quot;disabled&quot;:false,&quot;value&quot;:&quot;否&quot;}" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ6_1_1&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="c67JvQz"> 
+                <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="否" __cid="c67JvQz" class="c67JvQz"></input>  
+                <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="c67JvQz" class="c67JvQz"></label> 
+              </span> 
+            </div>  
+            <div class="x-col c67JvQz" xid="col148" __cid="c67JvQz"> 
+              <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="fQ6_1_1Video" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ6_1_1Video&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;accept&quot;:&quot;*/*&quot;,&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="c67JvQz" class="c67JvQz"> 
+                <div class="x-attachment c67JvQz" xid="div154" __cid="c67JvQz"> 
+                  <div class="x-attachment-content x-card-border c67JvQz" xid="div153" __cid="c67JvQz"> 
+                    <div class="x-doc-process c67JvQz" xid="div152" __cid="c67JvQz"> 
+                      <div class="progress-bar x-doc-process-bar c67JvQz" role="progressbar" style="width:0%;" xid="progressBar14" __cid="c67JvQz"/> 
+                    </div>  
+                    <div data-bind="foreach:$attachmentItems" xid="div151" __cid="c67JvQz" class="c67JvQz"> 
+                      <div class="x-attachment-cell c67JvQz" xid="div150" __cid="c67JvQz"> 
+                        <div class="x-attachment-item x-item-other c67JvQz" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div149" __cid="c67JvQz"> 
+                          <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget c67JvQz" xid="a14" __cid="c67JvQz"/> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div148" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-upload c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div147" __cid="c67JvQz"/> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div146" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-remove c67JvQz" data-bind="click:changeState.bind($object,'remove')" xid="div144" __cid="c67JvQz"/> 
+                    </div>  
+                    <div style="clear:both;" xid="div145" __cid="c67JvQz" class="c67JvQz"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c67JvQz" xid="row46" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c67JvQz"> 
+            <div class="x-col x-col-20 x-col-center c67JvQz" xid="col152" __cid="c67JvQz"> 
+              <label xid="label58" __cid="c67JvQz" class="c67JvQz">2.代开票据</label> 
+            </div>  
+            <div class="x-col x-col-10 x-col-center c67JvQz" xid="col153" __cid="c67JvQz"> 
+              <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox c67JvQz" xid="fQ6_1_2" checkedValue="是" value="否" checked="true" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;是&quot;,&quot;disabled&quot;:false,&quot;value&quot;:&quot;否&quot;}" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ6_1_2&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="c67JvQz"> 
+                <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="否" __cid="c67JvQz" class="c67JvQz"></input>  
+                <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="c67JvQz" class="c67JvQz"></label> 
+              </span> 
+            </div>  
+            <div class="x-col c67JvQz" xid="col151" __cid="c67JvQz"> 
+              <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="fQ6_1_2Video" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ6_1_2Video&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;accept&quot;:&quot;*/*&quot;,&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="c67JvQz" class="c67JvQz"> 
+                <div class="x-attachment c67JvQz" xid="div165" __cid="c67JvQz"> 
+                  <div class="x-attachment-content x-card-border c67JvQz" xid="div164" __cid="c67JvQz"> 
+                    <div class="x-doc-process c67JvQz" xid="div163" __cid="c67JvQz"> 
+                      <div class="progress-bar x-doc-process-bar c67JvQz" role="progressbar" style="width:0%;" xid="progressBar15" __cid="c67JvQz"/> 
+                    </div>  
+                    <div data-bind="foreach:$attachmentItems" xid="div162" __cid="c67JvQz" class="c67JvQz"> 
+                      <div class="x-attachment-cell c67JvQz" xid="div161" __cid="c67JvQz"> 
+                        <div class="x-attachment-item x-item-other c67JvQz" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div160" __cid="c67JvQz"> 
+                          <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget c67JvQz" xid="a15" __cid="c67JvQz"/> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div159" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-upload c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div158" __cid="c67JvQz"/> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div157" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-remove c67JvQz" data-bind="click:changeState.bind($object,'remove')" xid="div155" __cid="c67JvQz"/> 
+                    </div>  
+                    <div style="clear:both;" xid="div156" __cid="c67JvQz" class="c67JvQz"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c67JvQz" xid="row47" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c67JvQz"> 
+            <div class="x-col x-col-20 x-col-center c67JvQz" xid="col155" __cid="c67JvQz"> 
+              <label xid="label59" __cid="c67JvQz" class="c67JvQz">3.代办复印病历</label> 
+            </div>  
+            <div class="x-col x-col-10 x-col-center c67JvQz" xid="col156" __cid="c67JvQz"> 
+              <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox c67JvQz" xid="fQ6_1_3" checkedValue="是" value="否" checked="true" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;是&quot;,&quot;disabled&quot;:false,&quot;value&quot;:&quot;否&quot;}" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ6_1_3&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="c67JvQz"> 
+                <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="否" __cid="c67JvQz" class="c67JvQz"></input>  
+                <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="c67JvQz" class="c67JvQz"></label> 
+              </span> 
+            </div>  
+            <div class="x-col c67JvQz" xid="col154" __cid="c67JvQz"> 
+              <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="fQ6_1_3Video" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ6_1_3Video&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;accept&quot;:&quot;*/*&quot;,&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="c67JvQz" class="c67JvQz"> 
+                <div class="x-attachment c67JvQz" xid="div176" __cid="c67JvQz"> 
+                  <div class="x-attachment-content x-card-border c67JvQz" xid="div175" __cid="c67JvQz"> 
+                    <div class="x-doc-process c67JvQz" xid="div174" __cid="c67JvQz"> 
+                      <div class="progress-bar x-doc-process-bar c67JvQz" role="progressbar" style="width:0%;" xid="progressBar16" __cid="c67JvQz"/> 
+                    </div>  
+                    <div data-bind="foreach:$attachmentItems" xid="div173" __cid="c67JvQz" class="c67JvQz"> 
+                      <div class="x-attachment-cell c67JvQz" xid="div172" __cid="c67JvQz"> 
+                        <div class="x-attachment-item x-item-other c67JvQz" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div171" __cid="c67JvQz"> 
+                          <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget c67JvQz" xid="a16" __cid="c67JvQz"/> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div170" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-upload c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div169" __cid="c67JvQz"/> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div168" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-remove c67JvQz" data-bind="click:changeState.bind($object,'remove')" xid="div166" __cid="c67JvQz"/> 
+                    </div>  
+                    <div style="clear:both;" xid="div167" __cid="c67JvQz" class="c67JvQz"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c67JvQz" xid="row48" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c67JvQz"> 
+            <div class="x-col x-col-20 x-col-center c67JvQz" xid="col158" __cid="c67JvQz"> 
+              <label xid="label60" __cid="c67JvQz" class="c67JvQz">4.其他（注明并拍照）</label>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row c67JvQz" xid="row50" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c67JvQz"> 
+                <div class="x-col c67JvQz" xid="col163" __cid="c67JvQz"> 
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control c67JvQz" xid="fQ6_1_4Context" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ6_1_4Context&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="c67JvQz"/> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-col x-col-10 x-col-center c67JvQz" xid="col159" __cid="c67JvQz"> 
+              <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox c67JvQz" xid="fQ6_1_4" checkedValue="是" value="否" checked="true" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;是&quot;,&quot;disabled&quot;:false,&quot;value&quot;:&quot;否&quot;}" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ6_1_4&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="c67JvQz"> 
+                <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="否" __cid="c67JvQz" class="c67JvQz"></input>  
+                <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="c67JvQz" class="c67JvQz"></label> 
+              </span> 
+            </div>  
+            <div class="x-col c67JvQz" xid="col157" __cid="c67JvQz"> 
+              <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="fQ6_1_4Video" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ6_1_4Video&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;accept&quot;:&quot;*/*&quot;,&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="c67JvQz" class="c67JvQz"> 
+                <div class="x-attachment c67JvQz" xid="div187" __cid="c67JvQz"> 
+                  <div class="x-attachment-content x-card-border c67JvQz" xid="div186" __cid="c67JvQz"> 
+                    <div class="x-doc-process c67JvQz" xid="div185" __cid="c67JvQz"> 
+                      <div class="progress-bar x-doc-process-bar c67JvQz" role="progressbar" style="width:0%;" xid="progressBar17" __cid="c67JvQz"/> 
+                    </div>  
+                    <div data-bind="foreach:$attachmentItems" xid="div184" __cid="c67JvQz" class="c67JvQz"> 
+                      <div class="x-attachment-cell c67JvQz" xid="div183" __cid="c67JvQz"> 
+                        <div class="x-attachment-item x-item-other c67JvQz" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div182" __cid="c67JvQz"> 
+                          <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget c67JvQz" xid="a17" __cid="c67JvQz"/> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div181" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-upload c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div180" __cid="c67JvQz"/> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div179" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-remove c67JvQz" data-bind="click:changeState.bind($object,'remove')" xid="div177" __cid="c67JvQz"/> 
+                    </div>  
+                    <div style="clear:both;" xid="div178" __cid="c67JvQz" class="c67JvQz"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c67JvQz" xid="row49" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c67JvQz"> 
+            <div class="x-col x-col-20 x-col-center c67JvQz" xid="col161" __cid="c67JvQz"> 
+              <label xid="label61" __cid="c67JvQz" class="c67JvQz">5.其他（注明并拍照）</label>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row c67JvQz" xid="row51" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c67JvQz"> 
+                <div class="x-col c67JvQz" xid="col166" __cid="c67JvQz"> 
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control c67JvQz" xid="fQ6_1_5Context" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ6_1_5Context&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="c67JvQz"/> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-col x-col-10 x-col-center c67JvQz" xid="col162" __cid="c67JvQz"> 
+              <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox c67JvQz" xid="fQ6_1_5" checkedValue="是" value="否" checked="true" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;是&quot;,&quot;disabled&quot;:false,&quot;value&quot;:&quot;否&quot;}" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ6_1_5&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="c67JvQz"> 
+                <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="否" __cid="c67JvQz" class="c67JvQz"></input>  
+                <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="c67JvQz" class="c67JvQz"></label> 
+              </span> 
+            </div>  
+            <div class="x-col c67JvQz" xid="col160" __cid="c67JvQz"> 
+              <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="fQ6_1_5Video" data-bind="component:{ref:$model.tabquestion.ref(&quot;fQ6_1_5Video&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;accept&quot;:&quot;*/*&quot;,&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="c67JvQz" class="c67JvQz"> 
+                <div class="x-attachment c67JvQz" xid="div198" __cid="c67JvQz"> 
+                  <div class="x-attachment-content x-card-border c67JvQz" xid="div197" __cid="c67JvQz"> 
+                    <div class="x-doc-process c67JvQz" xid="div196" __cid="c67JvQz"> 
+                      <div class="progress-bar x-doc-process-bar c67JvQz" role="progressbar" style="width:0%;" xid="progressBar18" __cid="c67JvQz"/> 
+                    </div>  
+                    <div data-bind="foreach:$attachmentItems" xid="div195" __cid="c67JvQz" class="c67JvQz"> 
+                      <div class="x-attachment-cell c67JvQz" xid="div194" __cid="c67JvQz"> 
+                        <div class="x-attachment-item x-item-other c67JvQz" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div193" __cid="c67JvQz"> 
+                          <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget c67JvQz" xid="a18" __cid="c67JvQz"/> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div192" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-upload c67JvQz" data-bind="visible:$state.get() == 'upload'" xid="div191" __cid="c67JvQz"/> 
+                    </div>  
+                    <div class="x-attachment-cell c67JvQz" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div190" __cid="c67JvQz"> 
+                      <div class="x-attachment-item x-item-remove c67JvQz" data-bind="click:changeState.bind($object,'remove')" xid="div188" __cid="c67JvQz"/> 
+                    </div>  
+                    <div style="clear:both;" xid="div189" __cid="c67JvQz" class="c67JvQz"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/bar/bar" class="x-bar c67JvQz" xid="bar7" data-bind="component:{name:'$model/UI2/system/components/justep/bar/bar'}" __cid="c67JvQz"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm center-block c67JvQz" xid="button7" style="background-color:transparent;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button7Click" data-config="{&quot;label&quot;:&quot;完结保存&quot;}" __cid="c67JvQz"> 
+              <i xid="i7" __cid="c67JvQz" class="c67JvQz"/>  
+              <span xid="span7" __cid="c67JvQz" class="c67JvQz">完结保存</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm center-block c67JvQz" xid="button17" style="background-color:transparent;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button17Click" data-config="{&quot;label&quot;:&quot;再填一份&quot;}" __cid="c67JvQz"> 
+              <i xid="i18" __cid="c67JvQz" class="c67JvQz"/>  
+              <span xid="span18" __cid="c67JvQz" class="c67JvQz">再填一份</span> 
+            </a> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="c67JvQz" class="c67JvQz">.x-panel.pf6e546641cac49b3989f8664d6694788-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pf6e546641cac49b3989f8664d6694788-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pf6e546641cac49b3989f8664d6694788-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pf6e546641cac49b3989f8664d6694788-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pf6e546641cac49b3989f8664d6694788-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pf6e546641cac49b3989f8664d6694788-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pf6e546641cac49b3989f8664d6694788-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pf6e546641cac49b3989f8664d6694788-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pf6e546641cac49b3989f8664d6694788-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

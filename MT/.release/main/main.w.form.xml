@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czMbamu" class="czMbamu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-white.czMbamu{color: rgb(255, 255, 255)} .x-panel-top.czMbamu{z-index: 100} .x-panel.czMbamu &gt; .x-panel-content.czMbamu{top: 0 !important} .x-panel.czMbamu .no-iosstatusbar.czMbamu &gt; .x-panel-content.czMbamu{top: -20px !important} .x-img2.czMbamu{width: 40px; height: 33px} .x-list.czMbamu{margin-top: 25%} .x-list.czMbamu .col-xs-6.czMbamu{margin-bottom: 30px; padding-left: 0px; padding-right: 0px} .x-list.czMbamu .col-xs-6.czMbamu &gt; div.czMbamu{margin: 0 auto; width: 90px; height: 90px; border-radius: 65px; padding-top: 15px; position: absolute} .x-list.czMbamu .col-xs-6.czMbamu:nth-child(1) &gt; div.czMbamu{background-color: rgba(0, 134, 207, 0.8); left: 40%; top: 20px} .x-list.czMbamu .col-xs-6.czMbamu:nth-child(2) &gt; div.czMbamu{background-color: rgba(219, 83, 45, 0.8); right: 40%; top: 20px} .x-list.czMbamu .col-xs-6.czMbamu:nth-child(3) &gt; div.czMbamu{background-color: rgba(98, 61, 190, 0.8); left: 10%; top: 100px} .x-list.czMbamu .col-xs-6.czMbamu:nth-child(4) &gt; div.czMbamu{background-color: rgba(0, 190, 242, 0.8); right: 10%; top: 100px} .x-list.czMbamu .col-xs-6.czMbamu:nth-child(5) &gt; div.czMbamu{background-color: rgba(50, 189, 96, 0.8); left: 40%; top: 180px} .x-list.czMbamu .col-xs-6.czMbamu:nth-child(6) &gt; div.czMbamu{background-color: rgba(180, 28, 67, 0.8); right: 40%; top: 180px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="czMbamu" class="czMbamu"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p2750731cd1164d8581f2e5a59ba7642e-iosstatusbar czMbamu" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czMbamu"> 
+    <div class="x-panel-top czMbamu" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:48}" __cid="czMbamu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar czMbamu" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;TCN管理&quot;}" __cid="czMbamu"> 
+        <div class="x-titlebar-left czMbamu" __cid="czMbamu"></div>  
+        <div class="x-titlebar-title  text-success czMbamu" __cid="czMbamu">TCN管理</div>  
+        <div class="x-titlebar-right  czMbamu" __cid="czMbamu">
+          <div class="empty czMbamu" __cid="czMbamu"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-bgImg czMbamu" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czMbamu"> 
+      <ul component="$model/UI2/system/components/justep/list/list" class="x-list x-list-template hide czMbamu" xid="list2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;}" __cid="czMbamu"> 
+        <li xid="li2" class="col-xs-6 text-center czMbamu" __cid="czMbamu"> 
+          <div bind-click="openPageClick" __cid="czMbamu" class="czMbamu"> 
+            <img bind-attr-src="$model.transUrl($object)" class="x-img2 czMbamu" __cid="czMbamu"/>  
+            <h5 class="text-white czMbamu" bind-text="ref('title')" __cid="czMbamu">关于我们</h5> 
+          </div> 
+        </li> 
+      </ul> 
+    </div>  
+    <style __cid="czMbamu" class="czMbamu">.x-panel.p2750731cd1164d8581f2e5a59ba7642e-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p2750731cd1164d8581f2e5a59ba7642e-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p2750731cd1164d8581f2e5a59ba7642e-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p2750731cd1164d8581f2e5a59ba7642e-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p2750731cd1164d8581f2e5a59ba7642e-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p2750731cd1164d8581f2e5a59ba7642e-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p2750731cd1164d8581f2e5a59ba7642e-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p2750731cd1164d8581f2e5a59ba7642e-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p2750731cd1164d8581f2e5a59ba7642e-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

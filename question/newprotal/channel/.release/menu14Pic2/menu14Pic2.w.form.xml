@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czQFFBb" class="czQFFBb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="czQFFBb" class="czQFFBb"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p02ad75c7b0ca48d6bd6e44ee6ffaac7c-iosstatusbar czQFFBb" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czQFFBb"> 
+    <div class="x-panel-top czQFFBb" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czQFFBb"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar czQFFBb" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;服务项目&quot;}" __cid="czQFFBb"> 
+        <div class="x-titlebar-left czQFFBb" __cid="czQFFBb"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czQFFBb" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="czQFFBb"> 
+            <i class="icon-chevron-left czQFFBb" __cid="czQFFBb"/>  
+            <span __cid="czQFFBb" class="czQFFBb"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title czQFFBb" __cid="czQFFBb">服务项目</div>  
+        <div class="x-titlebar-right  czQFFBb" __cid="czQFFBb">
+          <div class="empty czQFFBb" __cid="czQFFBb"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content czQFFBb" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czQFFBb"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list czQFFBb" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;,&quot;disableInfiniteLoad&quot;:false,&quot;disablePullToRefresh&quot;:false}" __cid="czQFFBb"> 
+        <ul class="x-list-template hide czQFFBb" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="czQFFBb"> 
+          <li xid="li1" bind-click="open" class="media czQFFBb" __cid="czQFFBb"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row czQFFBb" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czQFFBb"> 
+              <div class="x-col x-col-90 czQFFBb" xid="col10" __cid="czQFFBb"> 
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output czQFFBb" xid="output1" data-bind="component:{ref:ref('title'),name:'$model/UI2/system/components/justep/output/output'}" __cid="czQFFBb"/> 
+              </div>  
+              <div class="x-col czQFFBb" xid="col11" __cid="czQFFBb"> 
+                <span __cid="czQFFBb" class="czQFFBb"> 
+                  <i class="icon-chevron-right czQFFBb" __cid="czQFFBb"/> 
+                </span> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div>  
+      <div xid="parent" __cid="czQFFBb" class="czQFFBb"/> 
+    </div>  
+    <style __cid="czQFFBb" class="czQFFBb">.x-panel.p02ad75c7b0ca48d6bd6e44ee6ffaac7c-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p02ad75c7b0ca48d6bd6e44ee6ffaac7c-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p02ad75c7b0ca48d6bd6e44ee6ffaac7c-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p02ad75c7b0ca48d6bd6e44ee6ffaac7c-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p02ad75c7b0ca48d6bd6e44ee6ffaac7c-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p02ad75c7b0ca48d6bd6e44ee6ffaac7c-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p02ad75c7b0ca48d6bd6e44ee6ffaac7c-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p02ad75c7b0ca48d6bd6e44ee6ffaac7c-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p02ad75c7b0ca48d6bd6e44ee6ffaac7c-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>
